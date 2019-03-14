@@ -1,0 +1,5 @@
+authenticated.users=[{"token"\:"7d147a00-34f2-4918-8376-6bb99f69321e","userId"\:"rahulyog03","refreshToken"\:"","baseUrl"\:"https\://anypoint.mulesoft.com/"}]
+current.token=7d147a00-34f2-4918-8376-6bb99f69321e
+current.user=rahulyog03
+eclipse.preferences.version=1
+org.mule.tooling.amc.apps={"userProjectMap"\:{"rahulyog03"\:{"training-american-ws-1"\:"{\\"applicationName\\"\:\\"training-american-ws-1-airb\\",\\"muleRuntime\\"\:\\"3.9.1\\",\\"properties\\"\:{\\"envkey\\"\:\\"mulesofttraining\\",\\"myenv\\"\:\\"edev\\"}}"}}}

@@ -1,0 +1,27 @@
+#%RAML 1.0
+version: v1
+baseUri: https://anypoint.mulesoft.com/mocking/api/v1/links/6e0cced1-0ff8-436e-90b5-df4a88337d76/ # 
+title: MUA Flights API
+
+types:
+  Flight: !include datatypes/FlightDataType.raml
+/flights:
+ get:
+   queryParameters:
+     muadestination:
+      required: false
+      type: string
+      enum: [SFO,LAX,CLE]
+     airline :
+      required: true
+      type: string
+      enum: [united, delta, american, all]
+   responses:
+     200:
+       body:
+         application/json:
+          example: !include examples/FlightsExample.raml
+          type: Flight []
+            
+
+                

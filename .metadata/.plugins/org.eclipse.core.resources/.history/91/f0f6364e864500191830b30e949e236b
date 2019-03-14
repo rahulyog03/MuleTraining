@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw" xmlns:metadata="http://www.mulesoft.org/schema/mule/metadata" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd
+http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd">
+    <http:request-config name="American_HTTP_Request_Configuration" host="training-american-ws-apmvj1.us-e2.cloudhub.io" port="80" basePath="/" doc:name="HTTP Request Configuration">
+        <http:raml-api-configuration location="https://anypoint.mulesoft.com/exchange/api/v1/organizations/3bc1df68-f3c3-49fb-a24f-e6f597cb5a17/assets/3bc1df68-f3c3-49fb-a24f-e6f597cb5a17/american-flights-api-new/1.0.2/api/root"/>
+    </http:request-config>
+    <flow name="getAmericanFlightFlow">
+        <http:listener config-ref="" path="/" doc:name="HTTP"/>
+        <http:request config-ref="American_HTTP_Request_Configuration" path="/flights" method="GET" doc:name="American REST request" metadata:id="09f7913c-7a6e-4a0c-b791-a3f5e948d18b">
+            <http:request-builder>
+                <http:query-param paramName="destination" value=""/>
+                <http:header headerName="Accept" value=""/>
+                <http:header headerName="client_secret" value=""/>
+                <http:header headerName="client_id" value=""/>
+            </http:request-builder>
+        </http:request>
+        <dw:transform-message doc:name="Transform Message" metadata:id="2a7fd079-62c4-48ab-891e-414e7f083833">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/json
+---
+payload map ((payload01 , indexOfPayload01) -> {
+	airline: "American",
+	flightCode: payload01.code,
+	fromAirportCode: payload01.origin,
+	toAirportCode: payload01.destination,
+	departureDate: payload01.departureDate,
+	emptySeats: payload01.emptySeats,
+	totalSeats: payload01.plane.totalSeats,
+	price: payload01.price,
+	planeType: payload01.plane.type
+})]]></dw:set-payload>
+        </dw:transform-message>
+    </flow>
+</mule>

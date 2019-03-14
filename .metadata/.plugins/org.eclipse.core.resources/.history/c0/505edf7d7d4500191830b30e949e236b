@@ -1,0 +1,5 @@
+#Wed Mar 13 16:17:26 IST 2019
+encoding=UTF-8
+domain=default
+redeployment.enabled=true
+config.resources=mua-flights-api.xml

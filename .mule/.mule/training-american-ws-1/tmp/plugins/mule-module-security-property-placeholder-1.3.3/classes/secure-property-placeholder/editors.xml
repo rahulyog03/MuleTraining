@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<namespace xmlns="http://www.mulesoft.org/schema/mule/tooling.attributes" xmlns:mule="http://www.mulesoft.org/schema/mule/core" url="http://www.mulesoft.org/schema/mule/secure-property-placeholder" prefix="secure-property-placeholder">
+  <global-cloud-connector versions="[3.5.4,8.0.0]" caption="Secure Property Placeholder" description="" icon="" localId="parentConfig" image="" abstract="true" extends="http://www.mulesoft.org/schema/mule/secure-property-placeholder/abstractSecure-property-placeholderConnectorGeneric"></global-cloud-connector>
+  <global-cloud-connector versions="[3.5.4,8.0.0]" caption="Secure Property Placeholder" description="Global Secure Property Placeholder configuration information." icon="icons/small/secure-property-placeholder-connector-24x16.png" localId="config" image="icons/large/secure-property-placeholder-connector-48x32.png" abstract="false" extends="http://www.mulesoft.org/schema/mule/secure-property-placeholder/parentConfig" connectivityTesting="off">
+    <attribute-category caption="General" description="Secure-property-placeholder configuration properties.">
+      <group id="secure-property-placeholderGenericProperties" caption="Basic Settings">
+        <name name="name" caption="Name" description="Give a name to this configuration so it can be later referenced by config-ref." required="true"></name>
+      </group>
+      <group id="encryption" caption="Encryption">
+        <enum defaultValue="AES" allowsCustom="true" name="encryptionAlgorithm" caption="Encryption Algorithm" description="The encryption algorithm used 
+
+Allowed algorithms AES(Default), Blowfish, DES, DESede, RC2, RSA, PBEWithMD5AndDES." supportsExpressions="true" required="false" javaType="org.mule.security.encryption.binary.jce.algorithms.EncryptionAlgorithm">
+          <option value="AES"></option>
+          <option value="Blowfish"></option>
+          <option value="CAST5"></option>
+          <option value="CAST6"></option>
+          <option value="Camellia"></option>
+          <option value="DES"></option>
+          <option value="DESede"></option>
+          <option value="Noekeon"></option>
+          <option value="RC2"></option>
+          <option value="RC5"></option>
+          <option value="RC6"></option>
+          <option value="RSA"></option>
+          <option value="Rijndael"></option>
+          <option value="SEED"></option>
+          <option value="Serpent"></option>
+          <option value="Skipjack"></option>
+          <option value="TEA"></option>
+          <option value="Twofish"></option>
+          <option value="XTEA"></option>
+        </enum>
+        <enum defaultValue="CBC" allowsCustom="true" name="encryptionMode" caption="Encryption Mode" description="The encryption mode used 
+
+Allowed modes CBC, CFB, ECB, OFB, PCBC." supportsExpressions="true" required="false" javaType="org.mule.security.encryption.binary.jce.algorithms.EncryptionMode">
+          <option value="CBC"></option>
+          <option value="CFB"></option>
+          <option value="ECB"></option>
+          <option value="OFB"></option>
+        </enum>
+        <string name="key" caption="Key" description="The decryption key ." required="true" javaType="java.lang.String"></string>
+      </group>
+      <group id="source" caption="Source">
+        <string name="location" caption="Location" description="The property files locations, separated with commas." required="true" javaType="java.lang.String"></string>
+        <boolean defaultValue="false" name="ignoreResourceNotFound" caption="Ignore Resource Not Found" description="Defines if failure to find the property resource should be ignored.
+&quot;true&quot; is appropriate if the properties file is completely optional. Default is &quot;false&quot;. ." supportsExpressions="true" required="false" javaType="boolean"></boolean>
+      </group>
+    </attribute-category>
+    <attribute-category caption="Advanced" description="Advanced.">
+      <group id="encoding" caption="Encoding">
+        <string name="fileEncoding" caption="File Encoding" description="The encoding to use for parsing properties files.
+Only applies to classic properties files, not to XML files.." required="false" javaType="java.lang.String"></string>
+      </group>
+      <group id="properties" caption="Properties">
+        <boolean defaultValue="false" name="ignoreUnresolvablePlaceholders" caption="Ignore Unresolvable Placeholders" description="Defines if unresolvable placeholders should be ignored or considered as an error." supportsExpressions="true" required="false" javaType="boolean"></boolean>
+        <enum defaultValue="FALLBACK" allowsCustom="true" name="systemPropertiesMode" caption="System Properties Mode" description="Defines how to check system properties: as fallback, as override, or never.." supportsExpressions="true" required="false" javaType="org.mule.modules.security.placeholder.SystemPropertiesMode">
+          <option value="FALLBACK"></option>
+          <option value="NEVER"></option>
+          <option value="OVERRIDE"></option>
+        </enum>
+      </group>
+      <group id="order" caption="Order">
+        <integer min="0" step="1" name="order" caption="Order" description="The order value of this object for sorting purposes.." required="false" javaType="java.lang.Integer"></integer>
+      </group>
+    </attribute-category>
+  </global-cloud-connector>
+  <cloud-connector caption="Abstractsecure-property-placeholderconnectorgeneric" description="Interact with Secure-property-placeholder." icon="icons/small/secure-property-placeholder-connector-24x16.png" localId="abstractSecure-property-placeholderConnectorGeneric" image="icons/large/secure-property-placeholder-connector-48x32.png" category="org.mule.tooling.category.security" abstract="true">
+    <attribute-category caption="General" description="General.">
+      <group id="abstractSecure-property-placeholderConnectorGeneric" caption="Basic Settings">
+        <globalRef requiredType="http://www.mulesoft.org/schema/mule/secure-property-placeholder/config" name="config-ref" caption="Connector Configuration" description="Specify which configuration to use for this invocation." required="true"></globalRef>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector versions="[3.5.4,8.0.0]" aliasId="org.mule.tooling.ui.modules.core.pattern.secure-property-placeholder" caption="Secure Property Placeholder" description="Module for binary encryption." icon="icons/small/secure-property-placeholder-connector-24x16.png" localId="secure-property-placeholder-connector" image="icons/large/secure-property-placeholder-connector-48x32.png" category="org.mule.tooling.category.security" extends="http://www.mulesoft.org/schema/mule/secure-property-placeholder/abstractSecure-property-placeholderConnectorGeneric">
+    <attribute-category caption="General" description="General.">
+      <group id="secure-property-placeholderConnectorGeneric" caption="Basic Settings">
+        <modeSwitch alwaysCombo="true" name="Secure-property-placeholder operations to execute" caption="Operation" description="Operation."></modeSwitch>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+</namespace>

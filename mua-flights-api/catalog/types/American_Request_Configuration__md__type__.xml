@@ -1,0 +1,347 @@
+<metadata__catalog__entry>
+  <version>5.2.0.0</version>
+  <types class="tree-map">
+    <entry>
+      <org.mule.common.metadata.DefaultMetaDataKey>
+        <id>GET:/flights_response</id>
+        <displayName>GET:/flights_response</displayName>
+        <category>DEFAULT</category>
+        <metaDataKeyPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+          </properties>
+        </metaDataKeyPropertiesManager>
+      </org.mule.common.metadata.DefaultMetaDataKey>
+      <org.mule.common.metadata.DefaultXmlMetaDataModel>
+        <dataType>XML</dataType>
+        <metaDataModelPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+              <typeQName>
+                <namespaceURI>http://validationnamespace.raml.org</namespaceURI>
+                <localPart>AmericanFlight</localPart>
+                <prefix></prefix>
+              </typeQName>
+            </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+            <org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+              <metaDataKey class="org.mule.common.metadata.DefaultMetaDataKey" reference="../../../../../org.mule.common.metadata.DefaultMetaDataKey"/>
+              <derivedStructure>false</derivedStructure>
+              <generatedStructure>false</generatedStructure>
+            </org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+          </properties>
+        </metaDataModelPropertiesManager>
+        <fields>
+          <org.mule.common.metadata.DefaultMetaDataField>
+            <name>ns0:ID</name>
+            <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+              <dataType>INTEGER</dataType>
+              <metaDataModelPropertiesManager>
+                <properties/>
+              </metaDataModelPropertiesManager>
+            </model>
+            <accessType>READ_WRITE</accessType>
+            <metaDataFieldPropertyManager>
+              <properties>
+                <org.mule.common.metadata.property.QNameMetaDataProperty>
+                  <name>
+                    <namespaceURI>http://validationnamespace.raml.org</namespaceURI>
+                    <localPart>ID</localPart>
+                    <prefix>ns0</prefix>
+                  </name>
+                </org.mule.common.metadata.property.QNameMetaDataProperty>
+              </properties>
+            </metaDataFieldPropertyManager>
+          </org.mule.common.metadata.DefaultMetaDataField>
+          <org.mule.common.metadata.DefaultMetaDataField>
+            <name>ns0:code</name>
+            <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+              <dataType>STRING</dataType>
+              <metaDataModelPropertiesManager>
+                <properties/>
+              </metaDataModelPropertiesManager>
+            </model>
+            <accessType>READ_WRITE</accessType>
+            <metaDataFieldPropertyManager>
+              <properties>
+                <org.mule.common.metadata.property.QNameMetaDataProperty>
+                  <name>
+                    <namespaceURI>http://validationnamespace.raml.org</namespaceURI>
+                    <localPart>code</localPart>
+                    <prefix>ns0</prefix>
+                  </name>
+                </org.mule.common.metadata.property.QNameMetaDataProperty>
+              </properties>
+            </metaDataFieldPropertyManager>
+          </org.mule.common.metadata.DefaultMetaDataField>
+          <org.mule.common.metadata.DefaultMetaDataField>
+            <name>ns0:price</name>
+            <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+              <dataType>DOUBLE</dataType>
+              <metaDataModelPropertiesManager>
+                <properties/>
+              </metaDataModelPropertiesManager>
+            </model>
+            <accessType>READ_WRITE</accessType>
+            <metaDataFieldPropertyManager>
+              <properties>
+                <org.mule.common.metadata.property.QNameMetaDataProperty>
+                  <name>
+                    <namespaceURI>http://validationnamespace.raml.org</namespaceURI>
+                    <localPart>price</localPart>
+                    <prefix>ns0</prefix>
+                  </name>
+                </org.mule.common.metadata.property.QNameMetaDataProperty>
+              </properties>
+            </metaDataFieldPropertyManager>
+          </org.mule.common.metadata.DefaultMetaDataField>
+          <org.mule.common.metadata.DefaultMetaDataField>
+            <name>ns0:departureDate</name>
+            <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+              <dataType>STRING</dataType>
+              <metaDataModelPropertiesManager>
+                <properties/>
+              </metaDataModelPropertiesManager>
+            </model>
+            <accessType>READ_WRITE</accessType>
+            <metaDataFieldPropertyManager>
+              <properties>
+                <org.mule.common.metadata.property.QNameMetaDataProperty>
+                  <name>
+                    <namespaceURI>http://validationnamespace.raml.org</namespaceURI>
+                    <localPart>departureDate</localPart>
+                    <prefix>ns0</prefix>
+                  </name>
+                </org.mule.common.metadata.property.QNameMetaDataProperty>
+              </properties>
+            </metaDataFieldPropertyManager>
+          </org.mule.common.metadata.DefaultMetaDataField>
+          <org.mule.common.metadata.DefaultMetaDataField>
+            <name>ns0:origin</name>
+            <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+              <dataType>STRING</dataType>
+              <metaDataModelPropertiesManager>
+                <properties/>
+              </metaDataModelPropertiesManager>
+            </model>
+            <accessType>READ_WRITE</accessType>
+            <metaDataFieldPropertyManager>
+              <properties>
+                <org.mule.common.metadata.property.QNameMetaDataProperty>
+                  <name>
+                    <namespaceURI>http://validationnamespace.raml.org</namespaceURI>
+                    <localPart>origin</localPart>
+                    <prefix>ns0</prefix>
+                  </name>
+                </org.mule.common.metadata.property.QNameMetaDataProperty>
+              </properties>
+            </metaDataFieldPropertyManager>
+          </org.mule.common.metadata.DefaultMetaDataField>
+          <org.mule.common.metadata.DefaultMetaDataField>
+            <name>ns0:destination</name>
+            <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+              <dataType>STRING</dataType>
+              <metaDataModelPropertiesManager>
+                <properties/>
+              </metaDataModelPropertiesManager>
+            </model>
+            <accessType>READ_WRITE</accessType>
+            <metaDataFieldPropertyManager>
+              <properties>
+                <org.mule.common.metadata.property.QNameMetaDataProperty>
+                  <name>
+                    <namespaceURI>http://validationnamespace.raml.org</namespaceURI>
+                    <localPart>destination</localPart>
+                    <prefix>ns0</prefix>
+                  </name>
+                </org.mule.common.metadata.property.QNameMetaDataProperty>
+              </properties>
+            </metaDataFieldPropertyManager>
+          </org.mule.common.metadata.DefaultMetaDataField>
+          <org.mule.common.metadata.DefaultMetaDataField>
+            <name>ns0:emptySeats</name>
+            <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+              <dataType>INTEGER</dataType>
+              <metaDataModelPropertiesManager>
+                <properties/>
+              </metaDataModelPropertiesManager>
+            </model>
+            <accessType>READ_WRITE</accessType>
+            <metaDataFieldPropertyManager>
+              <properties>
+                <org.mule.common.metadata.property.QNameMetaDataProperty>
+                  <name>
+                    <namespaceURI>http://validationnamespace.raml.org</namespaceURI>
+                    <localPart>emptySeats</localPart>
+                    <prefix>ns0</prefix>
+                  </name>
+                </org.mule.common.metadata.property.QNameMetaDataProperty>
+              </properties>
+            </metaDataFieldPropertyManager>
+          </org.mule.common.metadata.DefaultMetaDataField>
+          <org.mule.common.metadata.DefaultMetaDataField>
+            <name>ns0:plane</name>
+            <model class="org.mule.common.metadata.DefaultXmlMetaDataModel">
+              <dataType>XML</dataType>
+              <metaDataModelPropertiesManager>
+                <properties/>
+              </metaDataModelPropertiesManager>
+              <fields>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns0:type</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties/>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://validationnamespace.raml.org</namespaceURI>
+                          <localPart>type</localPart>
+                          <prefix>ns0</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns0:totalSeats</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>INTEGER</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties/>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://validationnamespace.raml.org</namespaceURI>
+                          <localPart>totalSeats</localPart>
+                          <prefix>ns0</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+              </fields>
+              <rootElement>
+                <namespaceURI>http://validationnamespace.raml.org</namespaceURI>
+                <localPart>AmericanFlight</localPart>
+                <prefix>ns0</prefix>
+              </rootElement>
+              <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+                <schemas>
+                  <string>&lt;schema xmlns=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:tns=&quot;http://validationnamespace.raml.org&quot; attributeFormDefault=&quot;unqualified&quot; elementFormDefault=&quot;qualified&quot; targetNamespace=&quot;http://validationnamespace.raml.org&quot;&gt;&#xd;
+    &lt;element maxOccurs=&quot;unbounded&quot; name=&quot;AmericanFlight&quot; type=&quot;tns:AmericanFlight&quot;/&gt;&#xd;
+    &lt;complexType name=&quot;AmericanFlight&quot;&gt;&#xd;
+        &lt;sequence&gt;&#xd;
+            &lt;element minOccurs=&quot;0&quot; name=&quot;ID&quot;&gt;&#xd;
+                &lt;simpleType&gt;&#xd;
+                    &lt;restriction base=&quot;integer&quot;/&gt;&#xd;
+                &lt;/simpleType&gt;&#xd;
+            &lt;/element&gt;&#xd;
+            &lt;element name=&quot;code&quot;&gt;&#xd;
+                &lt;simpleType&gt;&#xd;
+                    &lt;restriction base=&quot;string&quot;/&gt;&#xd;
+                &lt;/simpleType&gt;&#xd;
+            &lt;/element&gt;&#xd;
+            &lt;element name=&quot;price&quot;&gt;&#xd;
+                &lt;simpleType&gt;&#xd;
+                    &lt;restriction base=&quot;double&quot;/&gt;&#xd;
+                &lt;/simpleType&gt;&#xd;
+            &lt;/element&gt;&#xd;
+            &lt;element name=&quot;departureDate&quot;&gt;&#xd;
+                &lt;simpleType&gt;&#xd;
+                    &lt;restriction base=&quot;string&quot;/&gt;&#xd;
+                &lt;/simpleType&gt;&#xd;
+            &lt;/element&gt;&#xd;
+            &lt;element name=&quot;origin&quot;&gt;&#xd;
+                &lt;simpleType&gt;&#xd;
+                    &lt;restriction base=&quot;string&quot;/&gt;&#xd;
+                &lt;/simpleType&gt;&#xd;
+            &lt;/element&gt;&#xd;
+            &lt;element name=&quot;destination&quot;&gt;&#xd;
+                &lt;simpleType&gt;&#xd;
+                    &lt;restriction base=&quot;string&quot;/&gt;&#xd;
+                &lt;/simpleType&gt;&#xd;
+            &lt;/element&gt;&#xd;
+            &lt;element name=&quot;emptySeats&quot;&gt;&#xd;
+                &lt;simpleType&gt;&#xd;
+                    &lt;restriction base=&quot;integer&quot;/&gt;&#xd;
+                &lt;/simpleType&gt;&#xd;
+            &lt;/element&gt;&#xd;
+            &lt;element minOccurs=&quot;0&quot; name=&quot;plane&quot;&gt;&#xd;
+                &lt;complexType&gt;&#xd;
+                    &lt;sequence&gt;&#xd;
+                        &lt;element name=&quot;type&quot;&gt;&#xd;
+                            &lt;simpleType&gt;&#xd;
+                                &lt;restriction base=&quot;string&quot;/&gt;&#xd;
+                            &lt;/simpleType&gt;&#xd;
+                        &lt;/element&gt;&#xd;
+                        &lt;element name=&quot;totalSeats&quot;&gt;&#xd;
+                            &lt;simpleType&gt;&#xd;
+                                &lt;restriction base=&quot;integer&quot;/&gt;&#xd;
+                            &lt;/simpleType&gt;&#xd;
+                        &lt;/element&gt;&#xd;
+                        &lt;any maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; processContents=&quot;skip&quot;/&gt;&#xd;
+                    &lt;/sequence&gt;&#xd;
+                &lt;/complexType&gt;&#xd;
+            &lt;/element&gt;&#xd;
+            &lt;any maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; processContents=&quot;skip&quot;/&gt;&#xd;
+        &lt;/sequence&gt;&#xd;
+    &lt;/complexType&gt;&#xd;
+&lt;/schema&gt;&#xd;
+</string>
+                </schemas>
+                <encoding>windows-1252</encoding>
+              </schemas>
+              <namespaceManager>
+                <namespacePrefix class="tree-map">
+                  <entry>
+                    <string>http://validationnamespace.raml.org</string>
+                    <string>ns0</string>
+                  </entry>
+                </namespacePrefix>
+              </namespaceManager>
+            </model>
+            <accessType>READ_WRITE</accessType>
+            <metaDataFieldPropertyManager>
+              <properties>
+                <org.mule.common.metadata.property.QNameMetaDataProperty>
+                  <name>
+                    <namespaceURI>http://validationnamespace.raml.org</namespaceURI>
+                    <localPart>plane</localPart>
+                    <prefix>ns0</prefix>
+                  </name>
+                </org.mule.common.metadata.property.QNameMetaDataProperty>
+              </properties>
+            </metaDataFieldPropertyManager>
+          </org.mule.common.metadata.DefaultMetaDataField>
+        </fields>
+        <rootElement>
+          <namespaceURI>http://validationnamespace.raml.org</namespaceURI>
+          <localPart>AmericanFlight</localPart>
+          <prefix>ns0</prefix>
+        </rootElement>
+        <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+          <schemas reference="../../fields/org.mule.common.metadata.DefaultMetaDataField[8]/model/schemas/schemas"/>
+          <encoding reference="../../fields/org.mule.common.metadata.DefaultMetaDataField[8]/model/schemas/encoding"/>
+        </schemas>
+        <namespaceManager>
+          <namespacePrefix class="tree-map">
+            <entry>
+              <string>http://validationnamespace.raml.org</string>
+              <string>ns0</string>
+            </entry>
+          </namespacePrefix>
+        </namespaceManager>
+      </org.mule.common.metadata.DefaultXmlMetaDataModel>
+    </entry>
+  </types>
+  <connectorName>American_Request_Configuration</connectorName>
+</metadata__catalog__entry>

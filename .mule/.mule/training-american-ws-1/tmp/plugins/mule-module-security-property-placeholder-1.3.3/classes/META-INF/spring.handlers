@@ -1,0 +1,1 @@
+http\://www.mulesoft.org/schema/mule/secure-property-placeholder=org.mule.modules.security.placeholder.config.SecurePropertyPlaceholderNamespaceHandler

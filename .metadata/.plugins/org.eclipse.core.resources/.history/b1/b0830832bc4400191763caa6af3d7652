@@ -1,0 +1,101 @@
+#%RAML 1.0
+baseUri: https://anypoint.mulesoft.com/mocking/api/v1/links/1bb709f9-cc8e-49f9-a503-ed3b5c103df1/ # 
+version: v1
+title: American Flights API
+
+types:
+  AmericanFlight: !include exchange_modules/68ef9520-24e9-4cf2-b2f5-620025690913/training-american-flight-data-type/1.0.1/AmericanFlightDataType.raml
+
+traits:
+  error_status_codes: 
+    responses:
+      401:
+        body:
+          application/json:
+            example:
+              message: Not Authenticated. Check credentials.
+      500:
+        body:
+          application/json:
+            example:
+              message: Server side error. Try later.
+  cust_auth:
+    headers:
+      client_id:
+        required: true
+        type: string
+        example: AAjkdaahajksa767ashuauAIL
+      client_secret:
+        required: true
+        type: string
+        example: LKJutyuashd78767asdjjy6rttABGH
+           
+
+
+/flights:
+  is: [error_status_codes, cust_auth]
+  get:
+    displayName: Get All Flights
+    headers:
+      Accept:
+        type: string
+        example: application/json
+        enum: [application/json, application/xml]
+        required: true
+    queryParameters:
+      destination:
+        type: string
+        required: true
+        enum: [SFO, LAX, CLE]
+    responses:
+      200:
+        body:
+          application/json:
+            examples: !include exchange_modules/68ef9520-24e9-4cf2-b2f5-620025690913/training-american-flights-example/1.0.1/AmericanFlightsExample.raml
+            type: AmericanFlight[]
+          application/xml:
+            examples: !include exchange_modules/68ef9520-24e9-4cf2-b2f5-620025690913/training-american-flights-example/1.0.1/AmericanFlightsExample.raml
+            type: AmericanFlight[]
+  post:
+    displayName: Add A Flight
+    body:
+      application/json:
+        examples: !include examples/AmericanFlightExample.raml
+        type: AmericanFlight
+    responses:
+      201:
+        body:
+          application/json:
+            example:
+              message: Flight added        
+  
+  /{ID}:
+    is: [error_status_codes, cust_auth]
+    get:
+      displayName: Get Flight By ID
+      responses:
+        200:
+          body:
+            application/json:
+              type: AmericanFlight
+              examples: !include examples/AmericanFlightExample.raml
+    delete:
+      displayName: Delete Flight By ID
+      responses:
+        200:
+          body:
+            application/json:
+              example:
+                message: Flight deleted
+    put:
+      displayName: Update Flight By ID
+      body:
+        application/json:
+          examples: !include examples/AmericanFlightExample.raml
+          type: AmericanFlight
+      responses:
+        200:
+          body:
+            application/json:
+              example:
+                message: Flight updated
