@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:metadata="http://www.mulesoft.org/schema/mule/metadata" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd">
+    <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="9091" doc:name="HTTP Listener Configuration"/>
+    <flow name="firstFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/examples" allowedMethods="GET" doc:name="HTTP"/>
+        <set-payload value="#[message.inboundProperties.'http.query.params'.name.toUpperCase()]" doc:name="Set Payload"/>
+        <set-variable variableName="trainer" value="#[message.inboundProperties.'http.query.params'.trainer]" doc:name="Flow Variable trainer"/>
+        <set-session-variable variableName="training" value="#[message.inboundProperties.'http.query.params'.training]" doc:name="Session Variable training"/>
+        <flow-ref name="secondFlow" doc:name="Flow Reference"/>
+        <logger message="Payload is : #[payload] IBPs : #[message.inboundProperties] OBPs : #[message.outboundProperties]  FlowVariables: #[flowVars]    SessionVars : #[sessionVars]" level="INFO" doc:name="Logger"/>
+    </flow>
+    <flow name="secondFlow">
+        <set-variable variableName="numberOfDays" value="#[message.inboundProperties.'http.query.params'.numberOfDays]" doc:name="Flow Variable numberOfDays"/>
+        <set-session-variable variableName="numberOfParticipants" value="#[message.inboundProperties.'http.query.params'.numberOfParticipants]" doc:name="Session Variable numberOfParticipants"/>
+    </flow>
+</mule>

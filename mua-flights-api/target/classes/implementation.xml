@@ -31,7 +31,6 @@ http://www.mulesoft.org/schema/mule/ws http://www.mulesoft.org/schema/mule/ws/cu
         <http:config useTransportForUris="false"/>
     </configuration>
     <flow name="getFlightsFlow">
-        <http:listener config-ref="mua-flights-api-httpListenerConfig" path="/flights" allowedMethods="GET" doc:name="HTTP"/>
         <choice doc:name="Choice">
             <when expression="#[message.inboundProperties.'http.query.params'.airline == &quot;all&quot;]">
                 <flow-ref name="getAllFlights" doc:name="Flow Reference getAllFlights"/>
@@ -51,7 +50,6 @@ http://www.mulesoft.org/schema/mule/ws http://www.mulesoft.org/schema/mule/ws/cu
         </choice>
     </flow>
     <flow name="getAllFlights">
-        <http:listener config-ref="mua-flights-api-httpListenerConfig" path="/all" allowedMethods="GET" doc:name="HTTP All Listener"/>
         <scatter-gather doc:name="Scatter-Gather">
             <flow-ref name="getAmericanFlightFlow" doc:name="Flow Reference getAmericanFlightFlow"/>
             <flow-ref name="getDeltaFlights" doc:name="Flow Reference getDeltaFlights"/>
@@ -75,7 +73,6 @@ flatten payload]]></dw:set-payload>
         </catch-exception-strategy>
     </choice-exception-strategy>
     <flow name="getUnitedFlights">
-        <http:listener config-ref="mua-flights-api-httpListenerConfig" path="/united" allowedMethods="GET" doc:name="HTTP"/>
         <set-variable variableName="destination" value="#[(message.inboundProperties.'http.query.params'.muadestination != empty) ? message.inboundProperties.'http.query.params'.muadestination : &quot;SFO&quot;]" doc:name="United_Flow Variable destination"/>
         <http:request config-ref="United_HTTP_Configuration" path="/flights/{DEST}" method="GET" doc:name="United_HTTP" metadata:id="5cb395fd-a3f7-4370-bba0-cbcd35b54886">
             <http:request-builder>
@@ -100,7 +97,6 @@ payload.flights map ((flight , indexOfFlight) -> {
         </dw:transform-message>
     </flow>
     <flow name="getDeltaFlights">
-        <http:listener config-ref="mua-flights-api-httpListenerConfig" path="/delta" allowedMethods="GET" doc:name="HTTP"/>
         <set-variable variableName="destination" value="#[(message.inboundProperties.'http.query.params'.muadestination != empty) ? message.inboundProperties.'http.query.params'.muadestination : &quot;SFO&quot;]" doc:name="Flow Variable destination"/>
         <dw:transform-message doc:name="Transform Message">
             <dw:set-payload><![CDATA[%dw 1.0
@@ -133,7 +129,7 @@ payload.ns0#findFlightResponse.*return map ((return , indexOfReturn) -> {
     </flow>
     
     <flow name="getAmericanFlightFlow">
-        <http:listener config-ref="mua-flights-api-httpListenerConfig" path="/american" allowedMethods="GET" doc:name="American HTTP request"/>
+
         <set-variable variableName="destination" value="#[(message.inboundProperties.'http.query.params'.muadestination != empty) ? message.inboundProperties.'http.query.params'.muadestination : &quot;SFO&quot;]" doc:name="Flow Variable destination"/>
         <http:request config-ref="American_Request_Configuration" path="/flights" method="GET" doc:name="American REST request" metadata:id="09f7913c-7a6e-4a0c-b791-a3f5e948d18b">
             <http:request-builder>
