@@ -1,0 +1,1280 @@
+2019-03-15 13:00:58,194 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'performance-tunning'                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 13:00:58,382 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2019-03-15 13:00:58,569 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2019-03-15 13:00:58,741 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2019-03-15 13:00:58,741 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2019-03-15 13:00:58,906 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@22c86919: startup date [Fri Mar 15 13:00:58 IST 2019]; root of context hierarchy
+2019-03-15 13:01:01,625 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-03-15 13:01:03,438 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2019-03-15 13:01:04,060 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\performance-tunning\queue-tx-log\tx1.log and C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\performance-tunning\queue-tx-log\tx2.log
+2019-03-15 13:01:04,231 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\performance-tunning\queue-xa-tx-log\tx1.log and C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\performance-tunning\queue-xa-tx-log\tx2.log
+2019-03-15 13:01:04,247 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2019-03-15 13:01:04,294 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.VM.mule.default
+2019-03-15 13:01:04,435 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2019-03-15 13:01:04,435 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: readingFlow
+2019-03-15 13:01:04,435 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@27e2287c
+2019-03-15 13:01:04,497 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: readingFlow.stage1
+2019-03-15 13:01:04,510 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: processingFlow
+2019-03-15 13:01:04,510 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@4c82b5df
+2019-03-15 13:01:04,526 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: processingFlow.stage1
+2019-03-15 13:01:04,791 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\apps\performance-tunning\performance-tunning.xml'}]"
+2019-03-15 13:01:04,791 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\apps\performance-tunning\performance-tunning.xml'}]"
+2019-03-15 13:01:04,791 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2019-03-15 13:01:04,791 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'performance-tunning'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 13:01:04,791 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2019-03-15 13:01:04,791 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2019-03-15 13:01:04,854 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:9091
+2019-03-15 13:01:04,854 [main] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=10b687f2
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2019-03-15 13:01:04,854 [main] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=10b687f2
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2019-03-15 13:01:04,854 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2019-03-15 13:01:04,854 [main] INFO  org.mule.transport.vm.VMConnector - Connected: VMConnector
+{
+  name=connector.VM.mule.default
+  lifecycle=initialise
+  this=2ed71727
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[vm]
+  serviceOverrides=<none>
+}
+
+2019-03-15 13:01:04,854 [main] INFO  org.mule.transport.vm.VMConnector - Starting: VMConnector
+{
+  name=connector.VM.mule.default
+  lifecycle=initialise
+  this=2ed71727
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[vm]
+  serviceOverrides=<none>
+}
+
+2019-03-15 13:01:04,854 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.VM.mule.default
+2019-03-15 13:01:04,869 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 13:01:04,869 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2019-03-15 13:01:04,869 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: readingFlow
+2019-03-15 13:01:04,869 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: readingFlow.stage1
+2019-03-15 13:01:04,869 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: processingFlow
+2019-03-15 13:01:04,869 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: processingFlow.stage1
+2019-03-15 13:01:04,916 [main] INFO  org.mule.transport.file.FileConnector - Registering listener: readingFlow on endpointUri: file:///D:/input/
+2019-03-15 13:01:04,948 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: FileMessageReceiver
+2019-03-15 13:01:04,948 [main] INFO  org.mule.transport.file.FileMessageReceiver - Connecting clusterizable message receiver
+2019-03-15 13:01:04,948 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: FileMessageReceiver
+2019-03-15 13:01:04,948 [main] INFO  org.mule.transport.file.FileMessageReceiver - Starting clusterizable message receiver
+2019-03-15 13:01:04,948 [main] INFO  org.mule.transport.vm.VMConnector - Registering listener: processingFlow on endpointUri: vm://myq
+2019-03-15 13:01:04,963 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: VMMessageReceiver
+2019-03-15 13:01:04,963 [main] INFO  org.mule.transport.vm.VMMessageReceiver - Connecting clusterizable message receiver
+2019-03-15 13:01:04,963 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: VMMessageReceiver
+2019-03-15 13:01:04,963 [main] INFO  org.mule.transport.vm.VMMessageReceiver - Starting clusterizable message receiver
+2019-03-15 13:01:04,963 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2019-03-15 13:01:09,548 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.performance-tunning:type=Endpoint,service="readingFlow",connector=connector.file.mule.default,name="endpoint..D.input"
+2019-03-15 13:01:09,548 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.performance-tunning:type=Endpoint,service="readingFlow",connector=connector.file.mule.default,name="endpoint..D.input"
+2019-03-15 13:01:09,548 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.performance-tunning:type=Endpoint,service="processingFlow",connector=connector.VM.mule.default,name="endpoint.vm.myq"
+2019-03-15 13:01:09,548 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.performance-tunning:type=Endpoint,service="processingFlow",connector=connector.VM.mule.default,name="endpoint.vm.myq"
+2019-03-15 13:01:09,548 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.performance-tunning:type=Connector,name="connector.file.mule.default"
+2019-03-15 13:01:09,548 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.performance-tunning:type=Connector,name="connector.VM.mule.default"
+2019-03-15 13:01:09,570 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: performance-tunning                                   *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2019-03-15 13:01:40,424 [[performance-tunning].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: D:\input\accounts.csv
+2019-03-15 13:01:42,245 [[performance-tunning].connector.VM.mule.default.dispatcher.03] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.VM.mule.default.dispatcher.336224586'. Object is: VMMessageDispatcher
+2019-03-15 13:01:42,245 [[performance-tunning].connector.VM.mule.default.dispatcher.02] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.VM.mule.default.dispatcher.447322128'. Object is: VMMessageDispatcher
+2019-03-15 13:01:42,245 [[performance-tunning].connector.VM.mule.default.dispatcher.02] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.VM.mule.default.dispatcher.447322128'. Object is: VMMessageDispatcher
+2019-03-15 13:01:42,245 [[performance-tunning].connector.VM.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.VM.mule.default.dispatcher.1643396355'. Object is: VMMessageDispatcher
+2019-03-15 13:01:42,245 [[performance-tunning].connector.VM.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.VM.mule.default.dispatcher.1643396355'. Object is: VMMessageDispatcher
+2019-03-15 13:01:42,245 [[performance-tunning].connector.VM.mule.default.dispatcher.03] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.VM.mule.default.dispatcher.336224586'. Object is: VMMessageDispatcher
+2019-03-15 13:01:42,279 [[performance-tunning].processingFlow.stage1.02] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 13:01:42,279 [[performance-tunning].processingFlow.stage1.04] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 13:01:42,279 [[performance-tunning].processingFlow.stage1.03] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 13:01:42,626 [[performance-tunning].processingFlow.stage1.03] INFO  org.mule.api.processor.LoggerMessageProcessor - Thread Name is --->currentThread
+2019-03-15 13:01:42,626 [[performance-tunning].processingFlow.stage1.04] INFO  org.mule.api.processor.LoggerMessageProcessor - Thread Name is --->currentThread
+2019-03-15 13:01:42,642 [[performance-tunning].processingFlow.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Thread Name is --->currentThread
+2019-03-15 13:01:42,673 [[performance-tunning].connector.file.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.file.mule.default.dispatcher.686132215'. Object is: FileMessageDispatcher
+2019-03-15 13:01:42,673 [[performance-tunning].connector.file.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.file.mule.default.dispatcher.686132215'. Object is: FileMessageDispatcher
+2019-03-15 13:01:42,673 [[performance-tunning].connector.file.mule.default.dispatcher.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\null.json
+2019-03-15 13:03:30,101 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'performance-tunning'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 13:03:30,101 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: readingFlow
+2019-03-15 13:03:30,101 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Removing listener on endpointUri: file:///D:/input/
+2019-03-15 13:03:30,101 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'null'. Object is: FileMessageReceiver
+2019-03-15 13:03:30,101 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'null'. Object is: FileMessageReceiver
+2019-03-15 13:03:30,101 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: readingFlow.stage1
+2019-03-15 13:03:30,164 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: processingFlow
+2019-03-15 13:03:30,164 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.vm.VMConnector - Removing listener on endpointUri: vm://myq
+2019-03-15 13:03:30,164 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'null'. Object is: VMMessageReceiver
+2019-03-15 13:03:30,164 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'null'. Object is: VMMessageReceiver
+2019-03-15 13:03:30,164 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: processingFlow.stage1
+2019-03-15 13:03:30,273 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.routing.correlation.EventCorrelator - Stopping event correlator: [performance-tunning].processingFlow.event.correlator
+2019-03-15 13:03:30,273 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2019-03-15 13:03:30,273 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping connector: connector.file.mule.default
+2019-03-15 13:03:30,273 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'connector.file.mule.default.dispatcher.686132215'. Object is: FileMessageDispatcher
+2019-03-15 13:03:30,273 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'connector.file.mule.default.dispatcher.686132215'. Object is: FileMessageDispatcher
+2019-03-15 13:03:30,273 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping connector: connector.VM.mule.default
+2019-03-15 13:03:30,273 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'connector.VM.mule.default.dispatcher.336224586'. Object is: VMMessageDispatcher
+2019-03-15 13:03:30,273 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'connector.VM.mule.default.dispatcher.336224586'. Object is: VMMessageDispatcher
+2019-03-15 13:03:30,273 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'connector.VM.mule.default.dispatcher.1643396355'. Object is: VMMessageDispatcher
+2019-03-15 13:03:30,273 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'connector.VM.mule.default.dispatcher.1643396355'. Object is: VMMessageDispatcher
+2019-03-15 13:03:30,273 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'connector.VM.mule.default.dispatcher.447322128'. Object is: VMMessageDispatcher
+2019-03-15 13:03:30,273 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'connector.VM.mule.default.dispatcher.447322128'. Object is: VMMessageDispatcher
+2019-03-15 13:03:30,304 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:9091
+2019-03-15 13:03:30,304 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2019-03-15 13:03:30,304 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2019-03-15 13:03:30,304 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'performance-tunning'                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 13:03:30,320 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2019-03-15 13:03:30,320 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: readingFlow
+2019-03-15 13:03:30,320 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: readingFlow.stage1
+2019-03-15 13:03:30,320 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: processingFlow
+2019-03-15 13:03:30,320 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: processingFlow.stage1
+2019-03-15 13:03:30,320 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2019-03-15 13:03:30,320 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Disconnected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=stop
+  this=10b687f2
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2019-03-15 13:03:30,320 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing connector: connector.file.mule.default
+2019-03-15 13:03:30,320 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.vm.VMConnector - Disconnected: VMConnector
+{
+  name=connector.VM.mule.default
+  lifecycle=stop
+  this=2ed71727
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[vm]
+  serviceOverrides=<none>
+}
+
+2019-03-15 13:03:30,320 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing connector: connector.VM.mule.default
+2019-03-15 13:03:30,586 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@22c86919: startup date [Fri Mar 15 13:00:58 IST 2019]; root of context hierarchy
+2019-03-15 13:03:30,601 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "performance-tunning" shut down normally on: 15/3/19   *
+* 1:03 PM                                                            *
+* Up for: 0 days, 0 hours, 2 mins, 25.810 sec                        *
+**********************************************************************
+2019-03-15 13:03:30,867 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'performance-tunning'                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 13:03:30,883 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2019-03-15 13:03:30,898 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2019-03-15 13:03:30,914 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2019-03-15 13:03:30,914 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2019-03-15 13:03:30,914 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@21d6bc7f: startup date [Fri Mar 15 13:03:30 IST 2019]; root of context hierarchy
+2019-03-15 13:03:31,758 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-03-15 13:03:32,070 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\performance-tunning\queue-tx-log\tx1.log and C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\performance-tunning\queue-tx-log\tx2.log
+2019-03-15 13:03:32,086 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\performance-tunning\queue-xa-tx-log\tx1.log and C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\performance-tunning\queue-xa-tx-log\tx2.log
+2019-03-15 13:03:32,086 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2019-03-15 13:03:32,102 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.VM.mule.default
+2019-03-15 13:03:32,133 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2019-03-15 13:03:32,133 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: readingFlow
+2019-03-15 13:03:32,149 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@62a65637
+2019-03-15 13:03:32,149 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: readingFlow.stage1
+2019-03-15 13:03:32,164 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: processingFlow
+2019-03-15 13:03:32,164 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@12dbab7f
+2019-03-15 13:03:32,164 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: processingFlow.stage1
+2019-03-15 13:03:32,195 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\apps\performance-tunning\performance-tunning.xml'}]"
+2019-03-15 13:03:32,195 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\apps\performance-tunning\performance-tunning.xml'}]"
+2019-03-15 13:03:32,195 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'performance-tunning'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 13:03:32,195 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2019-03-15 13:03:32,195 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2019-03-15 13:03:32,227 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:9091
+2019-03-15 13:03:32,227 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=34d0085a
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2019-03-15 13:03:32,227 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=34d0085a
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2019-03-15 13:03:32,227 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2019-03-15 13:03:32,227 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.vm.VMConnector - Connected: VMConnector
+{
+  name=connector.VM.mule.default
+  lifecycle=initialise
+  this=347817d
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[vm]
+  serviceOverrides=<none>
+}
+
+2019-03-15 13:03:32,227 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.vm.VMConnector - Starting: VMConnector
+{
+  name=connector.VM.mule.default
+  lifecycle=initialise
+  this=347817d
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[vm]
+  serviceOverrides=<none>
+}
+
+2019-03-15 13:03:32,227 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.VM.mule.default
+2019-03-15 13:03:32,227 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 13:03:32,227 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2019-03-15 13:03:32,242 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: readingFlow
+2019-03-15 13:03:32,242 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: readingFlow.stage1
+2019-03-15 13:03:32,242 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: processingFlow
+2019-03-15 13:03:32,242 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: processingFlow.stage1
+2019-03-15 13:03:32,258 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Registering listener: readingFlow on endpointUri: file:///D:/input/
+2019-03-15 13:03:32,258 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: FileMessageReceiver
+2019-03-15 13:03:32,258 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileMessageReceiver - Connecting clusterizable message receiver
+2019-03-15 13:03:32,274 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: FileMessageReceiver
+2019-03-15 13:03:32,274 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileMessageReceiver - Starting clusterizable message receiver
+2019-03-15 13:03:32,274 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.vm.VMConnector - Registering listener: processingFlow on endpointUri: vm://myq
+2019-03-15 13:03:32,274 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: VMMessageReceiver
+2019-03-15 13:03:32,274 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.vm.VMMessageReceiver - Connecting clusterizable message receiver
+2019-03-15 13:03:32,274 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: VMMessageReceiver
+2019-03-15 13:03:32,274 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.vm.VMMessageReceiver - Starting clusterizable message receiver
+2019-03-15 13:03:32,274 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2019-03-15 13:03:32,274 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.performance-tunning:type=Endpoint,service="readingFlow",connector=connector.file.mule.default,name="endpoint..D.input"
+2019-03-15 13:03:32,274 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.performance-tunning:type=Endpoint,service="readingFlow",connector=connector.file.mule.default,name="endpoint..D.input"
+2019-03-15 13:03:32,274 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.performance-tunning:type=Endpoint,service="processingFlow",connector=connector.VM.mule.default,name="endpoint.vm.myq"
+2019-03-15 13:03:32,274 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.performance-tunning:type=Endpoint,service="processingFlow",connector=connector.VM.mule.default,name="endpoint.vm.myq"
+2019-03-15 13:03:32,274 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.performance-tunning:type=Connector,name="connector.file.mule.default"
+2019-03-15 13:03:32,274 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.performance-tunning:type=Connector,name="connector.VM.mule.default"
+2019-03-15 13:03:32,289 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: performance-tunning                                   *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2019-03-15 13:04:47,540 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'performance-tunning'                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 13:04:47,853 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2019-03-15 13:04:48,087 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2019-03-15 13:04:48,431 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2019-03-15 13:04:48,431 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2019-03-15 13:04:48,571 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@22c86919: startup date [Fri Mar 15 13:04:48 IST 2019]; root of context hierarchy
+2019-03-15 13:04:52,320 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-03-15 13:04:55,325 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2019-03-15 13:04:56,139 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\performance-tunning\queue-tx-log\tx1.log and C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\performance-tunning\queue-tx-log\tx2.log
+2019-03-15 13:04:56,327 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\performance-tunning\queue-xa-tx-log\tx1.log and C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\performance-tunning\queue-xa-tx-log\tx2.log
+2019-03-15 13:04:56,342 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2019-03-15 13:04:56,432 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.VM.mule.default
+2019-03-15 13:04:56,651 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2019-03-15 13:04:56,651 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: readingFlow
+2019-03-15 13:04:56,651 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@4207852d
+2019-03-15 13:04:56,760 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: readingFlow.stage1
+2019-03-15 13:04:56,807 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: processingFlow
+2019-03-15 13:04:56,807 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2693c618
+2019-03-15 13:04:56,807 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: processingFlow.stage1
+2019-03-15 13:04:57,354 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\apps\performance-tunning\performance-tunning.xml'}]"
+2019-03-15 13:04:57,354 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\apps\performance-tunning\performance-tunning.xml'}]"
+2019-03-15 13:04:57,365 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2019-03-15 13:04:57,365 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'performance-tunning'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 13:04:57,365 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2019-03-15 13:04:57,365 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2019-03-15 13:04:57,506 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:9091
+2019-03-15 13:04:57,506 [main] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=dd4aec3
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2019-03-15 13:04:57,506 [main] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=dd4aec3
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2019-03-15 13:04:57,506 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2019-03-15 13:04:57,506 [main] INFO  org.mule.transport.vm.VMConnector - Connected: VMConnector
+{
+  name=connector.VM.mule.default
+  lifecycle=initialise
+  this=2d119405
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[vm]
+  serviceOverrides=<none>
+}
+
+2019-03-15 13:04:57,506 [main] INFO  org.mule.transport.vm.VMConnector - Starting: VMConnector
+{
+  name=connector.VM.mule.default
+  lifecycle=initialise
+  this=2d119405
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[vm]
+  serviceOverrides=<none>
+}
+
+2019-03-15 13:04:57,506 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.VM.mule.default
+2019-03-15 13:04:57,521 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 13:04:57,521 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2019-03-15 13:04:57,521 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: readingFlow
+2019-03-15 13:04:57,521 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: readingFlow.stage1
+2019-03-15 13:04:57,537 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: processingFlow
+2019-03-15 13:04:57,537 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: processingFlow.stage1
+2019-03-15 13:04:57,600 [main] INFO  org.mule.transport.file.FileConnector - Registering listener: readingFlow on endpointUri: file:///D:/input/
+2019-03-15 13:04:57,646 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: FileMessageReceiver
+2019-03-15 13:04:57,646 [main] INFO  org.mule.transport.file.FileMessageReceiver - Connecting clusterizable message receiver
+2019-03-15 13:04:57,646 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: FileMessageReceiver
+2019-03-15 13:04:57,646 [main] INFO  org.mule.transport.file.FileMessageReceiver - Starting clusterizable message receiver
+2019-03-15 13:04:57,662 [main] INFO  org.mule.transport.vm.VMConnector - Registering listener: processingFlow on endpointUri: vm://myq
+2019-03-15 13:04:57,693 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: VMMessageReceiver
+2019-03-15 13:04:57,693 [main] INFO  org.mule.transport.vm.VMMessageReceiver - Connecting clusterizable message receiver
+2019-03-15 13:04:57,693 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: VMMessageReceiver
+2019-03-15 13:04:57,693 [main] INFO  org.mule.transport.vm.VMMessageReceiver - Starting clusterizable message receiver
+2019-03-15 13:04:57,725 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2019-03-15 13:05:02,287 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.performance-tunning:type=Endpoint,service="readingFlow",connector=connector.file.mule.default,name="endpoint..D.input"
+2019-03-15 13:05:02,292 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.performance-tunning:type=Endpoint,service="readingFlow",connector=connector.file.mule.default,name="endpoint..D.input"
+2019-03-15 13:05:02,292 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.performance-tunning:type=Endpoint,service="processingFlow",connector=connector.VM.mule.default,name="endpoint.vm.myq"
+2019-03-15 13:05:02,292 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.performance-tunning:type=Endpoint,service="processingFlow",connector=connector.VM.mule.default,name="endpoint.vm.myq"
+2019-03-15 13:05:02,294 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.performance-tunning:type=Connector,name="connector.file.mule.default"
+2019-03-15 13:05:02,294 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.performance-tunning:type=Connector,name="connector.VM.mule.default"
+2019-03-15 13:05:02,294 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: performance-tunning                                   *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2019-03-15 13:05:02,357 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'performance-tunning'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 13:05:02,357 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: readingFlow
+2019-03-15 13:05:02,357 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Removing listener on endpointUri: file:///D:/input/
+2019-03-15 13:05:02,357 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'null'. Object is: FileMessageReceiver
+2019-03-15 13:05:02,388 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'null'. Object is: FileMessageReceiver
+2019-03-15 13:05:02,388 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: readingFlow.stage1
+2019-03-15 13:05:02,810 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: processingFlow
+2019-03-15 13:05:02,810 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.vm.VMConnector - Removing listener on endpointUri: vm://myq
+2019-03-15 13:05:02,810 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'null'. Object is: VMMessageReceiver
+2019-03-15 13:05:02,872 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'null'. Object is: VMMessageReceiver
+2019-03-15 13:05:02,872 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: processingFlow.stage1
+2019-03-15 13:05:03,029 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.routing.correlation.EventCorrelator - Stopping event correlator: [performance-tunning].processingFlow.event.correlator
+2019-03-15 13:05:03,029 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2019-03-15 13:05:03,029 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping connector: connector.file.mule.default
+2019-03-15 13:05:03,029 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping connector: connector.VM.mule.default
+2019-03-15 13:05:03,060 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:9091
+2019-03-15 13:05:03,076 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2019-03-15 13:05:03,076 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2019-03-15 13:05:03,076 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'performance-tunning'                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 13:05:03,076 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2019-03-15 13:05:03,076 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: readingFlow
+2019-03-15 13:05:03,091 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: readingFlow.stage1
+2019-03-15 13:05:03,091 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: processingFlow
+2019-03-15 13:05:03,091 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: processingFlow.stage1
+2019-03-15 13:05:03,091 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2019-03-15 13:05:03,091 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Disconnected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=stop
+  this=dd4aec3
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2019-03-15 13:05:03,107 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing connector: connector.file.mule.default
+2019-03-15 13:05:03,107 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.vm.VMConnector - Disconnected: VMConnector
+{
+  name=connector.VM.mule.default
+  lifecycle=stop
+  this=2d119405
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[vm]
+  serviceOverrides=<none>
+}
+
+2019-03-15 13:05:03,107 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing connector: connector.VM.mule.default
+2019-03-15 13:05:04,107 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@22c86919: startup date [Fri Mar 15 13:04:48 IST 2019]; root of context hierarchy
+2019-03-15 13:05:04,148 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "performance-tunning" shut down normally on: 15/3/19   *
+* 1:05 PM                                                            *
+* Up for: 0 days, 0 hours, 0 mins, 6.783 sec                         *
+**********************************************************************
+2019-03-15 13:05:04,430 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'performance-tunning'                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 13:05:04,461 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2019-03-15 13:05:04,476 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2019-03-15 13:05:04,508 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2019-03-15 13:05:04,508 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2019-03-15 13:05:04,523 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@442fad5b: startup date [Fri Mar 15 13:05:04 IST 2019]; root of context hierarchy
+2019-03-15 13:05:05,726 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-03-15 13:05:06,984 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\performance-tunning\queue-tx-log\tx1.log and C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\performance-tunning\queue-tx-log\tx2.log
+2019-03-15 13:05:06,998 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\performance-tunning\queue-xa-tx-log\tx1.log and C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\performance-tunning\queue-xa-tx-log\tx2.log
+2019-03-15 13:05:06,998 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2019-03-15 13:05:07,029 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.VM.mule.default
+2019-03-15 13:05:07,076 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2019-03-15 13:05:07,076 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: readingFlow
+2019-03-15 13:05:07,076 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@31dfc963
+2019-03-15 13:05:07,092 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: readingFlow.stage1
+2019-03-15 13:05:07,092 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: processingFlow
+2019-03-15 13:05:07,092 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@48aea3dd
+2019-03-15 13:05:07,107 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: processingFlow.stage1
+2019-03-15 13:05:07,154 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\apps\performance-tunning\performance-tunning.xml'}]"
+2019-03-15 13:05:07,154 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\apps\performance-tunning\performance-tunning.xml'}]"
+2019-03-15 13:05:07,154 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'performance-tunning'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 13:05:07,170 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2019-03-15 13:05:07,170 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2019-03-15 13:05:07,201 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:9091
+2019-03-15 13:05:07,232 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=2b1a63ee
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2019-03-15 13:05:07,232 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=2b1a63ee
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2019-03-15 13:05:07,232 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2019-03-15 13:05:07,232 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.vm.VMConnector - Connected: VMConnector
+{
+  name=connector.VM.mule.default
+  lifecycle=initialise
+  this=70d59b0
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[vm]
+  serviceOverrides=<none>
+}
+
+2019-03-15 13:05:07,232 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.vm.VMConnector - Starting: VMConnector
+{
+  name=connector.VM.mule.default
+  lifecycle=initialise
+  this=70d59b0
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[vm]
+  serviceOverrides=<none>
+}
+
+2019-03-15 13:05:07,232 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.VM.mule.default
+2019-03-15 13:05:07,248 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 13:05:07,248 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2019-03-15 13:05:07,248 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: readingFlow
+2019-03-15 13:05:07,248 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: readingFlow.stage1
+2019-03-15 13:05:07,263 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: processingFlow
+2019-03-15 13:05:07,263 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: processingFlow.stage1
+2019-03-15 13:05:07,310 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Registering listener: readingFlow on endpointUri: file:///D:/input/
+2019-03-15 13:05:07,326 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: FileMessageReceiver
+2019-03-15 13:05:07,342 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileMessageReceiver - Connecting clusterizable message receiver
+2019-03-15 13:05:07,342 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: FileMessageReceiver
+2019-03-15 13:05:07,342 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileMessageReceiver - Starting clusterizable message receiver
+2019-03-15 13:05:07,342 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.vm.VMConnector - Registering listener: processingFlow on endpointUri: vm://myq
+2019-03-15 13:05:07,342 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: VMMessageReceiver
+2019-03-15 13:05:07,342 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.vm.VMMessageReceiver - Connecting clusterizable message receiver
+2019-03-15 13:05:07,342 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: VMMessageReceiver
+2019-03-15 13:05:07,342 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.vm.VMMessageReceiver - Starting clusterizable message receiver
+2019-03-15 13:05:07,342 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2019-03-15 13:05:07,373 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.performance-tunning:type=Endpoint,service="readingFlow",connector=connector.file.mule.default,name="endpoint..D.input"
+2019-03-15 13:05:07,373 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.performance-tunning:type=Endpoint,service="readingFlow",connector=connector.file.mule.default,name="endpoint..D.input"
+2019-03-15 13:05:07,373 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.performance-tunning:type=Endpoint,service="processingFlow",connector=connector.VM.mule.default,name="endpoint.vm.myq"
+2019-03-15 13:05:07,373 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.performance-tunning:type=Endpoint,service="processingFlow",connector=connector.VM.mule.default,name="endpoint.vm.myq"
+2019-03-15 13:05:07,373 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.performance-tunning:type=Connector,name="connector.file.mule.default"
+2019-03-15 13:05:07,373 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.performance-tunning:type=Connector,name="connector.VM.mule.default"
+2019-03-15 13:05:07,373 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: performance-tunning                                   *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2019-03-15 13:05:44,247 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'performance-tunning'                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 13:05:44,528 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2019-03-15 13:05:44,731 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2019-03-15 13:05:44,971 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2019-03-15 13:05:44,971 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2019-03-15 13:05:45,096 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@22c86919: startup date [Fri Mar 15 13:05:45 IST 2019]; root of context hierarchy
+2019-03-15 13:05:47,769 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-03-15 13:05:50,145 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2019-03-15 13:05:50,761 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\performance-tunning\queue-tx-log\tx1.log and C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\performance-tunning\queue-tx-log\tx2.log
+2019-03-15 13:05:50,792 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\performance-tunning\queue-xa-tx-log\tx1.log and C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\performance-tunning\queue-xa-tx-log\tx2.log
+2019-03-15 13:05:50,948 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2019-03-15 13:05:50,995 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.VM.mule.default
+2019-03-15 13:05:51,183 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2019-03-15 13:05:51,195 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: readingFlow
+2019-03-15 13:05:51,195 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@4f169009
+2019-03-15 13:05:51,273 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: readingFlow.stage1
+2019-03-15 13:05:51,351 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: processingFlow
+2019-03-15 13:05:51,351 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@546394ed
+2019-03-15 13:05:51,351 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: processingFlow.stage1
+2019-03-15 13:05:51,742 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\apps\performance-tunning\performance-tunning.xml'}]"
+2019-03-15 13:05:51,742 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\apps\performance-tunning\performance-tunning.xml'}]"
+2019-03-15 13:05:51,757 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2019-03-15 13:05:51,757 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'performance-tunning'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 13:05:51,757 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2019-03-15 13:05:51,757 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2019-03-15 13:05:51,835 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:9091
+2019-03-15 13:05:51,835 [main] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=456bcb74
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2019-03-15 13:05:51,835 [main] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=456bcb74
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2019-03-15 13:05:51,835 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2019-03-15 13:05:51,835 [main] INFO  org.mule.transport.vm.VMConnector - Connected: VMConnector
+{
+  name=connector.VM.mule.default
+  lifecycle=initialise
+  this=7951c3a2
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[vm]
+  serviceOverrides=<none>
+}
+
+2019-03-15 13:05:51,835 [main] INFO  org.mule.transport.vm.VMConnector - Starting: VMConnector
+{
+  name=connector.VM.mule.default
+  lifecycle=initialise
+  this=7951c3a2
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[vm]
+  serviceOverrides=<none>
+}
+
+2019-03-15 13:05:51,835 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.VM.mule.default
+2019-03-15 13:05:51,851 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 13:05:51,851 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2019-03-15 13:05:51,851 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: readingFlow
+2019-03-15 13:05:51,851 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: readingFlow.stage1
+2019-03-15 13:05:51,851 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: processingFlow
+2019-03-15 13:05:51,851 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: processingFlow.stage1
+2019-03-15 13:05:51,913 [main] INFO  org.mule.transport.file.FileConnector - Registering listener: readingFlow on endpointUri: file:///D:/input/
+2019-03-15 13:05:51,945 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: FileMessageReceiver
+2019-03-15 13:05:51,945 [main] INFO  org.mule.transport.file.FileMessageReceiver - Connecting clusterizable message receiver
+2019-03-15 13:05:51,960 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: FileMessageReceiver
+2019-03-15 13:05:51,960 [main] INFO  org.mule.transport.file.FileMessageReceiver - Starting clusterizable message receiver
+2019-03-15 13:05:51,960 [main] INFO  org.mule.transport.vm.VMConnector - Registering listener: processingFlow on endpointUri: vm://myq
+2019-03-15 13:05:51,960 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: VMMessageReceiver
+2019-03-15 13:05:51,960 [main] INFO  org.mule.transport.vm.VMMessageReceiver - Connecting clusterizable message receiver
+2019-03-15 13:05:51,960 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: VMMessageReceiver
+2019-03-15 13:05:51,960 [main] INFO  org.mule.transport.vm.VMMessageReceiver - Starting clusterizable message receiver
+2019-03-15 13:05:51,976 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2019-03-15 13:05:56,523 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.performance-tunning:type=Endpoint,service="readingFlow",connector=connector.file.mule.default,name="endpoint..D.input"
+2019-03-15 13:05:56,523 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.performance-tunning:type=Endpoint,service="readingFlow",connector=connector.file.mule.default,name="endpoint..D.input"
+2019-03-15 13:05:56,523 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.performance-tunning:type=Endpoint,service="processingFlow",connector=connector.VM.mule.default,name="endpoint.vm.myq"
+2019-03-15 13:05:56,523 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.performance-tunning:type=Endpoint,service="processingFlow",connector=connector.VM.mule.default,name="endpoint.vm.myq"
+2019-03-15 13:05:56,527 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.performance-tunning:type=Connector,name="connector.file.mule.default"
+2019-03-15 13:05:56,528 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.performance-tunning:type=Connector,name="connector.VM.mule.default"
+2019-03-15 13:05:56,530 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: performance-tunning                                   *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2019-03-15 13:06:00,076 [[performance-tunning].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: D:\input\accounts.csv
+2019-03-15 13:06:02,141 [[performance-tunning].connector.VM.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.VM.mule.default.dispatcher.846732381'. Object is: VMMessageDispatcher
+2019-03-15 13:06:02,141 [[performance-tunning].connector.VM.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.VM.mule.default.dispatcher.846732381'. Object is: VMMessageDispatcher
+2019-03-15 13:06:02,153 [[performance-tunning].connector.VM.mule.default.dispatcher.02] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.VM.mule.default.dispatcher.473275084'. Object is: VMMessageDispatcher
+2019-03-15 13:06:02,153 [[performance-tunning].connector.VM.mule.default.dispatcher.02] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.VM.mule.default.dispatcher.473275084'. Object is: VMMessageDispatcher
+2019-03-15 13:06:02,155 [[performance-tunning].connector.VM.mule.default.dispatcher.03] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.VM.mule.default.dispatcher.1785172213'. Object is: VMMessageDispatcher
+2019-03-15 13:06:02,155 [[performance-tunning].connector.VM.mule.default.dispatcher.03] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.VM.mule.default.dispatcher.1785172213'. Object is: VMMessageDispatcher
+2019-03-15 13:06:02,155 [[performance-tunning].processingFlow.stage1.03] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 13:06:02,155 [[performance-tunning].processingFlow.stage1.02] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 13:06:02,155 [[performance-tunning].processingFlow.stage1.04] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 13:06:02,515 [[performance-tunning].processingFlow.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Thread Name is --->[performance-tunning].processingFlow.stage1.02
+2019-03-15 13:06:02,515 [[performance-tunning].processingFlow.stage1.04] INFO  org.mule.api.processor.LoggerMessageProcessor - Thread Name is --->[performance-tunning].processingFlow.stage1.04
+2019-03-15 13:06:02,530 [[performance-tunning].processingFlow.stage1.03] INFO  org.mule.api.processor.LoggerMessageProcessor - Thread Name is --->[performance-tunning].processingFlow.stage1.03
+2019-03-15 13:06:02,562 [[performance-tunning].connector.file.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.file.mule.default.dispatcher.1054942702'. Object is: FileMessageDispatcher
+2019-03-15 13:06:02,562 [[performance-tunning].connector.file.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.file.mule.default.dispatcher.1054942702'. Object is: FileMessageDispatcher
+2019-03-15 13:06:02,562 [[performance-tunning].connector.file.mule.default.dispatcher.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\null.json
+2019-03-15 13:06:11,257 [[performance-tunning].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: D:\input\accounts.csv
+2019-03-15 13:06:11,278 [[performance-tunning].processingFlow.stage1.03] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 13:06:11,278 [[performance-tunning].processingFlow.stage1.03] INFO  org.mule.api.processor.LoggerMessageProcessor - Thread Name is --->[performance-tunning].processingFlow.stage1.03
+2019-03-15 13:06:11,278 [[performance-tunning].processingFlow.stage1.02] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 13:06:11,278 [[performance-tunning].processingFlow.stage1.03] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 13:06:11,278 [[performance-tunning].processingFlow.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Thread Name is --->[performance-tunning].processingFlow.stage1.02
+2019-03-15 13:06:11,278 [[performance-tunning].processingFlow.stage1.03] INFO  org.mule.api.processor.LoggerMessageProcessor - Thread Name is --->[performance-tunning].processingFlow.stage1.03
+2019-03-15 13:06:11,278 [[performance-tunning].connector.file.mule.default.dispatcher.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\null.json
+2019-03-15 13:09:52,185 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'performance-tunning'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 13:09:52,187 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: readingFlow
+2019-03-15 13:09:52,187 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Removing listener on endpointUri: file:///D:/input/
+2019-03-15 13:09:52,187 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'null'. Object is: FileMessageReceiver
+2019-03-15 13:09:52,187 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'null'. Object is: FileMessageReceiver
+2019-03-15 13:09:52,187 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: readingFlow.stage1
+2019-03-15 13:09:52,312 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: processingFlow
+2019-03-15 13:09:52,312 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.vm.VMConnector - Removing listener on endpointUri: vm://myq
+2019-03-15 13:09:52,312 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'null'. Object is: VMMessageReceiver
+2019-03-15 13:09:52,374 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'null'. Object is: VMMessageReceiver
+2019-03-15 13:09:52,374 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: processingFlow.stage1
+2019-03-15 13:09:52,578 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.routing.correlation.EventCorrelator - Stopping event correlator: [performance-tunning].processingFlow.event.correlator
+2019-03-15 13:09:52,593 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2019-03-15 13:09:52,593 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping connector: connector.file.mule.default
+2019-03-15 13:09:52,593 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'connector.file.mule.default.dispatcher.1054942702'. Object is: FileMessageDispatcher
+2019-03-15 13:09:52,593 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'connector.file.mule.default.dispatcher.1054942702'. Object is: FileMessageDispatcher
+2019-03-15 13:09:52,593 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping connector: connector.VM.mule.default
+2019-03-15 13:09:52,593 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'connector.VM.mule.default.dispatcher.1785172213'. Object is: VMMessageDispatcher
+2019-03-15 13:09:52,593 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'connector.VM.mule.default.dispatcher.1785172213'. Object is: VMMessageDispatcher
+2019-03-15 13:09:52,593 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'connector.VM.mule.default.dispatcher.846732381'. Object is: VMMessageDispatcher
+2019-03-15 13:09:52,593 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'connector.VM.mule.default.dispatcher.846732381'. Object is: VMMessageDispatcher
+2019-03-15 13:09:52,593 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'connector.VM.mule.default.dispatcher.473275084'. Object is: VMMessageDispatcher
+2019-03-15 13:09:52,609 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'connector.VM.mule.default.dispatcher.473275084'. Object is: VMMessageDispatcher
+2019-03-15 13:09:52,656 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:9091
+2019-03-15 13:09:52,656 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2019-03-15 13:09:52,656 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2019-03-15 13:09:52,671 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'performance-tunning'                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 13:09:52,671 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2019-03-15 13:09:52,671 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: readingFlow
+2019-03-15 13:09:52,671 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: readingFlow.stage1
+2019-03-15 13:09:52,671 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: processingFlow
+2019-03-15 13:09:52,671 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: processingFlow.stage1
+2019-03-15 13:09:52,671 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2019-03-15 13:09:52,671 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Disconnected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=stop
+  this=456bcb74
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2019-03-15 13:09:52,671 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing connector: connector.file.mule.default
+2019-03-15 13:09:52,687 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.vm.VMConnector - Disconnected: VMConnector
+{
+  name=connector.VM.mule.default
+  lifecycle=stop
+  this=7951c3a2
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[vm]
+  serviceOverrides=<none>
+}
+
+2019-03-15 13:09:52,687 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing connector: connector.VM.mule.default
+2019-03-15 13:09:52,859 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@22c86919: startup date [Fri Mar 15 13:05:45 IST 2019]; root of context hierarchy
+2019-03-15 13:09:52,890 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "performance-tunning" shut down normally on: 15/3/19   *
+* 1:09 PM                                                            *
+* Up for: 0 days, 0 hours, 4 mins, 1.117 sec                         *
+**********************************************************************
+2019-03-15 13:09:53,124 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'performance-tunning'                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 13:09:53,140 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2019-03-15 13:09:53,156 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2019-03-15 13:09:53,187 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2019-03-15 13:09:53,195 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2019-03-15 13:09:53,196 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@218f88de: startup date [Fri Mar 15 13:09:53 IST 2019]; root of context hierarchy
+2019-03-15 13:09:53,805 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-03-15 13:09:54,242 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\performance-tunning\queue-tx-log\tx1.log and C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\performance-tunning\queue-tx-log\tx2.log
+2019-03-15 13:09:54,255 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\performance-tunning\queue-xa-tx-log\tx1.log and C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\performance-tunning\queue-xa-tx-log\tx2.log
+2019-03-15 13:09:54,255 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2019-03-15 13:09:54,302 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.VM.mule.default
+2019-03-15 13:09:54,380 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2019-03-15 13:09:54,380 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: readingFlow
+2019-03-15 13:09:54,380 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@661a5794
+2019-03-15 13:09:54,396 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: readingFlow.stage1
+2019-03-15 13:09:54,396 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: processingFlow
+2019-03-15 13:09:54,396 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5c1943b8
+2019-03-15 13:09:54,411 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: processingFlow.stage1
+2019-03-15 13:09:54,505 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\apps\performance-tunning\performance-tunning.xml'}]"
+2019-03-15 13:09:54,521 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\apps\performance-tunning\performance-tunning.xml'}]"
+2019-03-15 13:09:54,521 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'performance-tunning'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 13:09:54,521 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2019-03-15 13:09:54,521 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2019-03-15 13:09:54,583 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:9091
+2019-03-15 13:09:54,583 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=1d7ddcc1
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2019-03-15 13:09:54,583 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=1d7ddcc1
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2019-03-15 13:09:54,583 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2019-03-15 13:09:54,583 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.vm.VMConnector - Connected: VMConnector
+{
+  name=connector.VM.mule.default
+  lifecycle=initialise
+  this=26db9b80
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[vm]
+  serviceOverrides=<none>
+}
+
+2019-03-15 13:09:54,583 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.vm.VMConnector - Starting: VMConnector
+{
+  name=connector.VM.mule.default
+  lifecycle=initialise
+  this=26db9b80
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[vm]
+  serviceOverrides=<none>
+}
+
+2019-03-15 13:09:54,583 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.VM.mule.default
+2019-03-15 13:09:54,599 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 13:09:54,599 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2019-03-15 13:09:54,599 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: readingFlow
+2019-03-15 13:09:54,615 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: readingFlow.stage1
+2019-03-15 13:09:54,615 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: processingFlow
+2019-03-15 13:09:54,615 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: processingFlow.stage1
+2019-03-15 13:09:54,630 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Registering listener: readingFlow on endpointUri: file:///D:/input/
+2019-03-15 13:09:54,646 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: FileMessageReceiver
+2019-03-15 13:09:54,661 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileMessageReceiver - Connecting clusterizable message receiver
+2019-03-15 13:09:54,661 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: FileMessageReceiver
+2019-03-15 13:09:54,661 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileMessageReceiver - Starting clusterizable message receiver
+2019-03-15 13:09:54,661 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.vm.VMConnector - Registering listener: processingFlow on endpointUri: vm://myq
+2019-03-15 13:09:54,677 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: VMMessageReceiver
+2019-03-15 13:09:54,677 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.vm.VMMessageReceiver - Connecting clusterizable message receiver
+2019-03-15 13:09:54,677 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: VMMessageReceiver
+2019-03-15 13:09:54,677 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.vm.VMMessageReceiver - Starting clusterizable message receiver
+2019-03-15 13:09:54,677 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2019-03-15 13:09:54,693 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.performance-tunning:type=Endpoint,service="readingFlow",connector=connector.file.mule.default,name="endpoint..D.input"
+2019-03-15 13:09:54,693 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.performance-tunning:type=Endpoint,service="readingFlow",connector=connector.file.mule.default,name="endpoint..D.input"
+2019-03-15 13:09:54,693 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.performance-tunning:type=Endpoint,service="processingFlow",connector=connector.VM.mule.default,name="endpoint.vm.myq"
+2019-03-15 13:09:54,693 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.performance-tunning:type=Endpoint,service="processingFlow",connector=connector.VM.mule.default,name="endpoint.vm.myq"
+2019-03-15 13:09:54,693 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.performance-tunning:type=Connector,name="connector.file.mule.default"
+2019-03-15 13:09:54,693 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.performance-tunning:type=Connector,name="connector.VM.mule.default"
+2019-03-15 13:09:54,693 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: performance-tunning                                   *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2019-03-15 13:10:24,798 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'performance-tunning'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 13:10:24,805 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: readingFlow
+2019-03-15 13:10:24,805 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Removing listener on endpointUri: file:///D:/input/
+2019-03-15 13:10:24,805 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'null'. Object is: FileMessageReceiver
+2019-03-15 13:10:24,805 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'null'. Object is: FileMessageReceiver
+2019-03-15 13:10:24,805 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: readingFlow.stage1
+2019-03-15 13:10:24,820 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: processingFlow
+2019-03-15 13:10:24,820 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.vm.VMConnector - Removing listener on endpointUri: vm://myq
+2019-03-15 13:10:24,820 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'null'. Object is: VMMessageReceiver
+2019-03-15 13:10:24,883 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'null'. Object is: VMMessageReceiver
+2019-03-15 13:10:24,883 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: processingFlow.stage1
+2019-03-15 13:10:25,023 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.routing.correlation.EventCorrelator - Stopping event correlator: [performance-tunning].processingFlow.event.correlator
+2019-03-15 13:10:25,023 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2019-03-15 13:10:25,023 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping connector: connector.file.mule.default
+2019-03-15 13:10:25,023 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping connector: connector.VM.mule.default
+2019-03-15 13:10:25,023 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:9091
+2019-03-15 13:10:25,023 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2019-03-15 13:10:25,023 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2019-03-15 13:10:25,023 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'performance-tunning'                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 13:10:25,023 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2019-03-15 13:10:25,023 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: readingFlow
+2019-03-15 13:10:25,023 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: readingFlow.stage1
+2019-03-15 13:10:25,023 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: processingFlow
+2019-03-15 13:10:25,023 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: processingFlow.stage1
+2019-03-15 13:10:25,023 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2019-03-15 13:10:25,039 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Disconnected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=stop
+  this=1d7ddcc1
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2019-03-15 13:10:25,039 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing connector: connector.file.mule.default
+2019-03-15 13:10:25,039 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.vm.VMConnector - Disconnected: VMConnector
+{
+  name=connector.VM.mule.default
+  lifecycle=stop
+  this=26db9b80
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[vm]
+  serviceOverrides=<none>
+}
+
+2019-03-15 13:10:25,039 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing connector: connector.VM.mule.default
+2019-03-15 13:10:25,039 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@218f88de: startup date [Fri Mar 15 13:09:53 IST 2019]; root of context hierarchy
+2019-03-15 13:10:25,055 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "performance-tunning" shut down normally on: 15/3/19   *
+* 1:10 PM                                                            *
+* Up for: 0 days, 0 hours, 0 mins, 30.534 sec                        *
+**********************************************************************
+2019-03-15 13:10:25,195 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'performance-tunning'                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 13:10:25,211 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2019-03-15 13:10:25,227 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2019-03-15 13:10:25,258 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2019-03-15 13:10:25,258 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2019-03-15 13:10:25,273 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@784d5a78: startup date [Fri Mar 15 13:10:25 IST 2019]; root of context hierarchy
+2019-03-15 13:10:25,961 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-03-15 13:10:26,159 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\performance-tunning\queue-tx-log\tx1.log and C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\performance-tunning\queue-tx-log\tx2.log
+2019-03-15 13:10:26,175 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\performance-tunning\queue-xa-tx-log\tx1.log and C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\performance-tunning\queue-xa-tx-log\tx2.log
+2019-03-15 13:10:26,175 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2019-03-15 13:10:26,206 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.VM.mule.default
+2019-03-15 13:10:26,222 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2019-03-15 13:10:26,238 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: readingFlow
+2019-03-15 13:10:26,238 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@cb08a0a
+2019-03-15 13:10:26,238 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: readingFlow.stage1
+2019-03-15 13:10:26,238 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: processingFlow
+2019-03-15 13:10:26,238 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@33de6c07
+2019-03-15 13:10:26,253 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: processingFlow.stage1
+2019-03-15 13:10:26,284 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\apps\performance-tunning\performance-tunning.xml'}]"
+2019-03-15 13:10:26,284 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\apps\performance-tunning\performance-tunning.xml'}]"
+2019-03-15 13:10:26,284 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'performance-tunning'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 13:10:26,300 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2019-03-15 13:10:26,300 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2019-03-15 13:10:26,331 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:9091
+2019-03-15 13:10:26,331 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=5460c529
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2019-03-15 13:10:26,331 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=5460c529
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2019-03-15 13:10:26,331 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2019-03-15 13:10:26,331 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.vm.VMConnector - Connected: VMConnector
+{
+  name=connector.VM.mule.default
+  lifecycle=initialise
+  this=247085d5
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[vm]
+  serviceOverrides=<none>
+}
+
+2019-03-15 13:10:26,331 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.vm.VMConnector - Starting: VMConnector
+{
+  name=connector.VM.mule.default
+  lifecycle=initialise
+  this=247085d5
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[vm]
+  serviceOverrides=<none>
+}
+
+2019-03-15 13:10:26,331 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.VM.mule.default
+2019-03-15 13:10:26,331 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 13:10:26,331 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2019-03-15 13:10:26,331 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: readingFlow
+2019-03-15 13:10:26,331 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: readingFlow.stage1
+2019-03-15 13:10:26,347 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: processingFlow
+2019-03-15 13:10:26,347 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: processingFlow.stage1
+2019-03-15 13:10:26,363 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Registering listener: readingFlow on endpointUri: file:///D:/input/
+2019-03-15 13:10:26,363 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: FileMessageReceiver
+2019-03-15 13:10:26,363 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileMessageReceiver - Connecting clusterizable message receiver
+2019-03-15 13:10:26,378 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: FileMessageReceiver
+2019-03-15 13:10:26,378 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileMessageReceiver - Starting clusterizable message receiver
+2019-03-15 13:10:26,378 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.vm.VMConnector - Registering listener: processingFlow on endpointUri: vm://myq
+2019-03-15 13:10:26,378 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: VMMessageReceiver
+2019-03-15 13:10:26,378 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.vm.VMMessageReceiver - Connecting clusterizable message receiver
+2019-03-15 13:10:26,378 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: VMMessageReceiver
+2019-03-15 13:10:26,378 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.vm.VMMessageReceiver - Starting clusterizable message receiver
+2019-03-15 13:10:26,378 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2019-03-15 13:10:26,378 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.performance-tunning:type=Endpoint,service="readingFlow",connector=connector.file.mule.default,name="endpoint..D.input"
+2019-03-15 13:10:26,378 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.performance-tunning:type=Endpoint,service="readingFlow",connector=connector.file.mule.default,name="endpoint..D.input"
+2019-03-15 13:10:26,378 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.performance-tunning:type=Endpoint,service="processingFlow",connector=connector.VM.mule.default,name="endpoint.vm.myq"
+2019-03-15 13:10:26,378 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.performance-tunning:type=Endpoint,service="processingFlow",connector=connector.VM.mule.default,name="endpoint.vm.myq"
+2019-03-15 13:10:26,378 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.performance-tunning:type=Connector,name="connector.file.mule.default"
+2019-03-15 13:10:26,378 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.performance-tunning:type=Connector,name="connector.VM.mule.default"
+2019-03-15 13:10:26,394 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: performance-tunning                                   *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2019-03-15 13:11:01,934 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'performance-tunning'                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 13:11:02,169 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2019-03-15 13:11:02,419 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2019-03-15 13:11:02,559 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2019-03-15 13:11:02,559 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2019-03-15 13:11:02,642 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@22c86919: startup date [Fri Mar 15 13:11:02 IST 2019]; root of context hierarchy
+2019-03-15 13:11:04,611 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-03-15 13:11:06,115 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2019-03-15 13:11:06,582 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\performance-tunning\queue-tx-log\tx1.log and C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\performance-tunning\queue-tx-log\tx2.log
+2019-03-15 13:11:06,598 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\performance-tunning\queue-xa-tx-log\tx1.log and C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\performance-tunning\queue-xa-tx-log\tx2.log
+2019-03-15 13:11:06,785 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2019-03-15 13:11:06,832 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.VM.mule.default
+2019-03-15 13:11:06,973 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2019-03-15 13:11:06,973 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: readingFlow
+2019-03-15 13:11:06,973 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@4e3e11b9
+2019-03-15 13:11:07,020 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: readingFlow.stage1
+2019-03-15 13:11:07,020 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: processingFlow
+2019-03-15 13:11:07,020 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7ef8eda7
+2019-03-15 13:11:07,035 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: processingFlow.stage1
+2019-03-15 13:11:07,348 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\apps\performance-tunning\performance-tunning.xml'}]"
+2019-03-15 13:11:07,348 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\apps\performance-tunning\performance-tunning.xml'}]"
+2019-03-15 13:11:07,352 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2019-03-15 13:11:07,353 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'performance-tunning'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 13:11:07,353 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2019-03-15 13:11:07,353 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2019-03-15 13:11:07,416 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:9091
+2019-03-15 13:11:07,416 [main] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=3b332962
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2019-03-15 13:11:07,416 [main] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=3b332962
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2019-03-15 13:11:07,416 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2019-03-15 13:11:07,416 [main] INFO  org.mule.transport.vm.VMConnector - Connected: VMConnector
+{
+  name=connector.VM.mule.default
+  lifecycle=initialise
+  this=4b432e53
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[vm]
+  serviceOverrides=<none>
+}
+
+2019-03-15 13:11:07,416 [main] INFO  org.mule.transport.vm.VMConnector - Starting: VMConnector
+{
+  name=connector.VM.mule.default
+  lifecycle=initialise
+  this=4b432e53
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[vm]
+  serviceOverrides=<none>
+}
+
+2019-03-15 13:11:07,416 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.VM.mule.default
+2019-03-15 13:11:07,416 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 13:11:07,416 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2019-03-15 13:11:07,431 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: readingFlow
+2019-03-15 13:11:07,431 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: readingFlow.stage1
+2019-03-15 13:11:07,431 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: processingFlow
+2019-03-15 13:11:07,431 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: processingFlow.stage1
+2019-03-15 13:11:07,478 [main] INFO  org.mule.transport.file.FileConnector - Registering listener: readingFlow on endpointUri: file:///D:/input/
+2019-03-15 13:11:07,509 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: FileMessageReceiver
+2019-03-15 13:11:07,509 [main] INFO  org.mule.transport.file.FileMessageReceiver - Connecting clusterizable message receiver
+2019-03-15 13:11:07,525 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: FileMessageReceiver
+2019-03-15 13:11:07,525 [main] INFO  org.mule.transport.file.FileMessageReceiver - Starting clusterizable message receiver
+2019-03-15 13:11:07,525 [main] INFO  org.mule.transport.vm.VMConnector - Registering listener: processingFlow on endpointUri: vm://myq
+2019-03-15 13:11:07,525 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: VMMessageReceiver
+2019-03-15 13:11:07,525 [main] INFO  org.mule.transport.vm.VMMessageReceiver - Connecting clusterizable message receiver
+2019-03-15 13:11:07,525 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: VMMessageReceiver
+2019-03-15 13:11:07,525 [main] INFO  org.mule.transport.vm.VMMessageReceiver - Starting clusterizable message receiver
+2019-03-15 13:11:07,540 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2019-03-15 13:11:12,119 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.performance-tunning:type=Endpoint,service="readingFlow",connector=connector.file.mule.default,name="endpoint..D.input"
+2019-03-15 13:11:12,119 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.performance-tunning:type=Endpoint,service="readingFlow",connector=connector.file.mule.default,name="endpoint..D.input"
+2019-03-15 13:11:12,124 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.performance-tunning:type=Endpoint,service="processingFlow",connector=connector.VM.mule.default,name="endpoint.vm.myq"
+2019-03-15 13:11:12,124 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.performance-tunning:type=Endpoint,service="processingFlow",connector=connector.VM.mule.default,name="endpoint.vm.myq"
+2019-03-15 13:11:12,126 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.performance-tunning:type=Connector,name="connector.file.mule.default"
+2019-03-15 13:11:12,126 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.performance-tunning:type=Connector,name="connector.VM.mule.default"
+2019-03-15 13:11:12,126 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: performance-tunning                                   *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2019-03-15 13:11:19,695 [[performance-tunning].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: D:\input\accounts.csv
+2019-03-15 13:11:21,684 [[performance-tunning].connector.VM.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.VM.mule.default.dispatcher.1448795039'. Object is: VMMessageDispatcher
+2019-03-15 13:11:21,684 [[performance-tunning].connector.VM.mule.default.dispatcher.03] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.VM.mule.default.dispatcher.514349434'. Object is: VMMessageDispatcher
+2019-03-15 13:11:21,684 [[performance-tunning].connector.VM.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.VM.mule.default.dispatcher.1448795039'. Object is: VMMessageDispatcher
+2019-03-15 13:11:21,684 [[performance-tunning].connector.VM.mule.default.dispatcher.03] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.VM.mule.default.dispatcher.514349434'. Object is: VMMessageDispatcher
+2019-03-15 13:11:21,684 [[performance-tunning].connector.VM.mule.default.dispatcher.02] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.VM.mule.default.dispatcher.1510871072'. Object is: VMMessageDispatcher
+2019-03-15 13:11:21,684 [[performance-tunning].connector.VM.mule.default.dispatcher.02] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.VM.mule.default.dispatcher.1510871072'. Object is: VMMessageDispatcher
+2019-03-15 13:11:21,688 [[performance-tunning].processingFlow.stage1.02] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 13:11:21,688 [[performance-tunning].processingFlow.stage1.03] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 13:11:21,688 [[performance-tunning].processingFlow.stage1.04] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 13:11:21,985 [[performance-tunning].processingFlow.stage1.03] INFO  org.mule.api.processor.LoggerMessageProcessor - Thread Name is --->[performance-tunning].processingFlow.stage1.03
+2019-03-15 13:11:21,985 [[performance-tunning].processingFlow.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Thread Name is --->[performance-tunning].processingFlow.stage1.02
+2019-03-15 13:11:21,985 [[performance-tunning].processingFlow.stage1.04] INFO  org.mule.api.processor.LoggerMessageProcessor - Thread Name is --->[performance-tunning].processingFlow.stage1.04
+2019-03-15 13:11:22,032 [[performance-tunning].connector.file.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.file.mule.default.dispatcher.1109854211'. Object is: FileMessageDispatcher
+2019-03-15 13:11:22,032 [[performance-tunning].connector.file.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.file.mule.default.dispatcher.1109854211'. Object is: FileMessageDispatcher
+2019-03-15 13:11:22,048 [[performance-tunning].connector.file.mule.default.dispatcher.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\null.json

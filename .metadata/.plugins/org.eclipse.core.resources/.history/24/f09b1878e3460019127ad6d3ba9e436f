@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw" xmlns:json="http://www.mulesoft.org/schema/mule/json" xmlns:mulexml="http://www.mulesoft.org/schema/mule/xml" xmlns:metadata="http://www.mulesoft.org/schema/mule/metadata" xmlns:vm="http://www.mulesoft.org/schema/mule/vm" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd
+http://www.mulesoft.org/schema/mule/vm http://www.mulesoft.org/schema/mule/vm/current/mule-vm.xsd
+http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/json/current/mule-json.xsd
+http://www.mulesoft.org/schema/mule/xml http://www.mulesoft.org/schema/mule/xml/current/mule-xml.xsd
+http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd">
+    <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="9091" doc:name="HTTP Listener Configuration"/>
+    <vm:connector name="VM" validateConnections="true" doc:name="VM">
+        <vm:queue-profile maxOutstandingMessages="10000">
+            <default-persistent-queue-store/>
+        </vm:queue-profile>
+    </vm:connector>
+    <flow name="firstFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/examples" allowedMethods="GET" doc:name="HTTP"/>
+        <set-payload value="#[message.inboundProperties.'http.query.params'.name.toUpperCase()]" doc:name="Set Payload"/>
+        <set-variable variableName="trainer" value="#[message.inboundProperties.'http.query.params'.trainer]" doc:name="Flow Variable trainer"/>
+        <set-session-variable variableName="training" value="#[message.inboundProperties.'http.query.params'.training]" doc:name="Session Variable training"/>
+        <vm:outbound-endpoint exchange-pattern="request-response" path="myq" connector-ref="VM" doc:name="VM_OBEP"/>
+        <logger message="Payload is : #[payload] IBPs : #[message.inboundProperties] OBPs : #[message.outboundProperties]  FlowVariables: #[flowVars]    SessionVars : #[sessionVars]" level="INFO" doc:name="Logger"/>
+    </flow>
+    <flow name="secondFlow">
+        <vm:inbound-endpoint exchange-pattern="request-response" path="myq" connector-ref="VM" doc:name="VM_IBEP"/>
+        <message-filter throwOnUnaccepted="true" doc:name="Message">
+            <custom-filter class="com.hsbc.CustomFilter"/>
+        </message-filter>
+        <set-variable variableName="numberOfDays" value="#[message.inboundProperties.'http.query.params'.numberOfDays]" doc:name="Flow Variable numberOfDays"/>
+        <set-session-variable variableName="numberOfParticipants" value="#[message.inboundProperties.'http.query.params'.numberOfParticipants]" doc:name="Session Variable numberOfParticipants"/>
+        <set-payload value="#[payload]" doc:name="Set Payload"/>
+        <flow-ref name="thirdFlow" doc:name="Flow Reference"/>
+    </flow>
+    <sub-flow name="thirdFlow">
+        <logger level="INFO" doc:name="Logger"/>
+    </sub-flow>
+    <flow name="mule-examplesFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/java" allowedMethods="GET" doc:name="HTTP"/>
+        <set-payload value="#[message.inboundProperties.'http.query.params'.empData]" doc:name="Set Payload"/>
+        <component class="com.hsbc.CustEmployeeProcessor" doc:name="Java">
+        <method-entry-point-resolver>
+        	<include-entry-point method="processEmpData"/>
+        </method-entry-point-resolver>
+        
+        </component>
+        <json:object-to-json-transformer doc:name="Object to JSON"/>
+        <logger message="Payload is - #[payload]" level="INFO" doc:name="Logger"/>
+        
+    </flow>
+    <flow name="totalSeatsFlow">
+        <expression-component doc:name="Expression"><![CDATA[if(payload.pt.contains("737")){
+	payload = 180;
+} else if(payload.fc.contains("123")){
+	payload = 350;
+} else{
+	payload = 250;
+}]]></expression-component>
+    </flow>
+    <flow name="DWL_Flow2">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/dwl2" allowedMethods="POST" doc:name="HTTP"/>
+        <dw:transform-message doc:name="Transform Message">
+            <dw:input-payload doc:sample="sample_data\json_1.json"/>
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/java
+%type wiprodate =   :date {format:"yyyy/MM/dd"}
+%type wiprostring = :string {format:"dd MMM yyyy"}
+---
+payload map  {
+    flightOperator: $.airlineName,
+    cost: $.price,
+    takeOffDate: $.departureDate 
+    as :wiprodate
+    as :wiprostring,
+    type: $.planeType,
+    fromAirport: $.origination,
+    code: $.flightCode,
+    emptySeats: 10 when $.availableSeats == 0
+    otherwise 20 when $.availableSeats <0
+    otherwise $.availableSeats,
+    toAirport: $.destination,
+    totalSeats: lookup("totalSeatsFlow",{pt: $.planeType,fc: $.flightCode})}]]></dw:set-payload>
+            <dw:set-variable resource="classpath:myDwl.dwl" variableName="JSON"/>
+            <dw:set-variable resource="classpath:flight_xml.dwl" variableName="xml"/>
+        </dw:transform-message>
+        <logger message="#[payload]" level="INFO" doc:name="Logger"/>
+    </flow>
+    <flow name="dwl1Flow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/dwl1" allowedMethods="POST" doc:name="HTTP"/>
+        <dw:transform-message doc:name="Transform Message">
+            <dw:input-payload doc:sample="sample_data\json.json"/>
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/java
+---
+{
+	toAirport : lower payload.destination,
+	flightOperator : capitalize payload.airline,
+	fromAirport : "MUS"
+} as :object{class: "java.util.HashMap"}]]></dw:set-payload>
+            <dw:set-variable variableName="json"><![CDATA[%dw 1.0
+%output application/json
+---
+{
+	toAirport : lower payload.destination,
+	flightOperator : capitalize payload.airline,
+	fromAirport : "MUS"
+} as :object{class: "java.util.HashMap"}]]></dw:set-variable>
+            <dw:set-session-variable variableName="session-xml"><![CDATA[%dw 1.0
+%output application/xml
+---
+flightSearch :                                                                                               {
+	toAirport : lower payload.destination,
+	flightOperator : capitalize payload.airline,
+	fromAirport : "MUS"
+} as :object{class: "java.util.HashMap"}]]></dw:set-session-variable>
+        </dw:transform-message>
+    </flow>
+</mule>

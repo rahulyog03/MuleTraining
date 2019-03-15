@@ -1,0 +1,1133 @@
+2019-03-15 12:05:54,002 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'file-read-write'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 12:05:54,219 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2019-03-15 12:05:54,521 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2019-03-15 12:05:54,682 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2019-03-15 12:05:54,682 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2019-03-15 12:05:54,767 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@22c86919: startup date [Fri Mar 15 12:05:54 IST 2019]; root of context hierarchy
+2019-03-15 12:05:56,798 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-03-15 12:05:58,493 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2019-03-15 12:05:58,735 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\file-read-write\queue-tx-log\tx1.log and C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\file-read-write\queue-tx-log\tx2.log
+2019-03-15 12:05:58,766 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\file-read-write\queue-xa-tx-log\tx1.log and C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\file-read-write\queue-xa-tx-log\tx2.log
+2019-03-15 12:05:58,782 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2019-03-15 12:05:58,983 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2019-03-15 12:05:58,987 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: file-read-writeFlow
+2019-03-15 12:05:58,988 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@4a8a0099
+2019-03-15 12:05:59,022 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: file-read-writeFlow.stage1
+2019-03-15 12:05:59,628 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\apps\file-read-write\file-read-write.xml'}]"
+2019-03-15 12:05:59,628 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\apps\file-read-write\file-read-write.xml'}]"
+2019-03-15 12:05:59,631 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2019-03-15 12:05:59,632 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'file-read-write'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 12:05:59,632 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2019-03-15 12:05:59,632 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2019-03-15 12:05:59,691 [main] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=5afbd567
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2019-03-15 12:05:59,692 [main] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=5afbd567
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2019-03-15 12:05:59,693 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2019-03-15 12:05:59,700 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 12:05:59,701 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2019-03-15 12:05:59,703 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: file-read-writeFlow
+2019-03-15 12:05:59,703 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: file-read-writeFlow.stage1
+2019-03-15 12:05:59,751 [main] INFO  org.mule.transport.file.FileConnector - Registering listener: file-read-writeFlow on endpointUri: file:///D:/input/
+2019-03-15 12:05:59,813 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: FileMessageReceiver
+2019-03-15 12:05:59,813 [main] INFO  org.mule.transport.file.FileMessageReceiver - Connecting clusterizable message receiver
+2019-03-15 12:05:59,829 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: FileMessageReceiver
+2019-03-15 12:05:59,829 [main] INFO  org.mule.transport.file.FileMessageReceiver - Starting clusterizable message receiver
+2019-03-15 12:05:59,843 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2019-03-15 12:06:04,401 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.file-read-write:type=Endpoint,service="file-read-writeFlow",connector=connector.file.mule.default,name="endpoint..D.input"
+2019-03-15 12:06:04,402 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.file-read-write:type=Endpoint,service="file-read-writeFlow",connector=connector.file.mule.default,name="endpoint..D.input"
+2019-03-15 12:06:04,404 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.file-read-write:type=Connector,name="connector.file.mule.default"
+2019-03-15 12:06:04,410 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: file-read-write                                       *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2019-03-15 12:06:25,933 [[file-read-write].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: D:\input\accounts.csv
+2019-03-15 12:06:27,768 [[file-read-write].connector.file.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.file.mule.default.dispatcher.686588498'. Object is: FileMessageDispatcher
+2019-03-15 12:06:27,768 [[file-read-write].connector.file.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.file.mule.default.dispatcher.686588498'. Object is: FileMessageDispatcher
+2019-03-15 12:06:27,790 [[file-read-write].connector.file.mule.default.dispatcher.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\accounts.csv.json
+2019-03-15 12:10:24,956 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'file-read-write'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 12:10:24,958 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: file-read-writeFlow
+2019-03-15 12:10:24,958 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Removing listener on endpointUri: file:///D:/input/
+2019-03-15 12:10:24,958 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'null'. Object is: FileMessageReceiver
+2019-03-15 12:10:24,958 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'null'. Object is: FileMessageReceiver
+2019-03-15 12:10:24,958 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: file-read-writeFlow.stage1
+2019-03-15 12:10:24,974 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2019-03-15 12:10:24,974 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping connector: connector.file.mule.default
+2019-03-15 12:10:24,974 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'connector.file.mule.default.dispatcher.686588498'. Object is: FileMessageDispatcher
+2019-03-15 12:10:24,974 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'connector.file.mule.default.dispatcher.686588498'. Object is: FileMessageDispatcher
+2019-03-15 12:10:24,974 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2019-03-15 12:10:24,974 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2019-03-15 12:10:24,974 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'file-read-write'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 12:10:24,990 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2019-03-15 12:10:24,991 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: file-read-writeFlow
+2019-03-15 12:10:24,992 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: file-read-writeFlow.stage1
+2019-03-15 12:10:24,994 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2019-03-15 12:10:24,997 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Disconnected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=stop
+  this=5afbd567
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2019-03-15 12:10:24,998 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing connector: connector.file.mule.default
+2019-03-15 12:10:25,150 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@22c86919: startup date [Fri Mar 15 12:05:54 IST 2019]; root of context hierarchy
+2019-03-15 12:10:25,165 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "file-read-write" shut down normally on: 15/3/19       *
+* 12:10 PM                                                           *
+* Up for: 0 days, 0 hours, 4 mins, 25.518 sec                        *
+**********************************************************************
+2019-03-15 12:10:25,351 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'file-read-write'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 12:10:25,367 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2019-03-15 12:10:25,392 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2019-03-15 12:10:25,414 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2019-03-15 12:10:25,414 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2019-03-15 12:10:25,423 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@631600f7: startup date [Fri Mar 15 12:10:25 IST 2019]; root of context hierarchy
+2019-03-15 12:10:25,850 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-03-15 12:10:26,052 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\file-read-write\queue-tx-log\tx1.log and C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\file-read-write\queue-tx-log\tx2.log
+2019-03-15 12:10:26,058 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\file-read-write\queue-xa-tx-log\tx1.log and C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\file-read-write\queue-xa-tx-log\tx2.log
+2019-03-15 12:10:26,065 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2019-03-15 12:10:26,089 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2019-03-15 12:10:26,089 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: file-read-writeFlow
+2019-03-15 12:10:26,089 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@4daba07c
+2019-03-15 12:10:26,105 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: file-read-writeFlow.stage1
+2019-03-15 12:10:26,105 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: file-read-writeFlow1
+2019-03-15 12:10:26,105 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@121aec1
+2019-03-15 12:10:26,120 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2019-03-15 12:10:26,120 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: file-read-writeFlow
+2019-03-15 12:10:26,120 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: file-read-writeFlow.stage1
+2019-03-15 12:10:26,136 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2019-03-15 12:10:26,136 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing connector: connector.file.mule.default
+2019-03-15 12:10:26,136 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.lifecycle.phases.DefaultLifecyclePhase - Failed to dispose object org.mule.util.lock.MuleLockFactory@39c19c1e
+org.mule.api.lifecycle.LifecycleException: Failed to invoke lifecycle phase "dispose" on object: org.mule.util.lock.MuleLockFactory@39c19c1e
+	at org.mule.lifecycle.phases.DefaultLifecyclePhase.applyLifecycle(DefaultLifecyclePhase.java:243) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.phases.MuleContextDisposePhase.applyLifecycle(MuleContextDisposePhase.java:103) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.config.spring.SpringRegistryLifecycleManager$SpringContextDisposePhase.applyLifecycle(SpringRegistryLifecycleManager.java:143) ~[mule-module-spring-config-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.RegistryLifecycleCallback.doApplyLifecycle(RegistryLifecycleCallback.java:108) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.RegistryLifecycleCallback.onTransition(RegistryLifecycleCallback.java:78) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.AbstractLifecycleManager.invokePhase(AbstractLifecycleManager.java:146) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.RegistryLifecycleManager.fireLifecycle(RegistryLifecycleManager.java:134) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.registry.AbstractRegistry.dispose(AbstractRegistry.java:68) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.registry.AbstractRegistryBroker$2.onTransition(AbstractRegistryBroker.java:69) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.registry.AbstractRegistryBroker$2.onTransition(AbstractRegistryBroker.java:64) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.AbstractLifecycleManager.invokePhase(AbstractLifecycleManager.java:146) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.RegistryBrokerLifecycleManager.fireDisposePhase(RegistryBrokerLifecycleManager.java:82) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.registry.AbstractRegistryBroker.dispose(AbstractRegistryBroker.java:63) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.registry.MuleRegistryHelper.fireLifecycle(MuleRegistryHelper.java:137) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.MuleContextLifecycleManager$MuleContextLifecycleCallback.onTransition(MuleContextLifecycleManager.java:74) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.MuleContextLifecycleManager$MuleContextLifecycleCallback.onTransition(MuleContextLifecycleManager.java:70) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.AbstractLifecycleManager.invokePhase(AbstractLifecycleManager.java:146) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.MuleContextLifecycleManager.fireLifecycle(MuleContextLifecycleManager.java:62) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.DefaultMuleContext.dispose(DefaultMuleContext.java:452) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.context.DefaultMuleContextFactory.doCreateMuleContext(DefaultMuleContextFactory.java:230) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.context.DefaultMuleContextFactory.createMuleContext(DefaultMuleContextFactory.java:81) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.application.DefaultMuleApplication.init(DefaultMuleApplication.java:210) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.artifact.ArtifactWrapper$2.execute(ArtifactWrapper.java:64) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.artifact.ArtifactWrapper.executeWithinArtifactClassLoader(ArtifactWrapper.java:137) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.artifact.ArtifactWrapper.init(ArtifactWrapper.java:59) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.DefaultArtifactDeployer.deploy(DefaultArtifactDeployer.java:72) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.DefaultArchiveDeployer.redeploy(DefaultArchiveDeployer.java:493) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.DefaultArchiveDeployer.redeploy(DefaultArchiveDeployer.java:429) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.redeployModifiedArtifacts(DeploymentDirectoryWatcher.java:567) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.redeployModifiedApplications(DeploymentDirectoryWatcher.java:544) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.run(DeploymentDirectoryWatcher.java:356) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[?:1.8.0_40]
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source) ~[?:1.8.0_40]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source) ~[?:1.8.0_40]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) ~[?:1.8.0_40]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_40]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_40]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_40]
+Caused by: java.lang.NullPointerException
+	at org.mule.util.lock.MuleLockFactory.dispose(MuleLockFactory.java:32) ~[mule-core-3.9.1.jar:3.9.1]
+	at sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_40]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_40]
+	at org.mule.lifecycle.phases.DefaultLifecyclePhase.applyLifecycle(DefaultLifecyclePhase.java:230) ~[mule-core-3.9.1.jar:3.9.1]
+	... 37 more
+2019-03-15 12:10:26,152 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.lifecycle.phases.DefaultLifecyclePhase - Failed to dispose object org.mule.module.http.internal.listener.HttpListenerConnectionManager@2f74d2dc
+org.mule.api.lifecycle.LifecycleException: Failed to invoke lifecycle phase "dispose" on object: org.mule.module.http.internal.listener.HttpListenerConnectionManager@2f74d2dc
+	at org.mule.lifecycle.phases.DefaultLifecyclePhase.applyLifecycle(DefaultLifecyclePhase.java:243) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.phases.MuleContextDisposePhase.applyLifecycle(MuleContextDisposePhase.java:103) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.config.spring.SpringRegistryLifecycleManager$SpringContextDisposePhase.applyLifecycle(SpringRegistryLifecycleManager.java:143) ~[mule-module-spring-config-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.RegistryLifecycleCallback.doApplyLifecycle(RegistryLifecycleCallback.java:108) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.RegistryLifecycleCallback.onTransition(RegistryLifecycleCallback.java:78) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.AbstractLifecycleManager.invokePhase(AbstractLifecycleManager.java:146) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.RegistryLifecycleManager.fireLifecycle(RegistryLifecycleManager.java:134) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.registry.AbstractRegistry.dispose(AbstractRegistry.java:68) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.registry.AbstractRegistryBroker$2.onTransition(AbstractRegistryBroker.java:69) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.registry.AbstractRegistryBroker$2.onTransition(AbstractRegistryBroker.java:64) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.AbstractLifecycleManager.invokePhase(AbstractLifecycleManager.java:146) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.RegistryBrokerLifecycleManager.fireDisposePhase(RegistryBrokerLifecycleManager.java:82) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.registry.AbstractRegistryBroker.dispose(AbstractRegistryBroker.java:63) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.registry.MuleRegistryHelper.fireLifecycle(MuleRegistryHelper.java:137) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.MuleContextLifecycleManager$MuleContextLifecycleCallback.onTransition(MuleContextLifecycleManager.java:74) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.MuleContextLifecycleManager$MuleContextLifecycleCallback.onTransition(MuleContextLifecycleManager.java:70) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.AbstractLifecycleManager.invokePhase(AbstractLifecycleManager.java:146) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.MuleContextLifecycleManager.fireLifecycle(MuleContextLifecycleManager.java:62) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.DefaultMuleContext.dispose(DefaultMuleContext.java:452) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.context.DefaultMuleContextFactory.doCreateMuleContext(DefaultMuleContextFactory.java:230) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.context.DefaultMuleContextFactory.createMuleContext(DefaultMuleContextFactory.java:81) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.application.DefaultMuleApplication.init(DefaultMuleApplication.java:210) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.artifact.ArtifactWrapper$2.execute(ArtifactWrapper.java:64) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.artifact.ArtifactWrapper.executeWithinArtifactClassLoader(ArtifactWrapper.java:137) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.artifact.ArtifactWrapper.init(ArtifactWrapper.java:59) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.DefaultArtifactDeployer.deploy(DefaultArtifactDeployer.java:72) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.DefaultArchiveDeployer.redeploy(DefaultArchiveDeployer.java:493) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.DefaultArchiveDeployer.redeploy(DefaultArchiveDeployer.java:429) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.redeployModifiedArtifacts(DeploymentDirectoryWatcher.java:567) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.redeployModifiedApplications(DeploymentDirectoryWatcher.java:544) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.run(DeploymentDirectoryWatcher.java:356) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[?:1.8.0_40]
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source) ~[?:1.8.0_40]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source) ~[?:1.8.0_40]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) ~[?:1.8.0_40]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_40]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_40]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_40]
+Caused by: java.lang.NullPointerException
+	at org.mule.module.http.internal.listener.HttpListenerConnectionManager.dispose(HttpListenerConnectionManager.java:71) ~[mule-module-http-3.9.1.jar:3.9.1]
+	at sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_40]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_40]
+	at org.mule.lifecycle.phases.DefaultLifecyclePhase.applyLifecycle(DefaultLifecyclePhase.java:230) ~[mule-core-3.9.1.jar:3.9.1]
+	... 37 more
+2019-03-15 12:10:26,152 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@631600f7: startup date [Fri Mar 15 12:10:25 IST 2019]; root of context hierarchy
+2019-03-15 12:10:26,184 [Mule.app.deployer.monitor.1.thread.1] ERROR org.mule.module.launcher.application.DefaultMuleApplication - null
+java.lang.NullPointerException: null
+	at org.mule.module.http.internal.listener.DefaultHttpListener.initialise(DefaultHttpListener.java:216) ~[mule-module-http-3.9.1.jar:3.9.1]
+	at org.mule.construct.AbstractFlowConstruct.initialiseIfInitialisable(AbstractFlowConstruct.java:317) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.construct.AbstractPipeline.doInitialise(AbstractPipeline.java:241) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.construct.Flow.doInitialise(Flow.java:76) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.construct.AbstractFlowConstruct$1.onTransition(AbstractFlowConstruct.java:104) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.construct.AbstractFlowConstruct$1.onTransition(AbstractFlowConstruct.java:98) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.AbstractLifecycleManager.invokePhase(AbstractLifecycleManager.java:146) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.construct.FlowConstructLifecycleManager.fireInitialisePhase(FlowConstructLifecycleManager.java:78) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.construct.AbstractFlowConstruct.initialise(AbstractFlowConstruct.java:97) ~[mule-core-3.9.1.jar:3.9.1]
+	at sun.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_40]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_40]
+	at org.mule.lifecycle.phases.DefaultLifecyclePhase.applyLifecycle(DefaultLifecyclePhase.java:230) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.phases.MuleContextInitialisePhase.applyLifecycle(MuleContextInitialisePhase.java:71) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.RegistryLifecycleCallback.doApplyLifecycle(RegistryLifecycleCallback.java:108) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.RegistryLifecycleCallback.onTransition(RegistryLifecycleCallback.java:78) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.AbstractLifecycleManager.invokePhase(AbstractLifecycleManager.java:146) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.RegistryLifecycleManager.fireLifecycle(RegistryLifecycleManager.java:134) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.registry.AbstractRegistry.fireLifecycle(AbstractRegistry.java:150) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.registry.AbstractRegistry.initialise(AbstractRegistry.java:116) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.config.spring.SpringXmlConfigurationBuilder.createSpringRegistry(SpringXmlConfigurationBuilder.java:177) ~[mule-module-spring-config-3.9.1.jar:3.9.1]
+	at org.mule.config.spring.SpringXmlConfigurationBuilder.doConfigure(SpringXmlConfigurationBuilder.java:100) ~[mule-module-spring-config-3.9.1.jar:3.9.1]
+	at org.mule.config.builders.AbstractConfigurationBuilder.configure(AbstractConfigurationBuilder.java:43) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.config.builders.AbstractResourceConfigurationBuilder.configure(AbstractResourceConfigurationBuilder.java:69) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.config.builders.AutoConfigurationBuilder.autoConfigure(AutoConfigurationBuilder.java:102) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.config.builders.AutoConfigurationBuilder.doConfigure(AutoConfigurationBuilder.java:54) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.config.builders.AbstractConfigurationBuilder.configure(AbstractConfigurationBuilder.java:43) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.config.builders.AbstractResourceConfigurationBuilder.configure(AbstractResourceConfigurationBuilder.java:69) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.context.DefaultMuleContextFactory$1.configure(DefaultMuleContextFactory.java:89) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.context.DefaultMuleContextFactory.doCreateMuleContext(DefaultMuleContextFactory.java:222) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.context.DefaultMuleContextFactory.createMuleContext(DefaultMuleContextFactory.java:81) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.application.DefaultMuleApplication.init(DefaultMuleApplication.java:210) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.artifact.ArtifactWrapper$2.execute(ArtifactWrapper.java:64) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.artifact.ArtifactWrapper.executeWithinArtifactClassLoader(ArtifactWrapper.java:137) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.artifact.ArtifactWrapper.init(ArtifactWrapper.java:59) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.DefaultArtifactDeployer.deploy(DefaultArtifactDeployer.java:72) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.DefaultArchiveDeployer.redeploy(DefaultArchiveDeployer.java:493) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.DefaultArchiveDeployer.redeploy(DefaultArchiveDeployer.java:429) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.redeployModifiedArtifacts(DeploymentDirectoryWatcher.java:567) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.redeployModifiedApplications(DeploymentDirectoryWatcher.java:544) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.run(DeploymentDirectoryWatcher.java:356) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[?:1.8.0_40]
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source) ~[?:1.8.0_40]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source) ~[?:1.8.0_40]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) ~[?:1.8.0_40]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_40]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_40]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_40]
+2019-03-15 12:10:26,196 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - App 'file-read-write' never started, nothing to dispose of
+2019-03-15 12:10:41,415 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'file-read-write'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 12:10:41,432 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2019-03-15 12:10:41,437 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2019-03-15 12:10:41,455 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2019-03-15 12:10:41,455 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2019-03-15 12:10:41,470 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@390004d4: startup date [Fri Mar 15 12:10:41 IST 2019]; root of context hierarchy
+2019-03-15 12:10:41,772 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-03-15 12:10:41,954 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\file-read-write\queue-tx-log\tx1.log and C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\file-read-write\queue-tx-log\tx2.log
+2019-03-15 12:10:41,969 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\file-read-write\queue-xa-tx-log\tx1.log and C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\file-read-write\queue-xa-tx-log\tx2.log
+2019-03-15 12:10:41,969 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2019-03-15 12:10:42,049 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2019-03-15 12:10:42,051 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: file-read-writeFlow
+2019-03-15 12:10:42,052 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@262f61bf
+2019-03-15 12:10:42,056 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: file-read-writeFlow.stage1
+2019-03-15 12:10:42,056 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: file-read-writeFlow1
+2019-03-15 12:10:42,056 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3261355d
+2019-03-15 12:10:42,071 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2019-03-15 12:10:42,071 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: file-read-writeFlow
+2019-03-15 12:10:42,071 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: file-read-writeFlow.stage1
+2019-03-15 12:10:42,071 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2019-03-15 12:10:42,071 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing connector: connector.file.mule.default
+2019-03-15 12:10:42,071 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.lifecycle.phases.DefaultLifecyclePhase - Failed to dispose object org.mule.util.lock.MuleLockFactory@2b694077
+org.mule.api.lifecycle.LifecycleException: Failed to invoke lifecycle phase "dispose" on object: org.mule.util.lock.MuleLockFactory@2b694077
+	at org.mule.lifecycle.phases.DefaultLifecyclePhase.applyLifecycle(DefaultLifecyclePhase.java:243) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.phases.MuleContextDisposePhase.applyLifecycle(MuleContextDisposePhase.java:103) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.config.spring.SpringRegistryLifecycleManager$SpringContextDisposePhase.applyLifecycle(SpringRegistryLifecycleManager.java:143) ~[mule-module-spring-config-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.RegistryLifecycleCallback.doApplyLifecycle(RegistryLifecycleCallback.java:108) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.RegistryLifecycleCallback.onTransition(RegistryLifecycleCallback.java:78) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.AbstractLifecycleManager.invokePhase(AbstractLifecycleManager.java:146) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.RegistryLifecycleManager.fireLifecycle(RegistryLifecycleManager.java:134) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.registry.AbstractRegistry.dispose(AbstractRegistry.java:68) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.registry.AbstractRegistryBroker$2.onTransition(AbstractRegistryBroker.java:69) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.registry.AbstractRegistryBroker$2.onTransition(AbstractRegistryBroker.java:64) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.AbstractLifecycleManager.invokePhase(AbstractLifecycleManager.java:146) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.RegistryBrokerLifecycleManager.fireDisposePhase(RegistryBrokerLifecycleManager.java:82) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.registry.AbstractRegistryBroker.dispose(AbstractRegistryBroker.java:63) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.registry.MuleRegistryHelper.fireLifecycle(MuleRegistryHelper.java:137) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.MuleContextLifecycleManager$MuleContextLifecycleCallback.onTransition(MuleContextLifecycleManager.java:74) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.MuleContextLifecycleManager$MuleContextLifecycleCallback.onTransition(MuleContextLifecycleManager.java:70) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.AbstractLifecycleManager.invokePhase(AbstractLifecycleManager.java:146) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.MuleContextLifecycleManager.fireLifecycle(MuleContextLifecycleManager.java:62) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.DefaultMuleContext.dispose(DefaultMuleContext.java:452) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.context.DefaultMuleContextFactory.doCreateMuleContext(DefaultMuleContextFactory.java:230) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.context.DefaultMuleContextFactory.createMuleContext(DefaultMuleContextFactory.java:81) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.application.DefaultMuleApplication.init(DefaultMuleApplication.java:210) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.artifact.ArtifactWrapper$2.execute(ArtifactWrapper.java:64) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.artifact.ArtifactWrapper.executeWithinArtifactClassLoader(ArtifactWrapper.java:137) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.artifact.ArtifactWrapper.init(ArtifactWrapper.java:59) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.DefaultArtifactDeployer.deploy(DefaultArtifactDeployer.java:72) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.DefaultArchiveDeployer.redeploy(DefaultArchiveDeployer.java:493) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.DefaultArchiveDeployer.redeploy(DefaultArchiveDeployer.java:429) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.redeployModifiedArtifacts(DeploymentDirectoryWatcher.java:567) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.redeployModifiedApplications(DeploymentDirectoryWatcher.java:544) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.run(DeploymentDirectoryWatcher.java:356) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[?:1.8.0_40]
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source) ~[?:1.8.0_40]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source) ~[?:1.8.0_40]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) ~[?:1.8.0_40]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_40]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_40]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_40]
+Caused by: java.lang.NullPointerException
+	at org.mule.util.lock.MuleLockFactory.dispose(MuleLockFactory.java:32) ~[mule-core-3.9.1.jar:3.9.1]
+	at sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_40]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_40]
+	at org.mule.lifecycle.phases.DefaultLifecyclePhase.applyLifecycle(DefaultLifecyclePhase.java:230) ~[mule-core-3.9.1.jar:3.9.1]
+	... 37 more
+2019-03-15 12:10:42,087 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.lifecycle.phases.DefaultLifecyclePhase - Failed to dispose object org.mule.module.http.internal.listener.HttpListenerConnectionManager@e97a49c
+org.mule.api.lifecycle.LifecycleException: Failed to invoke lifecycle phase "dispose" on object: org.mule.module.http.internal.listener.HttpListenerConnectionManager@e97a49c
+	at org.mule.lifecycle.phases.DefaultLifecyclePhase.applyLifecycle(DefaultLifecyclePhase.java:243) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.phases.MuleContextDisposePhase.applyLifecycle(MuleContextDisposePhase.java:103) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.config.spring.SpringRegistryLifecycleManager$SpringContextDisposePhase.applyLifecycle(SpringRegistryLifecycleManager.java:143) ~[mule-module-spring-config-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.RegistryLifecycleCallback.doApplyLifecycle(RegistryLifecycleCallback.java:108) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.RegistryLifecycleCallback.onTransition(RegistryLifecycleCallback.java:78) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.AbstractLifecycleManager.invokePhase(AbstractLifecycleManager.java:146) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.RegistryLifecycleManager.fireLifecycle(RegistryLifecycleManager.java:134) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.registry.AbstractRegistry.dispose(AbstractRegistry.java:68) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.registry.AbstractRegistryBroker$2.onTransition(AbstractRegistryBroker.java:69) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.registry.AbstractRegistryBroker$2.onTransition(AbstractRegistryBroker.java:64) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.AbstractLifecycleManager.invokePhase(AbstractLifecycleManager.java:146) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.RegistryBrokerLifecycleManager.fireDisposePhase(RegistryBrokerLifecycleManager.java:82) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.registry.AbstractRegistryBroker.dispose(AbstractRegistryBroker.java:63) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.registry.MuleRegistryHelper.fireLifecycle(MuleRegistryHelper.java:137) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.MuleContextLifecycleManager$MuleContextLifecycleCallback.onTransition(MuleContextLifecycleManager.java:74) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.MuleContextLifecycleManager$MuleContextLifecycleCallback.onTransition(MuleContextLifecycleManager.java:70) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.AbstractLifecycleManager.invokePhase(AbstractLifecycleManager.java:146) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.MuleContextLifecycleManager.fireLifecycle(MuleContextLifecycleManager.java:62) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.DefaultMuleContext.dispose(DefaultMuleContext.java:452) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.context.DefaultMuleContextFactory.doCreateMuleContext(DefaultMuleContextFactory.java:230) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.context.DefaultMuleContextFactory.createMuleContext(DefaultMuleContextFactory.java:81) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.application.DefaultMuleApplication.init(DefaultMuleApplication.java:210) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.artifact.ArtifactWrapper$2.execute(ArtifactWrapper.java:64) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.artifact.ArtifactWrapper.executeWithinArtifactClassLoader(ArtifactWrapper.java:137) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.artifact.ArtifactWrapper.init(ArtifactWrapper.java:59) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.DefaultArtifactDeployer.deploy(DefaultArtifactDeployer.java:72) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.DefaultArchiveDeployer.redeploy(DefaultArchiveDeployer.java:493) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.DefaultArchiveDeployer.redeploy(DefaultArchiveDeployer.java:429) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.redeployModifiedArtifacts(DeploymentDirectoryWatcher.java:567) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.redeployModifiedApplications(DeploymentDirectoryWatcher.java:544) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.run(DeploymentDirectoryWatcher.java:356) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[?:1.8.0_40]
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source) ~[?:1.8.0_40]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source) ~[?:1.8.0_40]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) ~[?:1.8.0_40]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_40]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_40]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_40]
+Caused by: java.lang.NullPointerException
+	at org.mule.module.http.internal.listener.HttpListenerConnectionManager.dispose(HttpListenerConnectionManager.java:71) ~[mule-module-http-3.9.1.jar:3.9.1]
+	at sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_40]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_40]
+	at org.mule.lifecycle.phases.DefaultLifecyclePhase.applyLifecycle(DefaultLifecyclePhase.java:230) ~[mule-core-3.9.1.jar:3.9.1]
+	... 37 more
+2019-03-15 12:10:42,087 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@390004d4: startup date [Fri Mar 15 12:10:41 IST 2019]; root of context hierarchy
+2019-03-15 12:10:42,102 [Mule.app.deployer.monitor.1.thread.1] ERROR org.mule.module.launcher.application.DefaultMuleApplication - null
+java.lang.NullPointerException: null
+	at org.mule.module.http.internal.listener.DefaultHttpListener.initialise(DefaultHttpListener.java:216) ~[mule-module-http-3.9.1.jar:3.9.1]
+	at org.mule.construct.AbstractFlowConstruct.initialiseIfInitialisable(AbstractFlowConstruct.java:317) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.construct.AbstractPipeline.doInitialise(AbstractPipeline.java:241) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.construct.Flow.doInitialise(Flow.java:76) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.construct.AbstractFlowConstruct$1.onTransition(AbstractFlowConstruct.java:104) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.construct.AbstractFlowConstruct$1.onTransition(AbstractFlowConstruct.java:98) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.AbstractLifecycleManager.invokePhase(AbstractLifecycleManager.java:146) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.construct.FlowConstructLifecycleManager.fireInitialisePhase(FlowConstructLifecycleManager.java:78) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.construct.AbstractFlowConstruct.initialise(AbstractFlowConstruct.java:97) ~[mule-core-3.9.1.jar:3.9.1]
+	at sun.reflect.GeneratedMethodAccessor11.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_40]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_40]
+	at org.mule.lifecycle.phases.DefaultLifecyclePhase.applyLifecycle(DefaultLifecyclePhase.java:230) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.phases.MuleContextInitialisePhase.applyLifecycle(MuleContextInitialisePhase.java:71) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.RegistryLifecycleCallback.doApplyLifecycle(RegistryLifecycleCallback.java:108) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.RegistryLifecycleCallback.onTransition(RegistryLifecycleCallback.java:78) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.AbstractLifecycleManager.invokePhase(AbstractLifecycleManager.java:146) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.lifecycle.RegistryLifecycleManager.fireLifecycle(RegistryLifecycleManager.java:134) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.registry.AbstractRegistry.fireLifecycle(AbstractRegistry.java:150) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.registry.AbstractRegistry.initialise(AbstractRegistry.java:116) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.config.spring.SpringXmlConfigurationBuilder.createSpringRegistry(SpringXmlConfigurationBuilder.java:177) ~[mule-module-spring-config-3.9.1.jar:3.9.1]
+	at org.mule.config.spring.SpringXmlConfigurationBuilder.doConfigure(SpringXmlConfigurationBuilder.java:100) ~[mule-module-spring-config-3.9.1.jar:3.9.1]
+	at org.mule.config.builders.AbstractConfigurationBuilder.configure(AbstractConfigurationBuilder.java:43) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.config.builders.AbstractResourceConfigurationBuilder.configure(AbstractResourceConfigurationBuilder.java:69) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.config.builders.AutoConfigurationBuilder.autoConfigure(AutoConfigurationBuilder.java:102) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.config.builders.AutoConfigurationBuilder.doConfigure(AutoConfigurationBuilder.java:54) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.config.builders.AbstractConfigurationBuilder.configure(AbstractConfigurationBuilder.java:43) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.config.builders.AbstractResourceConfigurationBuilder.configure(AbstractResourceConfigurationBuilder.java:69) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.context.DefaultMuleContextFactory$1.configure(DefaultMuleContextFactory.java:89) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.context.DefaultMuleContextFactory.doCreateMuleContext(DefaultMuleContextFactory.java:222) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.context.DefaultMuleContextFactory.createMuleContext(DefaultMuleContextFactory.java:81) ~[mule-core-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.application.DefaultMuleApplication.init(DefaultMuleApplication.java:210) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.artifact.ArtifactWrapper$2.execute(ArtifactWrapper.java:64) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.artifact.ArtifactWrapper.executeWithinArtifactClassLoader(ArtifactWrapper.java:137) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.artifact.ArtifactWrapper.init(ArtifactWrapper.java:59) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.DefaultArtifactDeployer.deploy(DefaultArtifactDeployer.java:72) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.DefaultArchiveDeployer.redeploy(DefaultArchiveDeployer.java:493) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.DefaultArchiveDeployer.redeploy(DefaultArchiveDeployer.java:429) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.redeployModifiedArtifacts(DeploymentDirectoryWatcher.java:567) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.redeployModifiedApplications(DeploymentDirectoryWatcher.java:544) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.run(DeploymentDirectoryWatcher.java:356) ~[mule-module-launcher-3.9.1.jar:3.9.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[?:1.8.0_40]
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source) ~[?:1.8.0_40]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source) ~[?:1.8.0_40]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) ~[?:1.8.0_40]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_40]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_40]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_40]
+2019-03-15 12:10:42,102 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - App 'file-read-write' never started, nothing to dispose of
+2019-03-15 12:11:17,273 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'file-read-write'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 12:11:17,305 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2019-03-15 12:11:17,305 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2019-03-15 12:11:17,320 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2019-03-15 12:11:17,320 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2019-03-15 12:11:17,336 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@7afa0129: startup date [Fri Mar 15 12:11:17 IST 2019]; root of context hierarchy
+2019-03-15 12:11:17,604 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-03-15 12:11:17,955 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\file-read-write\queue-tx-log\tx1.log and C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\file-read-write\queue-tx-log\tx2.log
+2019-03-15 12:11:17,955 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\file-read-write\queue-xa-tx-log\tx1.log and C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\file-read-write\queue-xa-tx-log\tx2.log
+2019-03-15 12:11:17,955 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2019-03-15 12:11:18,004 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2019-03-15 12:11:18,007 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: file-read-writeFlow
+2019-03-15 12:11:18,010 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6055c1d1
+2019-03-15 12:11:18,021 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: file-read-writeFlow.stage1
+2019-03-15 12:11:18,024 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: file-read-writeFlow1
+2019-03-15 12:11:18,024 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@35d592f8
+2019-03-15 12:11:18,040 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: file-read-writeFlow1.stage1
+2019-03-15 12:11:18,056 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\apps\file-read-write\file-read-write.xml'}]"
+2019-03-15 12:11:18,056 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\apps\file-read-write\file-read-write.xml'}]"
+2019-03-15 12:11:18,072 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'file-read-write'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 12:11:18,072 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2019-03-15 12:11:18,072 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2019-03-15 12:11:18,135 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:9091
+2019-03-15 12:11:18,135 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=1646e284
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2019-03-15 12:11:18,135 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=1646e284
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2019-03-15 12:11:18,135 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2019-03-15 12:11:18,135 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 12:11:18,135 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2019-03-15 12:11:18,135 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: file-read-writeFlow
+2019-03-15 12:11:18,135 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: file-read-writeFlow.stage1
+2019-03-15 12:11:18,150 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: file-read-writeFlow1
+2019-03-15 12:11:18,150 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: file-read-writeFlow1.stage1
+2019-03-15 12:11:18,166 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Registering listener: file-read-writeFlow on endpointUri: file:///D:/input/
+2019-03-15 12:11:18,166 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: FileMessageReceiver
+2019-03-15 12:11:18,166 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileMessageReceiver - Connecting clusterizable message receiver
+2019-03-15 12:11:18,166 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: FileMessageReceiver
+2019-03-15 12:11:18,166 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileMessageReceiver - Starting clusterizable message receiver
+2019-03-15 12:11:18,166 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2019-03-15 12:11:18,189 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.file-read-write:type=Endpoint,service="file-read-writeFlow",connector=connector.file.mule.default,name="endpoint..D.input"
+2019-03-15 12:11:18,194 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.file-read-write:type=Endpoint,service="file-read-writeFlow",connector=connector.file.mule.default,name="endpoint..D.input"
+2019-03-15 12:11:18,195 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.file-read-write:type=Connector,name="connector.file.mule.default"
+2019-03-15 12:11:18,198 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: file-read-write                                       *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2019-03-15 12:11:28,215 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'file-read-write'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 12:11:28,216 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: file-read-writeFlow
+2019-03-15 12:11:28,216 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Removing listener on endpointUri: file:///D:/input/
+2019-03-15 12:11:28,216 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'null'. Object is: FileMessageReceiver
+2019-03-15 12:11:28,216 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'null'. Object is: FileMessageReceiver
+2019-03-15 12:11:28,216 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: file-read-writeFlow.stage1
+2019-03-15 12:11:28,221 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: file-read-writeFlow1
+2019-03-15 12:11:28,221 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: file-read-writeFlow1.stage1
+2019-03-15 12:11:28,423 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2019-03-15 12:11:28,425 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping connector: connector.file.mule.default
+2019-03-15 12:11:28,439 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:9091
+2019-03-15 12:11:28,439 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2019-03-15 12:11:28,439 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2019-03-15 12:11:28,454 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'file-read-write'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 12:11:28,454 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2019-03-15 12:11:28,454 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: file-read-writeFlow
+2019-03-15 12:11:28,454 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: file-read-writeFlow.stage1
+2019-03-15 12:11:28,454 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: file-read-writeFlow1
+2019-03-15 12:11:28,454 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: file-read-writeFlow1.stage1
+2019-03-15 12:11:28,454 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2019-03-15 12:11:28,454 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Disconnected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=stop
+  this=1646e284
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2019-03-15 12:11:28,454 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing connector: connector.file.mule.default
+2019-03-15 12:11:28,487 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@7afa0129: startup date [Fri Mar 15 12:11:17 IST 2019]; root of context hierarchy
+2019-03-15 12:11:28,493 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "file-read-write" shut down normally on: 15/3/19       *
+* 12:11 PM                                                           *
+* Up for: 0 days, 0 hours, 0 mins, 10.420 sec                        *
+**********************************************************************
+2019-03-15 12:11:28,622 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'file-read-write'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 12:11:28,669 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2019-03-15 12:11:28,669 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2019-03-15 12:11:28,693 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2019-03-15 12:11:28,693 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2019-03-15 12:11:28,699 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@302e03a: startup date [Fri Mar 15 12:11:28 IST 2019]; root of context hierarchy
+2019-03-15 12:11:29,021 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-03-15 12:11:29,196 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\file-read-write\queue-tx-log\tx1.log and C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\file-read-write\queue-tx-log\tx2.log
+2019-03-15 12:11:29,201 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\file-read-write\queue-xa-tx-log\tx1.log and C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\file-read-write\queue-xa-tx-log\tx2.log
+2019-03-15 12:11:29,206 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2019-03-15 12:11:29,233 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2019-03-15 12:11:29,234 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: file-read-writeFlow
+2019-03-15 12:11:29,234 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@41212085
+2019-03-15 12:11:29,240 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: file-read-writeFlow.stage1
+2019-03-15 12:11:29,241 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: file-read-writeFlow1
+2019-03-15 12:11:29,241 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@33bc81c8
+2019-03-15 12:11:29,242 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: file-read-writeFlow1.stage1
+2019-03-15 12:11:29,258 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\apps\file-read-write\file-read-write.xml'}]"
+2019-03-15 12:11:29,258 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\apps\file-read-write\file-read-write.xml'}]"
+2019-03-15 12:11:29,258 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'file-read-write'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 12:11:29,273 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2019-03-15 12:11:29,273 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2019-03-15 12:11:29,289 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:9091
+2019-03-15 12:11:29,289 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=349774f
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2019-03-15 12:11:29,289 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=349774f
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2019-03-15 12:11:29,289 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2019-03-15 12:11:29,305 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 12:11:29,305 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2019-03-15 12:11:29,305 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: file-read-writeFlow
+2019-03-15 12:11:29,305 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: file-read-writeFlow.stage1
+2019-03-15 12:11:29,305 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: file-read-writeFlow1
+2019-03-15 12:11:29,305 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: file-read-writeFlow1.stage1
+2019-03-15 12:11:29,336 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Registering listener: file-read-writeFlow on endpointUri: file:///D:/input/
+2019-03-15 12:11:37,091 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'file-read-write'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 12:11:37,304 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2019-03-15 12:11:37,455 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2019-03-15 12:11:37,635 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2019-03-15 12:11:37,635 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2019-03-15 12:11:37,743 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@22c86919: startup date [Fri Mar 15 12:11:37 IST 2019]; root of context hierarchy
+2019-03-15 12:11:39,805 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-03-15 12:11:41,243 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2019-03-15 12:11:41,720 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\file-read-write\queue-tx-log\tx1.log and C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\file-read-write\queue-tx-log\tx2.log
+2019-03-15 12:11:41,740 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\file-read-write\queue-xa-tx-log\tx1.log and C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\file-read-write\queue-xa-tx-log\tx2.log
+2019-03-15 12:11:41,742 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2019-03-15 12:11:42,090 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2019-03-15 12:11:42,106 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: file-read-writeFlow
+2019-03-15 12:11:42,106 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@21c747a
+2019-03-15 12:11:42,137 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: file-read-writeFlow.stage1
+2019-03-15 12:11:42,153 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: file-read-writeFlow1
+2019-03-15 12:11:42,153 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@39de9bda
+2019-03-15 12:11:42,169 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: file-read-writeFlow1.stage1
+2019-03-15 12:11:42,455 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\apps\file-read-write\file-read-write.xml'}]"
+2019-03-15 12:11:42,455 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\apps\file-read-write\file-read-write.xml'}]"
+2019-03-15 12:11:42,467 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2019-03-15 12:11:42,467 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'file-read-write'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 12:11:42,467 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2019-03-15 12:11:42,467 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2019-03-15 12:11:42,536 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:9091
+2019-03-15 12:11:42,539 [main] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=ed2f2f6
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2019-03-15 12:11:42,539 [main] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=ed2f2f6
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2019-03-15 12:11:42,540 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2019-03-15 12:11:42,546 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 12:11:42,547 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2019-03-15 12:11:42,548 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: file-read-writeFlow
+2019-03-15 12:11:42,549 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: file-read-writeFlow.stage1
+2019-03-15 12:11:42,554 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: file-read-writeFlow1
+2019-03-15 12:11:42,554 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: file-read-writeFlow1.stage1
+2019-03-15 12:11:42,589 [main] INFO  org.mule.transport.file.FileConnector - Registering listener: file-read-writeFlow on endpointUri: file:///D:/input/
+2019-03-15 12:11:42,620 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: FileMessageReceiver
+2019-03-15 12:11:42,620 [main] INFO  org.mule.transport.file.FileMessageReceiver - Connecting clusterizable message receiver
+2019-03-15 12:11:42,620 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: FileMessageReceiver
+2019-03-15 12:11:42,620 [main] INFO  org.mule.transport.file.FileMessageReceiver - Starting clusterizable message receiver
+2019-03-15 12:11:42,636 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2019-03-15 12:11:47,213 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.file-read-write:type=Endpoint,service="file-read-writeFlow",connector=connector.file.mule.default,name="endpoint..D.input"
+2019-03-15 12:11:47,214 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.file-read-write:type=Endpoint,service="file-read-writeFlow",connector=connector.file.mule.default,name="endpoint..D.input"
+2019-03-15 12:11:47,217 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.file-read-write:type=Connector,name="connector.file.mule.default"
+2019-03-15 12:11:47,224 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: file-read-write                                       *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2019-03-15 12:12:00,652 [[file-read-write].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - No listener found for request: (POST)/pt
+2019-03-15 12:12:00,652 [[file-read-write].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - Available listeners are: [([get])/pt/]
+2019-03-15 12:12:16,258 [[file-read-write].HTTP_Listener_Configuration.worker.01] ERROR org.mule.exception.DefaultMessagingExceptionStrategy - 
+********************************************************************************
+Message               : Exception while executing: 
+Billing Street,Billing City,Billing Country,Billing State,Name,BillingPostalCode
+^
+Unexpected character 'B' at payload@[1:1] (line:column), expected false or true or null or {...} or [...] or number..
+Payload               : Billing Street,Billing City,Billing Country,Billing State,Name,BillingPostalCode
+111 Boulevard Hausmann,Paris,France,,Dog Park Industries,75008
+400 South St,San Francisco,USA,CA,Iguana Park Industries,91156
+777 North St,San Francisco,USA,CA,Cat Park Industries,91156
+
+Payload Type          : java.lang.String
+Element               : /file-read-writeFlow1/processors/1 @ file-read-write:file-read-write.xml:27 (Transform Message)
+Element XML           : <dw:transform-message doc:name="Transform Message">
+                        <dw:set-payload>%dw 1.0
+%output application/java
+---
+payload</dw:set-payload>
+                        </dw:transform-message>
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+com.mulesoft.weave.mule.exception.WeaveExecutionException: Exception while executing: 
+Billing Street,Billing City,Billing Country,Billing State,Name,BillingPostalCode
+^
+Unexpected character 'B' at payload@[1:1] (line:column), expected false or true or null or {...} or [...] or number..
+	at com.mulesoft.weave.mule.exception.WeaveExecutionException$.apply(WeaveExecutionException.scala:10)
+	at com.mulesoft.weave.mule.WeaveMessageProcessor.execute(WeaveMessageProcessor.scala:133)
+	at com.mulesoft.weave.mule.WeaveMessageProcessor.process(WeaveMessageProcessor.scala:72)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AsyncInterceptingMessageProcessor.process(AsyncInterceptingMessageProcessor.java:110)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.construct.DynamicPipelineMessageProcessor.process(DynamicPipelineMessageProcessor.java:55)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.interceptor.AbstractEnvelopeInterceptor.processBlocking(AbstractEnvelopeInterceptor.java:59)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.process(AbstractRequestResponseMessageProcessor.java:48)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AbstractFilteringMessageProcessor.process(AbstractFilteringMessageProcessor.java:62)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.processBlocking(AbstractRequestResponseMessageProcessor.java:57)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.process(AbstractRequestResponseMessageProcessor.java:48)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.construct.AbstractPipeline$3.process(AbstractPipeline.java:232)
+	at org.mule.module.http.internal.listener.HttpMessageProcessorTemplate.routeEvent(HttpMessageProcessorTemplate.java:73)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase$1.process(AsyncResponseFlowProcessingPhase.java:73)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase$1.process(AsyncResponseFlowProcessingPhase.java:60)
+	at org.mule.execution.ExecuteCallbackInterceptor.execute(ExecuteCallbackInterceptor.java:16)
+	at org.mule.execution.CommitTransactionInterceptor.execute(CommitTransactionInterceptor.java:35)
+	at org.mule.execution.CommitTransactionInterceptor.execute(CommitTransactionInterceptor.java:22)
+	at org.mule.execution.HandleExceptionInterceptor.execute(HandleExceptionInterceptor.java:30)
+	at org.mule.execution.HandleExceptionInterceptor.execute(HandleExceptionInterceptor.java:14)
+	at org.mule.execution.BeginAndResolveTransactionInterceptor.execute(BeginAndResolveTransactionInterceptor.java:67)
+	at org.mule.execution.ResolvePreviousTransactionInterceptor.execute(ResolvePreviousTransactionInterceptor.java:44)
+	at org.mule.execution.SuspendXaTransactionInterceptor.execute(SuspendXaTransactionInterceptor.java:50)
+	at org.mule.execution.ValidateTransactionalStateInterceptor.execute(ValidateTransactionalStateInterceptor.java:40)
+	at org.mule.execution.IsolateCurrentTransactionInterceptor.execute(IsolateCurrentTransactionInterceptor.java:41)
+	at org.mule.execution.ExternalTransactionInterceptor.execute(ExternalTransactionInterceptor.java:48)
+	at org.mule.execution.RethrowExceptionInterceptor.execute(RethrowExceptionInterceptor.java:28)
+	at org.mule.execution.RethrowExceptionInterceptor.execute(RethrowExceptionInterceptor.java:13)
+	at org.mule.execution.TransactionalErrorHandlingExecutionTemplate.execute(TransactionalErrorHandlingExecutionTemplate.java:110)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase.runPhase(AsyncResponseFlowProcessingPhase.java:59)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase.runPhase(AsyncResponseFlowProcessingPhase.java:36)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:65)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:69)
+	at com.mulesoft.mule.throttling.ThrottlingPhase.runPhase(ThrottlingPhase.java:187)
+	at com.mulesoft.mule.throttling.ThrottlingPhase.runPhase(ThrottlingPhase.java:58)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:65)
+	at com.mulesoft.gateway.http.phases.GatewayValidationPhase.runPhase(GatewayValidationPhase.java:93)
+	at com.mulesoft.gateway.http.phases.GatewayValidationPhase.runPhase(GatewayValidationPhase.java:49)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:65)
+	at org.mule.modules.cors.CorsPhase.runPhase(CorsPhase.java:112)
+	at org.mule.modules.cors.CorsPhase.runPhase(CorsPhase.java:39)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.process(PhaseExecutionEngine.java:114)
+	at org.mule.execution.PhaseExecutionEngine.process(PhaseExecutionEngine.java:41)
+	at org.mule.execution.MuleMessageProcessingManager.processMessage(MuleMessageProcessingManager.java:32)
+	at org.mule.module.http.internal.listener.DefaultHttpListener$1.handleRequest(DefaultHttpListener.java:135)
+	at org.mule.module.http.internal.listener.grizzly.GrizzlyRequestDispatcherFilter.handleRead(GrizzlyRequestDispatcherFilter.java:105)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:119)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:284)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:201)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:133)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:112)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:77)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:539)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.mule.module.http.internal.listener.grizzly.ExecutorPerServerAddressIOStrategy.run0(ExecutorPerServerAddressIOStrategy.java:126)
+	at org.mule.module.http.internal.listener.grizzly.ExecutorPerServerAddressIOStrategy.access$100(ExecutorPerServerAddressIOStrategy.java:32)
+	at org.mule.module.http.internal.listener.grizzly.ExecutorPerServerAddressIOStrategy$WorkerThreadRunnable.run(ExecutorPerServerAddressIOStrategy.java:149)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+********************************************************************************
+
+2019-03-15 12:13:47,518 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'file-read-write'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 12:13:47,524 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: file-read-writeFlow
+2019-03-15 12:13:47,526 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Removing listener on endpointUri: file:///D:/input/
+2019-03-15 12:13:47,528 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'null'. Object is: FileMessageReceiver
+2019-03-15 12:13:47,532 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'null'. Object is: FileMessageReceiver
+2019-03-15 12:13:47,532 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: file-read-writeFlow.stage1
+2019-03-15 12:13:47,709 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: file-read-writeFlow1
+2019-03-15 12:13:47,709 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: file-read-writeFlow1.stage1
+2019-03-15 12:13:47,910 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2019-03-15 12:13:47,916 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping connector: connector.file.mule.default
+2019-03-15 12:13:47,929 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:9091
+2019-03-15 12:13:47,932 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2019-03-15 12:13:47,933 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2019-03-15 12:13:47,942 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'file-read-write'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 12:13:47,942 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2019-03-15 12:13:47,942 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: file-read-writeFlow
+2019-03-15 12:13:47,942 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: file-read-writeFlow.stage1
+2019-03-15 12:13:47,942 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: file-read-writeFlow1
+2019-03-15 12:13:47,942 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: file-read-writeFlow1.stage1
+2019-03-15 12:13:47,942 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2019-03-15 12:13:47,942 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Disconnected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=stop
+  this=ed2f2f6
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2019-03-15 12:13:47,942 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing connector: connector.file.mule.default
+2019-03-15 12:13:48,109 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@22c86919: startup date [Fri Mar 15 12:11:37 IST 2019]; root of context hierarchy
+2019-03-15 12:13:48,109 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "file-read-write" shut down normally on: 15/3/19       *
+* 12:13 PM                                                           *
+* Up for: 0 days, 0 hours, 2 mins, 5.642 sec                         *
+**********************************************************************
+2019-03-15 12:13:48,260 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'file-read-write'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 12:13:48,276 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2019-03-15 12:13:48,291 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2019-03-15 12:13:48,307 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2019-03-15 12:13:48,307 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2019-03-15 12:13:48,323 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@51176541: startup date [Fri Mar 15 12:13:48 IST 2019]; root of context hierarchy
+2019-03-15 12:13:48,792 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-03-15 12:13:49,015 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\file-read-write\queue-tx-log\tx1.log and C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\file-read-write\queue-tx-log\tx2.log
+2019-03-15 12:13:49,020 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\file-read-write\queue-xa-tx-log\tx1.log and C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\file-read-write\queue-xa-tx-log\tx2.log
+2019-03-15 12:13:49,024 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2019-03-15 12:13:49,056 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2019-03-15 12:13:49,057 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: file-read-writeFlow
+2019-03-15 12:13:49,057 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@d8ae98f
+2019-03-15 12:13:49,059 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: file-read-writeFlow.stage1
+2019-03-15 12:13:49,059 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: read_file_from_client
+2019-03-15 12:13:49,059 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7bb4c8b9
+2019-03-15 12:13:49,106 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: read_file_from_client.stage1
+2019-03-15 12:13:49,137 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\apps\file-read-write\file-read-write.xml'}]"
+2019-03-15 12:13:49,137 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\apps\file-read-write\file-read-write.xml'}]"
+2019-03-15 12:13:49,137 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'file-read-write'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 12:13:49,137 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2019-03-15 12:13:49,137 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2019-03-15 12:13:49,184 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:9091
+2019-03-15 12:13:49,186 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=41444c61
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2019-03-15 12:13:49,186 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=41444c61
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2019-03-15 12:13:49,186 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2019-03-15 12:13:49,188 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 12:13:49,189 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2019-03-15 12:13:49,190 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: file-read-writeFlow
+2019-03-15 12:13:49,190 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: file-read-writeFlow.stage1
+2019-03-15 12:13:49,194 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: read_file_from_client
+2019-03-15 12:13:49,194 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: read_file_from_client.stage1
+2019-03-15 12:13:49,207 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Registering listener: file-read-writeFlow on endpointUri: file:///D:/input/
+2019-03-15 12:13:49,215 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: FileMessageReceiver
+2019-03-15 12:13:49,219 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileMessageReceiver - Connecting clusterizable message receiver
+2019-03-15 12:13:49,221 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: FileMessageReceiver
+2019-03-15 12:13:49,223 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileMessageReceiver - Starting clusterizable message receiver
+2019-03-15 12:13:49,226 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2019-03-15 12:13:49,231 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.file-read-write:type=Endpoint,service="file-read-writeFlow",connector=connector.file.mule.default,name="endpoint..D.input"
+2019-03-15 12:13:49,233 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.file-read-write:type=Endpoint,service="file-read-writeFlow",connector=connector.file.mule.default,name="endpoint..D.input"
+2019-03-15 12:13:49,236 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.file-read-write:type=Connector,name="connector.file.mule.default"
+2019-03-15 12:13:49,239 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: file-read-write                                       *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2019-03-15 12:30:47,168 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'file-read-write'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 12:30:47,173 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: file-read-writeFlow
+2019-03-15 12:30:47,173 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Removing listener on endpointUri: file:///D:/input/
+2019-03-15 12:30:47,173 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'null'. Object is: FileMessageReceiver
+2019-03-15 12:30:47,173 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'null'. Object is: FileMessageReceiver
+2019-03-15 12:30:47,173 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: file-read-writeFlow.stage1
+2019-03-15 12:30:47,314 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: read_file_from_client
+2019-03-15 12:30:47,314 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: read_file_from_client.stage1
+2019-03-15 12:30:47,517 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2019-03-15 12:30:47,517 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping connector: connector.file.mule.default
+2019-03-15 12:30:47,533 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:9091
+2019-03-15 12:30:47,533 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2019-03-15 12:30:47,533 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2019-03-15 12:30:47,549 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'file-read-write'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 12:30:47,549 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2019-03-15 12:30:47,549 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: file-read-writeFlow
+2019-03-15 12:30:47,549 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: file-read-writeFlow.stage1
+2019-03-15 12:30:47,549 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: read_file_from_client
+2019-03-15 12:30:47,549 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: read_file_from_client.stage1
+2019-03-15 12:30:47,549 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2019-03-15 12:30:47,564 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Disconnected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=stop
+  this=41444c61
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2019-03-15 12:30:47,564 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing connector: connector.file.mule.default
+2019-03-15 12:30:47,580 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@51176541: startup date [Fri Mar 15 12:13:48 IST 2019]; root of context hierarchy
+2019-03-15 12:30:47,580 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "file-read-write" shut down normally on: 15/3/19       *
+* 12:30 PM                                                           *
+* Up for: 0 days, 0 hours, 16 mins, 58.443 sec                       *
+**********************************************************************
+2019-03-15 12:30:47,767 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'file-read-write'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 12:30:47,783 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2019-03-15 12:30:47,799 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2019-03-15 12:30:47,814 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2019-03-15 12:30:47,814 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2019-03-15 12:30:47,830 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@1450b253: startup date [Fri Mar 15 12:30:47 IST 2019]; root of context hierarchy
+2019-03-15 12:30:48,174 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-03-15 12:30:48,366 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\file-read-write\queue-tx-log\tx1.log and C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\file-read-write\queue-tx-log\tx2.log
+2019-03-15 12:30:48,366 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\file-read-write\queue-xa-tx-log\tx1.log and C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\file-read-write\queue-xa-tx-log\tx2.log
+2019-03-15 12:30:48,366 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2019-03-15 12:30:48,398 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2019-03-15 12:30:48,398 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: file-read-writeFlow
+2019-03-15 12:30:48,398 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@4f1bafcc
+2019-03-15 12:30:48,413 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: file-read-writeFlow.stage1
+2019-03-15 12:30:48,444 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\apps\file-read-write\file-read-write.xml'}]"
+2019-03-15 12:30:48,444 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\apps\file-read-write\file-read-write.xml'}]"
+2019-03-15 12:30:48,460 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'file-read-write'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 12:30:48,460 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2019-03-15 12:30:48,460 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2019-03-15 12:30:48,523 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:9091
+2019-03-15 12:30:48,538 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=5dae88d8
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2019-03-15 12:30:48,538 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=5dae88d8
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2019-03-15 12:30:48,538 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2019-03-15 12:30:48,538 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 12:30:48,554 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2019-03-15 12:30:48,554 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: file-read-writeFlow
+2019-03-15 12:30:48,554 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: file-read-writeFlow.stage1
+2019-03-15 12:30:48,569 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Registering listener: file-read-writeFlow on endpointUri: file:///D:/input/
+2019-03-15 12:30:48,585 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: FileMessageReceiver
+2019-03-15 12:30:48,585 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileMessageReceiver - Connecting clusterizable message receiver
+2019-03-15 12:30:48,585 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: FileMessageReceiver
+2019-03-15 12:30:48,585 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileMessageReceiver - Starting clusterizable message receiver
+2019-03-15 12:30:48,585 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2019-03-15 12:30:48,601 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.file-read-write:type=Endpoint,service="file-read-writeFlow",connector=connector.file.mule.default,name="endpoint..D.input"
+2019-03-15 12:30:48,601 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.file-read-write:type=Endpoint,service="file-read-writeFlow",connector=connector.file.mule.default,name="endpoint..D.input"
+2019-03-15 12:30:48,601 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.file-read-write:type=Connector,name="connector.file.mule.default"
+2019-03-15 12:30:48,601 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: file-read-write                                       *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************

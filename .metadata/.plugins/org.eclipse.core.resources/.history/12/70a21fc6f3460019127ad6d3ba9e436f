@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:vm="http://www.mulesoft.org/schema/mule/vm" xmlns:file="http://www.mulesoft.org/schema/mule/file" xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw" xmlns:metadata="http://www.mulesoft.org/schema/mule/metadata" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd
+http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd
+http://www.mulesoft.org/schema/mule/vm http://www.mulesoft.org/schema/mule/vm/current/mule-vm.xsd">
+    <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="9091" doc:name="HTTP Listener Configuration"/>
+    <flow name="readingFlow">
+        <file:inbound-endpoint path="D:\input" moveToPattern="#[server.nanoTime()]_#[message.inboundProperties.originalFileName]" moveToDirectory="D:\backup" responseTimeout="10000" doc:name="File IBEP">
+            <file:filename-regex-filter pattern=".*csv,.*json" caseSensitive="true"/>
+        </file:inbound-endpoint>
+        <dw:transform-message doc:name="Transform Message">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/java
+---
+payload]]></dw:set-payload>
+        </dw:transform-message>
+        <collection-splitter doc:name="Collection Splitter"/>
+        <vm:outbound-endpoint exchange-pattern="one-way" path="myq" doc:name="VM OBEP"/>
+    </flow>
+    <flow name="processingFlow">
+        <vm:inbound-endpoint exchange-pattern="one-way" path="myq" doc:name="VM IBEP"/>
+        <dw:transform-message doc:name="TMC Billing state">
+            <dw:set-payload><![CDATA[%output application/java
+---
+{
+    "Billing Street": payload."Billing Street",
+    "Billing City": payload."Billing City",
+    "Billing Country": payload."Billing Country",
+    "Billing State": "LA" when payload."Billing State" == "" otherwise payload."Billing State",
+     Name: payload.Name,
+     BillingPostalCode: payload.BillingPostalCode
+}]]></dw:set-payload>
+        </dw:transform-message>
+        <dw:transform-message doc:name="Transform Message">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/java
+---
+payload]]></dw:set-payload>
+        </dw:transform-message>
+        <file:outbound-endpoint path="D:\jsonresult" outputPattern="#[message.inboundProperties.originalFileName].json" responseTimeout="10000" doc:name="File OBEP"/>
+    </flow>
+</mule>
