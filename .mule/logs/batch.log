@@ -1,0 +1,1014 @@
+2019-03-15 16:34:23,657 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'batch'                                 +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 16:34:23,860 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2019-03-15 16:34:24,016 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2019-03-15 16:34:24,157 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2019-03-15 16:34:24,157 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2019-03-15 16:34:24,235 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@6ea1bcdc: startup date [Fri Mar 15 16:34:24 IST 2019]; root of context hierarchy
+2019-03-15 16:34:26,509 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-03-15 16:34:27,010 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2019-03-15 16:34:27,010 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2019-03-15 16:34:27,010 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2019-03-15 16:34:27,010 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2019-03-15 16:34:28,854 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2019-03-15 16:34:29,077 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\batch\queue-tx-log\tx1.log and C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\batch\queue-tx-log\tx2.log
+2019-03-15 16:34:29,109 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\batch\queue-xa-tx-log\tx1.log and C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\batch\queue-xa-tx-log\tx2.log
+2019-03-15 16:34:29,109 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.polling.mule.default
+2019-03-15 16:34:29,187 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2019-03-15 16:34:29,374 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2019-03-15 16:34:29,374 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: batchBatch
+2019-03-15 16:34:29,374 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@f438904
+2019-03-15 16:34:30,109 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\apps\batch\batch.xml'}]"
+2019-03-15 16:34:30,113 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\apps\batch\batch.xml'}]"
+2019-03-15 16:34:30,116 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2019-03-15 16:34:30,116 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'batch'                                     +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 16:34:30,116 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2019-03-15 16:34:30,116 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2019-03-15 16:34:30,147 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Connected: MessageProcessorPollingConnector
+{
+  name=connector.polling.mule.default
+  lifecycle=initialise
+  this=7efa3f63
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[polling]
+  serviceOverrides=<none>
+}
+
+2019-03-15 16:34:30,147 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Starting: MessageProcessorPollingConnector
+{
+  name=connector.polling.mule.default
+  lifecycle=initialise
+  this=7efa3f63
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[polling]
+  serviceOverrides=<none>
+}
+
+2019-03-15 16:34:30,147 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.polling.mule.default
+2019-03-15 16:34:30,147 [main] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=1a256d80
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2019-03-15 16:34:30,147 [main] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=1a256d80
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2019-03-15 16:34:30,147 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2019-03-15 16:34:30,162 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 16:34:30,162 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2019-03-15 16:34:30,162 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: batchBatch
+2019-03-15 16:34:30,162 [main] INFO  org.mule.transport.polling.MessageProcessorPollingConnector - Registering listener: batchBatch on endpointUri: polling://-1912630717
+2019-03-15 16:34:30,194 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: MessageProcessorPollingMessageReceiver
+2019-03-15 16:34:30,225 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising Bean: polling://batchBatch/609375192
+2019-03-15 16:34:30,241 [main] INFO  org.mule.transport.polling.MessageProcessorPollingMessageReceiver - Connecting clusterizable message receiver
+2019-03-15 16:34:30,241 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: MessageProcessorPollingMessageReceiver
+2019-03-15 16:34:30,241 [main] INFO  org.mule.transport.polling.MessageProcessorPollingMessageReceiver - Starting clusterizable message receiver
+2019-03-15 16:34:30,350 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting Bean: polling://batchBatch/609375192
+2019-03-15 16:34:30,428 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2019-03-15 16:34:34,084 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance 1d36b9e0-4712-11e9-a81a-c4346b5d8661 for batch job batchBatch
+2019-03-15 16:34:34,091 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2019-03-15 16:34:34,092 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2019-03-15 16:34:34,186 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance '1d36b9e0-4712-11e9-a81a-c4346b5d8661' of job 'batchBatch'
+2019-03-15 16:34:34,295 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance 1d36b9e0-4712-11e9-a81a-c4346b5d8661 of job batchBatch. 220 records were loaded
+2019-03-15 16:34:34,311 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Started execution of instance '1d36b9e0-4712-11e9-a81a-c4346b5d8661' of job 'batchBatch'
+2019-03-15 16:34:34,827 [batch-job-batchBatch-work-manager.07] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:34,827 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:34,827 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:34,983 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.batch:type=Endpoint,service="batchBatch",connector=connector.polling.mule.default,name="endpoint.polling.1912630717"
+2019-03-15 16:34:34,983 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.batch:type=Endpoint,service="batchBatch",connector=connector.polling.mule.default,name="endpoint.polling.1912630717"
+2019-03-15 16:34:34,983 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.batch:type=Connector,name="connector.polling.mule.default"
+2019-03-15 16:34:34,983 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.batch:type=Connector,name="connector.file.mule.default"
+2019-03-15 16:34:34,998 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: batch                                                 *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2019-03-15 16:34:36,686 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,686 [batch-job-batchBatch-work-manager.07] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,702 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,705 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,705 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,705 [batch-job-batchBatch-work-manager.07] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,705 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,705 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,705 [batch-job-batchBatch-work-manager.07] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,721 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,721 [batch-job-batchBatch-work-manager.07] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,721 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,721 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,721 [batch-job-batchBatch-work-manager.07] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,737 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,737 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,737 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,752 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,768 [batch-job-batchBatch-work-manager.07] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,768 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,768 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,768 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,768 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,768 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,768 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,768 [batch-job-batchBatch-work-manager.07] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,784 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,784 [batch-job-batchBatch-work-manager.07] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,784 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,784 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,784 [batch-job-batchBatch-work-manager.07] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,784 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,784 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,799 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,799 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,799 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,799 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,799 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,815 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,815 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,815 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,815 [batch-job-batchBatch-work-manager.07] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,815 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,830 [batch-job-batchBatch-work-manager.07] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,830 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,830 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,830 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,830 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,846 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,846 [batch-job-batchBatch-work-manager.07] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,846 [batch-job-batchBatch-work-manager.07] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,846 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,846 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,846 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,862 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,862 [batch-job-batchBatch-work-manager.07] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,862 [batch-job-batchBatch-work-manager.07] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,862 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,862 [batch-job-batchBatch-work-manager.07] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,862 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,862 [batch-job-batchBatch-work-manager.07] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,862 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,877 [batch-job-batchBatch-work-manager.07] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,877 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,877 [batch-job-batchBatch-work-manager.07] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,877 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,877 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,877 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,877 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,893 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,893 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,893 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,893 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,893 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,893 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,909 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,909 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,909 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,909 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,924 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,924 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,940 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,940 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,940 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,940 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,940 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,940 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,955 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,955 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,955 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,971 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,971 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,971 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,971 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,971 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,971 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,971 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,987 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,987 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,987 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,987 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,987 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,987 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,987 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:36,987 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,002 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,002 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,002 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,002 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,018 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,018 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,018 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,018 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,018 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,018 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,018 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,034 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,034 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,034 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,034 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,034 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,034 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,034 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,049 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,049 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,049 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,065 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,065 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,065 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,065 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,065 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,080 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,080 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,080 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,080 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,080 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,080 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,080 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,096 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,096 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,096 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,112 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,112 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,112 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,112 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,112 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,112 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,112 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,112 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,127 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,127 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,127 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,127 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,143 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,143 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,143 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,143 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,143 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,159 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,159 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,174 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,174 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,174 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,174 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,190 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,190 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,190 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,190 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,190 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,190 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,190 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,205 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,205 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,205 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,205 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,205 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,221 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,221 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,221 [batch-job-batchBatch-work-manager.07] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.file.mule.default.dispatcher.1511338572'. Object is: FileMessageDispatcher
+2019-03-15 16:34:37,221 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,221 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,221 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,221 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,237 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,237 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,237 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,237 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,237 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,237 [batch-job-batchBatch-work-manager.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,237 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,237 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,252 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,252 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,252 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,267 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,267 [batch-job-batchBatch-work-manager.07] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.file.mule.default.dispatcher.1511338572'. Object is: FileMessageDispatcher
+2019-03-15 16:34:37,277 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,283 [batch-job-batchBatch-work-manager.07] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866746914054.json
+2019-03-15 16:34:37,283 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,288 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,292 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,295 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,298 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,298 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,298 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,298 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,298 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,314 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,314 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,314 [batch-job-batchBatch-work-manager.07] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866758516834.json
+2019-03-15 16:34:37,314 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,314 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,314 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,329 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,329 [batch-job-batchBatch-work-manager.07] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866797304252.json
+2019-03-15 16:34:37,329 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,329 [batch-job-batchBatch-work-manager.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.file.mule.default.dispatcher.1745781270'. Object is: FileMessageDispatcher
+2019-03-15 16:34:37,329 [batch-job-batchBatch-work-manager.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.file.mule.default.dispatcher.1745781270'. Object is: FileMessageDispatcher
+2019-03-15 16:34:37,329 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,329 [batch-job-batchBatch-work-manager.07] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866802861182.json
+2019-03-15 16:34:37,345 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,345 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866807340025.json
+2019-03-15 16:34:37,345 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,345 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,345 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,361 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2019-03-15 16:34:37,361 [batch-job-batchBatch-work-manager.07] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866820275906.json
+2019-03-15 16:34:37,361 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866836008132.json
+2019-03-15 16:34:37,376 [batch-job-batchBatch-work-manager.07] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866841237942.json
+2019-03-15 16:34:37,376 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866842916042.json
+2019-03-15 16:34:37,376 [batch-job-batchBatch-work-manager.07] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866849892836.json
+2019-03-15 16:34:37,376 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866855692760.json
+2019-03-15 16:34:37,392 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866862399006.json
+2019-03-15 16:34:37,392 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866867333060.json
+2019-03-15 16:34:37,392 [batch-job-batchBatch-work-manager.07] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866866728944.json
+2019-03-15 16:34:37,392 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866872117624.json
+2019-03-15 16:34:37,408 [batch-job-batchBatch-work-manager.07] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866875477928.json
+2019-03-15 16:34:37,408 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866877158960.json
+2019-03-15 16:34:37,408 [batch-job-batchBatch-work-manager.07] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866881364030.json
+2019-03-15 16:34:37,423 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866884865617.json
+2019-03-15 16:34:37,423 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.module.batch.DefaultBatchStep - Step Batch_Step1 finished processing all records for instance 1d36b9e0-4712-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:34:37,423 [batch-job-batchBatch-work-manager.07] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866892241930.json
+2019-03-15 16:34:37,423 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866896548712.json
+2019-03-15 16:34:37,439 [batch-job-batchBatch-work-manager.07] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.file.mule.default.dispatcher.403725650'. Object is: FileMessageDispatcher
+2019-03-15 16:34:37,439 [batch-job-batchBatch-work-manager.07] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.file.mule.default.dispatcher.403725650'. Object is: FileMessageDispatcher
+2019-03-15 16:34:37,439 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866904634956.json
+2019-03-15 16:34:37,439 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866905324077.json
+2019-03-15 16:34:37,439 [batch-job-batchBatch-work-manager.07] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866906984883.json
+2019-03-15 16:34:37,439 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866913033958.json
+2019-03-15 16:34:37,439 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866913310661.json
+2019-03-15 16:34:37,439 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866917506058.json
+2019-03-15 16:34:37,455 [batch-job-batchBatch-work-manager.07] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866918639252.json
+2019-03-15 16:34:37,455 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866925477401.json
+2019-03-15 16:34:37,470 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866933472486.json
+2019-03-15 16:34:37,470 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866937146426.json
+2019-03-15 16:34:37,470 [batch-job-batchBatch-work-manager.07] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866932511938.json
+2019-03-15 16:34:37,470 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866943219244.json
+2019-03-15 16:34:37,470 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866948789071.json
+2019-03-15 16:34:37,486 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866950246746.json
+2019-03-15 16:34:37,486 [batch-job-batchBatch-work-manager.07] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866951880292.json
+2019-03-15 16:34:37,486 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866960689659.json
+2019-03-15 16:34:37,486 [batch-job-batchBatch-work-manager.07] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866964038532.json
+2019-03-15 16:34:37,501 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866965781704.json
+2019-03-15 16:34:37,501 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866971268872.json
+2019-03-15 16:34:37,501 [batch-job-batchBatch-work-manager.07] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866972063808.json
+2019-03-15 16:34:37,501 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866975552204.json
+2019-03-15 16:34:37,501 [batch-job-batchBatch-work-manager.07] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866975952017.json
+2019-03-15 16:34:37,501 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866979188919.json
+2019-03-15 16:34:37,517 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866981203225.json
+2019-03-15 16:34:37,517 [batch-job-batchBatch-work-manager.07] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866982437838.json
+2019-03-15 16:34:37,517 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866983471665.json
+2019-03-15 16:34:37,517 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866988587746.json
+2019-03-15 16:34:37,517 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866988542605.json
+2019-03-15 16:34:37,517 [batch-job-batchBatch-work-manager.07] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866989749665.json
+2019-03-15 16:34:37,517 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866993494833.json
+2019-03-15 16:34:37,517 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866996281505.json
+2019-03-15 16:34:37,533 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278866999211805.json
+2019-03-15 16:34:37,533 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867001380292.json
+2019-03-15 16:34:37,533 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867003315457.json
+2019-03-15 16:34:37,533 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867006866874.json
+2019-03-15 16:34:37,548 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867008827246.json
+2019-03-15 16:34:37,548 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867027497980.json
+2019-03-15 16:34:37,548 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867026807101.json
+2019-03-15 16:34:37,564 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867033894986.json
+2019-03-15 16:34:37,580 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867044147958.json
+2019-03-15 16:34:37,580 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867053976789.json
+2019-03-15 16:34:37,580 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867058956570.json
+2019-03-15 16:34:37,626 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867065319867.json
+2019-03-15 16:34:37,626 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867068797419.json
+2019-03-15 16:34:37,626 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867102809066.json
+2019-03-15 16:34:37,626 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867102750442.json
+2019-03-15 16:34:37,626 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867106577097.json
+2019-03-15 16:34:37,626 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867107083019.json
+2019-03-15 16:34:37,642 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867111271674.json
+2019-03-15 16:34:37,642 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867111337919.json
+2019-03-15 16:34:37,642 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867116162640.json
+2019-03-15 16:34:37,642 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867116152674.json
+2019-03-15 16:34:37,642 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867120793611.json
+2019-03-15 16:34:37,642 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867120780420.json
+2019-03-15 16:34:37,658 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867125552967.json
+2019-03-15 16:34:37,658 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867128722451.json
+2019-03-15 16:34:37,658 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867129773279.json
+2019-03-15 16:34:37,658 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867134598586.json
+2019-03-15 16:34:37,658 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867134617053.json
+2019-03-15 16:34:37,673 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867139855070.json
+2019-03-15 16:34:37,673 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867139854777.json
+2019-03-15 16:34:37,673 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867144640807.json
+2019-03-15 16:34:37,673 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867144948288.json
+2019-03-15 16:34:37,673 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867149478132.json
+2019-03-15 16:34:37,673 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867149403094.json
+2019-03-15 16:34:37,673 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867153814812.json
+2019-03-15 16:34:37,689 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867154241006.json
+2019-03-15 16:34:37,705 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867174059296.json
+2019-03-15 16:34:37,712 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867180719522.json
+2019-03-15 16:34:37,712 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867184796793.json
+2019-03-15 16:34:37,712 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867189587805.json
+2019-03-15 16:34:37,728 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867194242518.json
+2019-03-15 16:34:37,728 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867196597135.json
+2019-03-15 16:34:37,728 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867201906673.json
+2019-03-15 16:34:37,728 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867202703661.json
+2019-03-15 16:34:37,728 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867207130328.json
+2019-03-15 16:34:37,728 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867207101896.json
+2019-03-15 16:34:37,743 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867213650443.json
+2019-03-15 16:34:37,743 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867214943973.json
+2019-03-15 16:34:37,743 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867218291380.json
+2019-03-15 16:34:37,743 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867220129229.json
+2019-03-15 16:34:37,743 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867223279954.json
+2019-03-15 16:34:37,759 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867226328088.json
+2019-03-15 16:34:37,759 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867228000619.json
+2019-03-15 16:34:37,759 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867232520790.json
+2019-03-15 16:34:37,759 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867234722985.json
+2019-03-15 16:34:37,759 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867236527713.json
+2019-03-15 16:34:37,775 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867240200480.json
+2019-03-15 16:34:37,775 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867240993365.json
+2019-03-15 16:34:37,775 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867247040974.json
+2019-03-15 16:34:37,775 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867246843412.json
+2019-03-15 16:34:37,775 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867251792123.json
+2019-03-15 16:34:37,775 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867252028669.json
+2019-03-15 16:34:37,790 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867256110336.json
+2019-03-15 16:34:37,790 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867256223480.json
+2019-03-15 16:34:37,790 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867260602369.json
+2019-03-15 16:34:37,790 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867265669498.json
+2019-03-15 16:34:37,806 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867261921692.json
+2019-03-15 16:34:37,806 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867271404644.json
+2019-03-15 16:34:37,806 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867275655734.json
+2019-03-15 16:34:37,806 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867281234941.json
+2019-03-15 16:34:37,806 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867283163950.json
+2019-03-15 16:34:37,806 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867286395282.json
+2019-03-15 16:34:37,822 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867290503330.json
+2019-03-15 16:34:37,822 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867293123511.json
+2019-03-15 16:34:37,822 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867294926773.json
+2019-03-15 16:34:37,822 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867299645092.json
+2019-03-15 16:34:37,837 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867302966998.json
+2019-03-15 16:34:37,837 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867307286384.json
+2019-03-15 16:34:37,837 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867313083084.json
+2019-03-15 16:34:37,837 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867310075987.json
+2019-03-15 16:34:37,837 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867316471235.json
+2019-03-15 16:34:37,853 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867317757729.json
+2019-03-15 16:34:37,853 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867321375977.json
+2019-03-15 16:34:37,853 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867325872993.json
+2019-03-15 16:34:37,853 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867330350662.json
+2019-03-15 16:34:37,853 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867322515034.json
+2019-03-15 16:34:37,868 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867336160553.json
+2019-03-15 16:34:37,868 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867339914515.json
+2019-03-15 16:34:37,868 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867343817380.json
+2019-03-15 16:34:37,868 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867348516354.json
+2019-03-15 16:34:37,868 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867348554166.json
+2019-03-15 16:34:37,884 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867353043267.json
+2019-03-15 16:34:37,884 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867353376835.json
+2019-03-15 16:34:37,884 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867357821969.json
+2019-03-15 16:34:37,884 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867357794709.json
+2019-03-15 16:34:37,884 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867362982604.json
+2019-03-15 16:34:37,884 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867363610462.json
+2019-03-15 16:34:37,900 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867374619972.json
+2019-03-15 16:34:37,900 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867380015101.json
+2019-03-15 16:34:37,915 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867384162134.json
+2019-03-15 16:34:37,915 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867387929579.json
+2019-03-15 16:34:37,931 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867391870549.json
+2019-03-15 16:34:37,931 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867393670000.json
+2019-03-15 16:34:37,931 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867404920160.json
+2019-03-15 16:34:37,931 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867408920927.json
+2019-03-15 16:34:37,962 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867414475805.json
+2019-03-15 16:34:37,962 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867439847215.json
+2019-03-15 16:34:37,978 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867443407132.json
+2019-03-15 16:34:37,978 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867416483077.json
+2019-03-15 16:34:37,978 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867447750261.json
+2019-03-15 16:34:37,978 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867453247688.json
+2019-03-15 16:34:37,978 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867456882350.json
+2019-03-15 16:34:37,993 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867468421817.json
+2019-03-15 16:34:37,993 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867473510638.json
+2019-03-15 16:34:38,009 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867477859336.json
+2019-03-15 16:34:38,009 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867483186461.json
+2019-03-15 16:34:38,009 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867486999926.json
+2019-03-15 16:34:38,025 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867491466750.json
+2019-03-15 16:34:38,040 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867510923333.json
+2019-03-15 16:34:38,040 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867516844022.json
+2019-03-15 16:34:38,056 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867520810787.json
+2019-03-15 16:34:38,056 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867526096583.json
+2019-03-15 16:34:38,056 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867531970960.json
+2019-03-15 16:34:38,056 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867536407300.json
+2019-03-15 16:34:38,072 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867540759808.json
+2019-03-15 16:34:38,087 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867499264860.json
+2019-03-15 16:34:38,087 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867565934536.json
+2019-03-15 16:34:38,103 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867569534317.json
+2019-03-15 16:34:38,103 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867571493224.json
+2019-03-15 16:34:38,103 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867575422470.json
+2019-03-15 16:34:38,103 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867580027060.json
+2019-03-15 16:34:38,118 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867584091727.json
+2019-03-15 16:34:38,118 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867575252169.json
+2019-03-15 16:34:38,118 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867588305883.json
+2019-03-15 16:34:38,118 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867592682427.json
+2019-03-15 16:34:38,118 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867596977778.json
+2019-03-15 16:34:38,134 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867597194099.json
+2019-03-15 16:34:38,134 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867604233326.json
+2019-03-15 16:34:38,134 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867604415059.json
+2019-03-15 16:34:38,134 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867609227763.json
+2019-03-15 16:34:38,134 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867609281990.json
+2019-03-15 16:34:38,134 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867613799523.json
+2019-03-15 16:34:38,134 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867613855509.json
+2019-03-15 16:34:38,150 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867618441925.json
+2019-03-15 16:34:38,150 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867619551670.json
+2019-03-15 16:34:38,150 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867622606838.json
+2019-03-15 16:34:38,150 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867623867831.json
+2019-03-15 16:34:38,150 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867627913445.json
+2019-03-15 16:34:38,165 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867633437546.json
+2019-03-15 16:34:38,165 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867644517697.json
+2019-03-15 16:34:38,181 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867649754249.json
+2019-03-15 16:34:38,181 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867653764689.json
+2019-03-15 16:34:38,181 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867654063376.json
+2019-03-15 16:34:38,181 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867657524220.json
+2019-03-15 16:34:38,181 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867658160872.json
+2019-03-15 16:34:38,197 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867662432187.json
+2019-03-15 16:34:38,197 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867663150912.json
+2019-03-15 16:34:38,197 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867666757728.json
+2019-03-15 16:34:38,197 [batch-job-batchBatch-work-manager.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867667798590.json
+2019-03-15 16:34:38,197 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867671175895.json
+2019-03-15 16:34:38,197 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867674643773.json
+2019-03-15 16:34:38,212 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867678236520.json
+2019-03-15 16:34:38,212 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867683313909.json
+2019-03-15 16:34:38,212 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867687379748.json
+2019-03-15 16:34:38,243 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867706892902.json
+2019-03-15 16:34:38,243 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867716994333.json
+2019-03-15 16:34:38,259 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867727599926.json
+2019-03-15 16:34:38,259 [batch-job-batchBatch-work-manager.08] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\jsonresult\278867732235880.json
+2019-03-15 16:34:38,275 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.module.batch.DefaultBatchStep - Step Batch_Step2 finished processing all records for instance 1d36b9e0-4712-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:34:38,306 [batch-job-batchBatch-work-manager.08] INFO  com.mulesoft.module.batch.DefaultBatchStep - Step Batch_Step3 finished processing all records for instance 1d36b9e0-4712-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:34:38,322 [pool-16-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance 1d36b9e0-4712-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:34:38,353 [pool-16-thread-1] INFO  org.mule.api.processor.LoggerMessageProcessor - 1d36b9e0-4712-11e9-a81a-c4346b5d8661 is successfull. No of failures: 0 No Of successfull : 220
+2019-03-15 16:34:38,353 [pool-16-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance 1d36b9e0-4712-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:34:38,368 [pool-16-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+
+2019-03-15 16:34:38,415 [pool-16-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution for instance '1d36b9e0-4712-11e9-a81a-c4346b5d8661' of job 'batchBatch'. Total Records processed: 220. Successful records: 220. Failed Records: 0
+2019-03-15 16:35:33,181 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance 40ae50e2-4712-11e9-a81a-c4346b5d8661 for batch job batchBatch
+2019-03-15 16:35:33,181 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2019-03-15 16:35:33,181 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2019-03-15 16:35:33,189 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance '40ae50e2-4712-11e9-a81a-c4346b5d8661' of job 'batchBatch'
+2019-03-15 16:35:33,189 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance 40ae50e2-4712-11e9-a81a-c4346b5d8661 of job batchBatch. 0 records were loaded
+2019-03-15 16:35:33,189 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Instance '40ae50e2-4712-11e9-a81a-c4346b5d8661' of job 'batchBatch' has no records to process. It's execution will be finished now
+2019-03-15 16:35:33,189 [pool-17-thread-1] INFO  org.mule.transport.polling.watermark.Watermark - Watermark value will not be updated since poll processor returned no results
+2019-03-15 16:35:33,204 [pool-16-thread-2] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance 40ae50e2-4712-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:35:33,204 [pool-16-thread-2] INFO  org.mule.api.processor.LoggerMessageProcessor - 40ae50e2-4712-11e9-a81a-c4346b5d8661 is successfull. No of failures: 0 No Of successfull : 0
+2019-03-15 16:35:33,204 [pool-16-thread-2] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance 40ae50e2-4712-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:35:33,204 [pool-16-thread-2] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+
+2019-03-15 16:35:33,236 [pool-16-thread-2] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution for instance '40ae50e2-4712-11e9-a81a-c4346b5d8661' of job 'batchBatch'. Total Records processed: 0. Successful records: 0. Failed Records: 0
+2019-03-15 16:36:33,173 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance 6472a852-4712-11e9-a81a-c4346b5d8661 for batch job batchBatch
+2019-03-15 16:36:33,173 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2019-03-15 16:36:33,173 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2019-03-15 16:36:33,186 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance '6472a852-4712-11e9-a81a-c4346b5d8661' of job 'batchBatch'
+2019-03-15 16:36:33,186 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance 6472a852-4712-11e9-a81a-c4346b5d8661 of job batchBatch. 0 records were loaded
+2019-03-15 16:36:33,186 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Instance '6472a852-4712-11e9-a81a-c4346b5d8661' of job 'batchBatch' has no records to process. It's execution will be finished now
+2019-03-15 16:36:33,186 [pool-17-thread-1] INFO  org.mule.transport.polling.watermark.Watermark - Watermark value will not be updated since poll processor returned no results
+2019-03-15 16:36:33,186 [pool-16-thread-3] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance 6472a852-4712-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:36:33,202 [pool-16-thread-3] INFO  org.mule.api.processor.LoggerMessageProcessor - 6472a852-4712-11e9-a81a-c4346b5d8661 is successfull. No of failures: 0 No Of successfull : 0
+2019-03-15 16:36:33,202 [pool-16-thread-3] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance 6472a852-4712-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:36:33,202 [pool-16-thread-3] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+
+2019-03-15 16:36:33,233 [pool-16-thread-3] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution for instance '6472a852-4712-11e9-a81a-c4346b5d8661' of job 'batchBatch'. Total Records processed: 0. Successful records: 0. Failed Records: 0
+2019-03-15 16:37:33,149 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance 882fd3d2-4712-11e9-a81a-c4346b5d8661 for batch job batchBatch
+2019-03-15 16:37:33,149 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2019-03-15 16:37:33,149 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2019-03-15 16:37:33,156 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance '882fd3d2-4712-11e9-a81a-c4346b5d8661' of job 'batchBatch'
+2019-03-15 16:37:33,156 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance 882fd3d2-4712-11e9-a81a-c4346b5d8661 of job batchBatch. 0 records were loaded
+2019-03-15 16:37:33,156 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Instance '882fd3d2-4712-11e9-a81a-c4346b5d8661' of job 'batchBatch' has no records to process. It's execution will be finished now
+2019-03-15 16:37:33,171 [pool-17-thread-1] INFO  org.mule.transport.polling.watermark.Watermark - Watermark value will not be updated since poll processor returned no results
+2019-03-15 16:37:33,171 [pool-16-thread-4] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance 882fd3d2-4712-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:37:33,171 [pool-16-thread-4] INFO  org.mule.api.processor.LoggerMessageProcessor - 882fd3d2-4712-11e9-a81a-c4346b5d8661 is successfull. No of failures: 0 No Of successfull : 0
+2019-03-15 16:37:33,171 [pool-16-thread-4] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance 882fd3d2-4712-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:37:33,171 [pool-16-thread-4] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+
+2019-03-15 16:37:33,202 [pool-16-thread-4] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution for instance '882fd3d2-4712-11e9-a81a-c4346b5d8661' of job 'batchBatch'. Total Records processed: 0. Successful records: 0. Failed Records: 0
+2019-03-15 16:38:33,176 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance abf75f92-4712-11e9-a81a-c4346b5d8661 for batch job batchBatch
+2019-03-15 16:38:33,176 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2019-03-15 16:38:33,176 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2019-03-15 16:38:33,182 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance 'abf75f92-4712-11e9-a81a-c4346b5d8661' of job 'batchBatch'
+2019-03-15 16:38:33,182 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance abf75f92-4712-11e9-a81a-c4346b5d8661 of job batchBatch. 0 records were loaded
+2019-03-15 16:38:33,182 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Instance 'abf75f92-4712-11e9-a81a-c4346b5d8661' of job 'batchBatch' has no records to process. It's execution will be finished now
+2019-03-15 16:38:33,182 [pool-17-thread-1] INFO  org.mule.transport.polling.watermark.Watermark - Watermark value will not be updated since poll processor returned no results
+2019-03-15 16:38:33,198 [pool-16-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance abf75f92-4712-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:38:33,198 [pool-16-thread-1] INFO  org.mule.api.processor.LoggerMessageProcessor - abf75f92-4712-11e9-a81a-c4346b5d8661 is successfull. No of failures: 0 No Of successfull : 0
+2019-03-15 16:38:33,198 [pool-16-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance abf75f92-4712-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:38:33,198 [pool-16-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+
+2019-03-15 16:38:33,198 [pool-16-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution for instance 'abf75f92-4712-11e9-a81a-c4346b5d8661' of job 'batchBatch'. Total Records processed: 0. Successful records: 0. Failed Records: 0
+2019-03-15 16:39:33,186 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance cfbc2c32-4712-11e9-a81a-c4346b5d8661 for batch job batchBatch
+2019-03-15 16:39:33,186 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2019-03-15 16:39:33,186 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2019-03-15 16:39:33,190 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance 'cfbc2c32-4712-11e9-a81a-c4346b5d8661' of job 'batchBatch'
+2019-03-15 16:39:33,190 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance cfbc2c32-4712-11e9-a81a-c4346b5d8661 of job batchBatch. 0 records were loaded
+2019-03-15 16:39:33,190 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Instance 'cfbc2c32-4712-11e9-a81a-c4346b5d8661' of job 'batchBatch' has no records to process. It's execution will be finished now
+2019-03-15 16:39:33,205 [pool-17-thread-1] INFO  org.mule.transport.polling.watermark.Watermark - Watermark value will not be updated since poll processor returned no results
+2019-03-15 16:39:33,205 [pool-16-thread-2] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance cfbc2c32-4712-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:39:33,205 [pool-16-thread-2] INFO  org.mule.api.processor.LoggerMessageProcessor - cfbc2c32-4712-11e9-a81a-c4346b5d8661 is successfull. No of failures: 0 No Of successfull : 0
+2019-03-15 16:39:33,205 [pool-16-thread-2] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance cfbc2c32-4712-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:39:33,205 [pool-16-thread-2] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+
+2019-03-15 16:39:33,205 [pool-16-thread-2] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution for instance 'cfbc2c32-4712-11e9-a81a-c4346b5d8661' of job 'batchBatch'. Total Records processed: 0. Successful records: 0. Failed Records: 0
+2019-03-15 16:40:33,156 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance f37ade52-4712-11e9-a81a-c4346b5d8661 for batch job batchBatch
+2019-03-15 16:40:33,156 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2019-03-15 16:40:33,156 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2019-03-15 16:40:33,162 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance 'f37ade52-4712-11e9-a81a-c4346b5d8661' of job 'batchBatch'
+2019-03-15 16:40:33,162 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance f37ade52-4712-11e9-a81a-c4346b5d8661 of job batchBatch. 0 records were loaded
+2019-03-15 16:40:33,162 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Instance 'f37ade52-4712-11e9-a81a-c4346b5d8661' of job 'batchBatch' has no records to process. It's execution will be finished now
+2019-03-15 16:40:33,162 [pool-16-thread-3] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance f37ade52-4712-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:40:33,162 [pool-17-thread-1] INFO  org.mule.transport.polling.watermark.Watermark - Watermark value will not be updated since poll processor returned no results
+2019-03-15 16:40:33,177 [pool-16-thread-3] INFO  org.mule.api.processor.LoggerMessageProcessor - f37ade52-4712-11e9-a81a-c4346b5d8661 is successfull. No of failures: 0 No Of successfull : 0
+2019-03-15 16:40:33,177 [pool-16-thread-3] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance f37ade52-4712-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:40:33,177 [pool-16-thread-3] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+
+2019-03-15 16:40:33,177 [pool-16-thread-3] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution for instance 'f37ade52-4712-11e9-a81a-c4346b5d8661' of job 'batchBatch'. Total Records processed: 0. Successful records: 0. Failed Records: 0
+2019-03-15 16:41:33,121 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance 173b1712-4713-11e9-a81a-c4346b5d8661 for batch job batchBatch
+2019-03-15 16:41:33,121 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2019-03-15 16:41:33,121 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2019-03-15 16:41:33,140 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance '173b1712-4713-11e9-a81a-c4346b5d8661' of job 'batchBatch'
+2019-03-15 16:41:33,140 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance 173b1712-4713-11e9-a81a-c4346b5d8661 of job batchBatch. 0 records were loaded
+2019-03-15 16:41:33,140 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Instance '173b1712-4713-11e9-a81a-c4346b5d8661' of job 'batchBatch' has no records to process. It's execution will be finished now
+2019-03-15 16:41:33,140 [pool-17-thread-1] INFO  org.mule.transport.polling.watermark.Watermark - Watermark value will not be updated since poll processor returned no results
+2019-03-15 16:41:33,140 [pool-16-thread-4] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance 173b1712-4713-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:41:33,140 [pool-16-thread-4] INFO  org.mule.api.processor.LoggerMessageProcessor - 173b1712-4713-11e9-a81a-c4346b5d8661 is successfull. No of failures: 0 No Of successfull : 0
+2019-03-15 16:41:33,140 [pool-16-thread-4] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance 173b1712-4713-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:41:33,140 [pool-16-thread-4] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+
+2019-03-15 16:41:33,155 [pool-16-thread-4] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution for instance '173b1712-4713-11e9-a81a-c4346b5d8661' of job 'batchBatch'. Total Records processed: 0. Successful records: 0. Failed Records: 0
+2019-03-15 16:42:33,205 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance 3b0b2e52-4713-11e9-a81a-c4346b5d8661 for batch job batchBatch
+2019-03-15 16:42:33,205 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2019-03-15 16:42:33,205 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2019-03-15 16:42:33,219 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance '3b0b2e52-4713-11e9-a81a-c4346b5d8661' of job 'batchBatch'
+2019-03-15 16:42:33,219 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance 3b0b2e52-4713-11e9-a81a-c4346b5d8661 of job batchBatch. 0 records were loaded
+2019-03-15 16:42:33,219 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Instance '3b0b2e52-4713-11e9-a81a-c4346b5d8661' of job 'batchBatch' has no records to process. It's execution will be finished now
+2019-03-15 16:42:33,234 [pool-16-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance 3b0b2e52-4713-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:42:33,234 [pool-17-thread-1] INFO  org.mule.transport.polling.watermark.Watermark - Watermark value will not be updated since poll processor returned no results
+2019-03-15 16:42:33,234 [pool-16-thread-1] INFO  org.mule.api.processor.LoggerMessageProcessor - 3b0b2e52-4713-11e9-a81a-c4346b5d8661 is successfull. No of failures: 0 No Of successfull : 0
+2019-03-15 16:42:33,234 [pool-16-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance 3b0b2e52-4713-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:42:33,234 [pool-16-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+
+2019-03-15 16:42:33,234 [pool-16-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution for instance '3b0b2e52-4713-11e9-a81a-c4346b5d8661' of job 'batchBatch'. Total Records processed: 0. Successful records: 0. Failed Records: 0
+2019-03-15 16:43:33,204 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance 5ecbdc42-4713-11e9-a81a-c4346b5d8661 for batch job batchBatch
+2019-03-15 16:43:33,204 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2019-03-15 16:43:33,204 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2019-03-15 16:43:33,211 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance '5ecbdc42-4713-11e9-a81a-c4346b5d8661' of job 'batchBatch'
+2019-03-15 16:43:33,211 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance 5ecbdc42-4713-11e9-a81a-c4346b5d8661 of job batchBatch. 0 records were loaded
+2019-03-15 16:43:33,211 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Instance '5ecbdc42-4713-11e9-a81a-c4346b5d8661' of job 'batchBatch' has no records to process. It's execution will be finished now
+2019-03-15 16:43:33,242 [pool-16-thread-2] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance 5ecbdc42-4713-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:43:33,242 [pool-17-thread-1] INFO  org.mule.transport.polling.watermark.Watermark - Watermark value will not be updated since poll processor returned no results
+2019-03-15 16:43:33,242 [pool-16-thread-2] INFO  org.mule.api.processor.LoggerMessageProcessor - 5ecbdc42-4713-11e9-a81a-c4346b5d8661 is successfull. No of failures: 0 No Of successfull : 0
+2019-03-15 16:43:33,242 [pool-16-thread-2] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance 5ecbdc42-4713-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:43:33,242 [pool-16-thread-2] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+
+2019-03-15 16:43:33,242 [pool-16-thread-2] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution for instance '5ecbdc42-4713-11e9-a81a-c4346b5d8661' of job 'batchBatch'. Total Records processed: 0. Successful records: 0. Failed Records: 0
+2019-03-15 16:44:33,168 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance 8289a402-4713-11e9-a81a-c4346b5d8661 for batch job batchBatch
+2019-03-15 16:44:33,168 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2019-03-15 16:44:33,168 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2019-03-15 16:44:33,172 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance '8289a402-4713-11e9-a81a-c4346b5d8661' of job 'batchBatch'
+2019-03-15 16:44:33,172 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance 8289a402-4713-11e9-a81a-c4346b5d8661 of job batchBatch. 0 records were loaded
+2019-03-15 16:44:33,172 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Instance '8289a402-4713-11e9-a81a-c4346b5d8661' of job 'batchBatch' has no records to process. It's execution will be finished now
+2019-03-15 16:44:33,188 [pool-16-thread-3] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance 8289a402-4713-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:44:33,188 [pool-17-thread-1] INFO  org.mule.transport.polling.watermark.Watermark - Watermark value will not be updated since poll processor returned no results
+2019-03-15 16:44:33,188 [pool-16-thread-3] INFO  org.mule.api.processor.LoggerMessageProcessor - 8289a402-4713-11e9-a81a-c4346b5d8661 is successfull. No of failures: 0 No Of successfull : 0
+2019-03-15 16:44:33,188 [pool-16-thread-3] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance 8289a402-4713-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:44:33,188 [pool-16-thread-3] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+
+2019-03-15 16:44:33,203 [pool-16-thread-3] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution for instance '8289a402-4713-11e9-a81a-c4346b5d8661' of job 'batchBatch'. Total Records processed: 0. Successful records: 0. Failed Records: 0
+2019-03-15 16:45:33,176 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance a6509382-4713-11e9-a81a-c4346b5d8661 for batch job batchBatch
+2019-03-15 16:45:33,176 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2019-03-15 16:45:33,176 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2019-03-15 16:45:33,204 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance 'a6509382-4713-11e9-a81a-c4346b5d8661' of job 'batchBatch'
+2019-03-15 16:45:33,204 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance a6509382-4713-11e9-a81a-c4346b5d8661 of job batchBatch. 0 records were loaded
+2019-03-15 16:45:33,204 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Instance 'a6509382-4713-11e9-a81a-c4346b5d8661' of job 'batchBatch' has no records to process. It's execution will be finished now
+2019-03-15 16:45:33,206 [pool-16-thread-4] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance a6509382-4713-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:45:33,206 [pool-17-thread-1] INFO  org.mule.transport.polling.watermark.Watermark - Watermark value will not be updated since poll processor returned no results
+2019-03-15 16:45:33,206 [pool-16-thread-4] INFO  org.mule.api.processor.LoggerMessageProcessor - a6509382-4713-11e9-a81a-c4346b5d8661 is successfull. No of failures: 0 No Of successfull : 0
+2019-03-15 16:45:33,206 [pool-16-thread-4] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance a6509382-4713-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:45:33,206 [pool-16-thread-4] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+
+2019-03-15 16:45:33,206 [pool-16-thread-4] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution for instance 'a6509382-4713-11e9-a81a-c4346b5d8661' of job 'batchBatch'. Total Records processed: 0. Successful records: 0. Failed Records: 0
+2019-03-15 16:46:33,127 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance ca0c5f72-4713-11e9-a81a-c4346b5d8661 for batch job batchBatch
+2019-03-15 16:46:33,127 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2019-03-15 16:46:33,127 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2019-03-15 16:46:33,138 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance 'ca0c5f72-4713-11e9-a81a-c4346b5d8661' of job 'batchBatch'
+2019-03-15 16:46:33,138 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance ca0c5f72-4713-11e9-a81a-c4346b5d8661 of job batchBatch. 0 records were loaded
+2019-03-15 16:46:33,138 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Instance 'ca0c5f72-4713-11e9-a81a-c4346b5d8661' of job 'batchBatch' has no records to process. It's execution will be finished now
+2019-03-15 16:46:33,154 [pool-17-thread-1] INFO  org.mule.transport.polling.watermark.Watermark - Watermark value will not be updated since poll processor returned no results
+2019-03-15 16:46:33,154 [pool-16-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance ca0c5f72-4713-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:46:33,154 [pool-16-thread-1] INFO  org.mule.api.processor.LoggerMessageProcessor - ca0c5f72-4713-11e9-a81a-c4346b5d8661 is successfull. No of failures: 0 No Of successfull : 0
+2019-03-15 16:46:33,154 [pool-16-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance ca0c5f72-4713-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:46:33,154 [pool-16-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+
+2019-03-15 16:46:33,154 [pool-16-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution for instance 'ca0c5f72-4713-11e9-a81a-c4346b5d8661' of job 'batchBatch'. Total Records processed: 0. Successful records: 0. Failed Records: 0
+2019-03-15 16:47:33,203 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance eddb3e32-4713-11e9-a81a-c4346b5d8661 for batch job batchBatch
+2019-03-15 16:47:33,203 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2019-03-15 16:47:33,203 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2019-03-15 16:47:33,221 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance 'eddb3e32-4713-11e9-a81a-c4346b5d8661' of job 'batchBatch'
+2019-03-15 16:47:33,221 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance eddb3e32-4713-11e9-a81a-c4346b5d8661 of job batchBatch. 0 records were loaded
+2019-03-15 16:47:33,221 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Instance 'eddb3e32-4713-11e9-a81a-c4346b5d8661' of job 'batchBatch' has no records to process. It's execution will be finished now
+2019-03-15 16:47:33,252 [pool-17-thread-1] INFO  org.mule.transport.polling.watermark.Watermark - Watermark value will not be updated since poll processor returned no results
+2019-03-15 16:47:33,252 [pool-16-thread-2] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance eddb3e32-4713-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:47:33,252 [pool-16-thread-2] INFO  org.mule.api.processor.LoggerMessageProcessor - eddb3e32-4713-11e9-a81a-c4346b5d8661 is successfull. No of failures: 0 No Of successfull : 0
+2019-03-15 16:47:33,252 [pool-16-thread-2] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance eddb3e32-4713-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:47:33,252 [pool-16-thread-2] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+
+2019-03-15 16:47:33,252 [pool-16-thread-2] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution for instance 'eddb3e32-4713-11e9-a81a-c4346b5d8661' of job 'batchBatch'. Total Records processed: 0. Successful records: 0. Failed Records: 0
+2019-03-15 16:48:33,206 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance 119ef962-4714-11e9-a81a-c4346b5d8661 for batch job batchBatch
+2019-03-15 16:48:33,206 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2019-03-15 16:48:33,206 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2019-03-15 16:48:33,238 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance '119ef962-4714-11e9-a81a-c4346b5d8661' of job 'batchBatch'
+2019-03-15 16:48:33,238 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance 119ef962-4714-11e9-a81a-c4346b5d8661 of job batchBatch. 0 records were loaded
+2019-03-15 16:48:33,238 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Instance '119ef962-4714-11e9-a81a-c4346b5d8661' of job 'batchBatch' has no records to process. It's execution will be finished now
+2019-03-15 16:48:33,239 [pool-16-thread-3] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance 119ef962-4714-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:48:33,239 [pool-17-thread-1] INFO  org.mule.transport.polling.watermark.Watermark - Watermark value will not be updated since poll processor returned no results
+2019-03-15 16:48:33,239 [pool-16-thread-3] INFO  org.mule.api.processor.LoggerMessageProcessor - 119ef962-4714-11e9-a81a-c4346b5d8661 is successfull. No of failures: 0 No Of successfull : 0
+2019-03-15 16:48:33,239 [pool-16-thread-3] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance 119ef962-4714-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:48:33,239 [pool-16-thread-3] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+
+2019-03-15 16:48:33,255 [pool-16-thread-3] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution for instance '119ef962-4714-11e9-a81a-c4346b5d8661' of job 'batchBatch'. Total Records processed: 0. Successful records: 0. Failed Records: 0
+2019-03-15 16:49:33,174 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance 355d5d62-4714-11e9-a81a-c4346b5d8661 for batch job batchBatch
+2019-03-15 16:49:33,174 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2019-03-15 16:49:33,174 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2019-03-15 16:49:33,190 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance '355d5d62-4714-11e9-a81a-c4346b5d8661' of job 'batchBatch'
+2019-03-15 16:49:33,190 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance 355d5d62-4714-11e9-a81a-c4346b5d8661 of job batchBatch. 0 records were loaded
+2019-03-15 16:49:33,190 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Instance '355d5d62-4714-11e9-a81a-c4346b5d8661' of job 'batchBatch' has no records to process. It's execution will be finished now
+2019-03-15 16:49:33,205 [pool-16-thread-4] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance 355d5d62-4714-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:49:33,205 [pool-17-thread-1] INFO  org.mule.transport.polling.watermark.Watermark - Watermark value will not be updated since poll processor returned no results
+2019-03-15 16:49:33,205 [pool-16-thread-4] INFO  org.mule.api.processor.LoggerMessageProcessor - 355d5d62-4714-11e9-a81a-c4346b5d8661 is successfull. No of failures: 0 No Of successfull : 0
+2019-03-15 16:49:33,205 [pool-16-thread-4] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance 355d5d62-4714-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:49:33,205 [pool-16-thread-4] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+
+2019-03-15 16:49:33,205 [pool-16-thread-4] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution for instance '355d5d62-4714-11e9-a81a-c4346b5d8661' of job 'batchBatch'. Total Records processed: 0. Successful records: 0. Failed Records: 0
+2019-03-15 16:50:33,214 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance 59244ce2-4714-11e9-a81a-c4346b5d8661 for batch job batchBatch
+2019-03-15 16:50:33,214 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2019-03-15 16:50:33,214 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2019-03-15 16:50:33,228 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance '59244ce2-4714-11e9-a81a-c4346b5d8661' of job 'batchBatch'
+2019-03-15 16:50:33,228 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance 59244ce2-4714-11e9-a81a-c4346b5d8661 of job batchBatch. 0 records were loaded
+2019-03-15 16:50:33,228 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Instance '59244ce2-4714-11e9-a81a-c4346b5d8661' of job 'batchBatch' has no records to process. It's execution will be finished now
+2019-03-15 16:50:33,244 [pool-16-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance 59244ce2-4714-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:50:33,244 [pool-17-thread-1] INFO  org.mule.transport.polling.watermark.Watermark - Watermark value will not be updated since poll processor returned no results
+2019-03-15 16:50:33,244 [pool-16-thread-1] INFO  org.mule.api.processor.LoggerMessageProcessor - 59244ce2-4714-11e9-a81a-c4346b5d8661 is successfull. No of failures: 0 No Of successfull : 0
+2019-03-15 16:50:33,244 [pool-16-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance 59244ce2-4714-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:50:33,244 [pool-16-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+
+2019-03-15 16:50:33,244 [pool-16-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution for instance '59244ce2-4714-11e9-a81a-c4346b5d8661' of job 'batchBatch'. Total Records processed: 0. Successful records: 0. Failed Records: 0
+2019-03-15 16:51:33,198 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance 7ce548f2-4714-11e9-a81a-c4346b5d8661 for batch job batchBatch
+2019-03-15 16:51:33,198 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2019-03-15 16:51:33,198 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2019-03-15 16:51:33,205 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance '7ce548f2-4714-11e9-a81a-c4346b5d8661' of job 'batchBatch'
+2019-03-15 16:51:33,205 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance 7ce548f2-4714-11e9-a81a-c4346b5d8661 of job batchBatch. 0 records were loaded
+2019-03-15 16:51:33,205 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Instance '7ce548f2-4714-11e9-a81a-c4346b5d8661' of job 'batchBatch' has no records to process. It's execution will be finished now
+2019-03-15 16:51:33,221 [pool-16-thread-2] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance 7ce548f2-4714-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:51:33,221 [pool-17-thread-1] INFO  org.mule.transport.polling.watermark.Watermark - Watermark value will not be updated since poll processor returned no results
+2019-03-15 16:51:33,221 [pool-16-thread-2] INFO  org.mule.api.processor.LoggerMessageProcessor - 7ce548f2-4714-11e9-a81a-c4346b5d8661 is successfull. No of failures: 0 No Of successfull : 0
+2019-03-15 16:51:33,221 [pool-16-thread-2] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance 7ce548f2-4714-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:51:33,221 [pool-16-thread-2] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+
+2019-03-15 16:51:33,252 [pool-16-thread-2] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution for instance '7ce548f2-4714-11e9-a81a-c4346b5d8661' of job 'batchBatch'. Total Records processed: 0. Successful records: 0. Failed Records: 0
+2019-03-15 16:52:33,212 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance a0aa8ac2-4714-11e9-a81a-c4346b5d8661 for batch job batchBatch
+2019-03-15 16:52:33,212 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2019-03-15 16:52:33,212 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2019-03-15 16:52:33,216 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance 'a0aa8ac2-4714-11e9-a81a-c4346b5d8661' of job 'batchBatch'
+2019-03-15 16:52:33,216 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance a0aa8ac2-4714-11e9-a81a-c4346b5d8661 of job batchBatch. 0 records were loaded
+2019-03-15 16:52:33,216 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Instance 'a0aa8ac2-4714-11e9-a81a-c4346b5d8661' of job 'batchBatch' has no records to process. It's execution will be finished now
+2019-03-15 16:52:33,232 [pool-17-thread-1] INFO  org.mule.transport.polling.watermark.Watermark - Watermark value will not be updated since poll processor returned no results
+2019-03-15 16:52:33,232 [pool-16-thread-3] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance a0aa8ac2-4714-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:52:33,232 [pool-16-thread-3] INFO  org.mule.api.processor.LoggerMessageProcessor - a0aa8ac2-4714-11e9-a81a-c4346b5d8661 is successfull. No of failures: 0 No Of successfull : 0
+2019-03-15 16:52:33,232 [pool-16-thread-3] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance a0aa8ac2-4714-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:52:33,232 [pool-16-thread-3] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+
+2019-03-15 16:52:33,263 [pool-16-thread-3] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution for instance 'a0aa8ac2-4714-11e9-a81a-c4346b5d8661' of job 'batchBatch'. Total Records processed: 0. Successful records: 0. Failed Records: 0
+2019-03-15 16:53:33,167 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance c46963f2-4714-11e9-a81a-c4346b5d8661 for batch job batchBatch
+2019-03-15 16:53:33,167 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2019-03-15 16:53:33,167 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2019-03-15 16:53:33,183 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance 'c46963f2-4714-11e9-a81a-c4346b5d8661' of job 'batchBatch'
+2019-03-15 16:53:33,183 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance c46963f2-4714-11e9-a81a-c4346b5d8661 of job batchBatch. 0 records were loaded
+2019-03-15 16:53:33,183 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Instance 'c46963f2-4714-11e9-a81a-c4346b5d8661' of job 'batchBatch' has no records to process. It's execution will be finished now
+2019-03-15 16:53:33,199 [pool-17-thread-1] INFO  org.mule.transport.polling.watermark.Watermark - Watermark value will not be updated since poll processor returned no results
+2019-03-15 16:53:33,199 [pool-16-thread-4] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance c46963f2-4714-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:53:33,199 [pool-16-thread-4] INFO  org.mule.api.processor.LoggerMessageProcessor - c46963f2-4714-11e9-a81a-c4346b5d8661 is successfull. No of failures: 0 No Of successfull : 0
+2019-03-15 16:53:33,199 [pool-16-thread-4] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance c46963f2-4714-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:53:33,199 [pool-16-thread-4] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+
+2019-03-15 16:53:33,215 [pool-16-thread-4] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution for instance 'c46963f2-4714-11e9-a81a-c4346b5d8661' of job 'batchBatch'. Total Records processed: 0. Successful records: 0. Failed Records: 0
+2019-03-15 16:54:33,150 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance e82a11e2-4714-11e9-a81a-c4346b5d8661 for batch job batchBatch
+2019-03-15 16:54:33,150 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2019-03-15 16:54:33,150 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2019-03-15 16:54:33,168 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance 'e82a11e2-4714-11e9-a81a-c4346b5d8661' of job 'batchBatch'
+2019-03-15 16:54:33,168 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance e82a11e2-4714-11e9-a81a-c4346b5d8661 of job batchBatch. 0 records were loaded
+2019-03-15 16:54:33,168 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Instance 'e82a11e2-4714-11e9-a81a-c4346b5d8661' of job 'batchBatch' has no records to process. It's execution will be finished now
+2019-03-15 16:54:33,184 [pool-16-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance e82a11e2-4714-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:54:33,184 [pool-17-thread-1] INFO  org.mule.transport.polling.watermark.Watermark - Watermark value will not be updated since poll processor returned no results
+2019-03-15 16:54:33,184 [pool-16-thread-1] INFO  org.mule.api.processor.LoggerMessageProcessor - e82a11e2-4714-11e9-a81a-c4346b5d8661 is successfull. No of failures: 0 No Of successfull : 0
+2019-03-15 16:54:33,184 [pool-16-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance e82a11e2-4714-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:54:33,184 [pool-16-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+
+2019-03-15 16:54:33,200 [pool-16-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution for instance 'e82a11e2-4714-11e9-a81a-c4346b5d8661' of job 'batchBatch'. Total Records processed: 0. Successful records: 0. Failed Records: 0
+2019-03-15 16:55:33,198 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance 0bf260f2-4715-11e9-a81a-c4346b5d8661 for batch job batchBatch
+2019-03-15 16:55:33,198 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2019-03-15 16:55:33,198 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2019-03-15 16:55:33,208 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance '0bf260f2-4715-11e9-a81a-c4346b5d8661' of job 'batchBatch'
+2019-03-15 16:55:33,208 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance 0bf260f2-4715-11e9-a81a-c4346b5d8661 of job batchBatch. 0 records were loaded
+2019-03-15 16:55:33,208 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Instance '0bf260f2-4715-11e9-a81a-c4346b5d8661' of job 'batchBatch' has no records to process. It's execution will be finished now
+2019-03-15 16:55:33,224 [pool-17-thread-1] INFO  org.mule.transport.polling.watermark.Watermark - Watermark value will not be updated since poll processor returned no results
+2019-03-15 16:55:33,224 [pool-16-thread-2] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance 0bf260f2-4715-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:55:33,224 [pool-16-thread-2] INFO  org.mule.api.processor.LoggerMessageProcessor - 0bf260f2-4715-11e9-a81a-c4346b5d8661 is successfull. No of failures: 0 No Of successfull : 0
+2019-03-15 16:55:33,224 [pool-16-thread-2] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance 0bf260f2-4715-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:55:33,224 [pool-16-thread-2] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+
+2019-03-15 16:55:33,240 [pool-16-thread-2] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution for instance '0bf260f2-4715-11e9-a81a-c4346b5d8661' of job 'batchBatch'. Total Records processed: 0. Successful records: 0. Failed Records: 0
+2019-03-15 16:56:33,247 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance 2fbf6af2-4715-11e9-a81a-c4346b5d8661 for batch job batchBatch
+2019-03-15 16:56:33,247 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2019-03-15 16:56:33,247 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2019-03-15 16:56:33,267 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance '2fbf6af2-4715-11e9-a81a-c4346b5d8661' of job 'batchBatch'
+2019-03-15 16:56:33,267 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance 2fbf6af2-4715-11e9-a81a-c4346b5d8661 of job batchBatch. 0 records were loaded
+2019-03-15 16:56:33,267 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Instance '2fbf6af2-4715-11e9-a81a-c4346b5d8661' of job 'batchBatch' has no records to process. It's execution will be finished now
+2019-03-15 16:56:33,267 [pool-16-thread-3] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance 2fbf6af2-4715-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:56:33,267 [pool-17-thread-1] INFO  org.mule.transport.polling.watermark.Watermark - Watermark value will not be updated since poll processor returned no results
+2019-03-15 16:56:33,267 [pool-16-thread-3] INFO  org.mule.api.processor.LoggerMessageProcessor - 2fbf6af2-4715-11e9-a81a-c4346b5d8661 is successfull. No of failures: 0 No Of successfull : 0
+2019-03-15 16:56:33,267 [pool-16-thread-3] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance 2fbf6af2-4715-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:56:33,267 [pool-16-thread-3] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+
+2019-03-15 16:56:33,283 [pool-16-thread-3] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution for instance '2fbf6af2-4715-11e9-a81a-c4346b5d8661' of job 'batchBatch'. Total Records processed: 0. Successful records: 0. Failed Records: 0
+2019-03-15 16:57:33,227 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance 537fa3b2-4715-11e9-a81a-c4346b5d8661 for batch job batchBatch
+2019-03-15 16:57:33,227 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2019-03-15 16:57:33,227 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2019-03-15 16:57:33,253 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance '537fa3b2-4715-11e9-a81a-c4346b5d8661' of job 'batchBatch'
+2019-03-15 16:57:33,253 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance 537fa3b2-4715-11e9-a81a-c4346b5d8661 of job batchBatch. 0 records were loaded
+2019-03-15 16:57:33,253 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Instance '537fa3b2-4715-11e9-a81a-c4346b5d8661' of job 'batchBatch' has no records to process. It's execution will be finished now
+2019-03-15 16:57:33,263 [pool-16-thread-4] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance 537fa3b2-4715-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:57:33,263 [pool-17-thread-1] INFO  org.mule.transport.polling.watermark.Watermark - Watermark value will not be updated since poll processor returned no results
+2019-03-15 16:57:33,264 [pool-16-thread-4] INFO  org.mule.api.processor.LoggerMessageProcessor - 537fa3b2-4715-11e9-a81a-c4346b5d8661 is successfull. No of failures: 0 No Of successfull : 0
+2019-03-15 16:57:33,264 [pool-16-thread-4] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance 537fa3b2-4715-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:57:33,264 [pool-16-thread-4] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+
+2019-03-15 16:57:33,269 [pool-16-thread-4] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution for instance '537fa3b2-4715-11e9-a81a-c4346b5d8661' of job 'batchBatch'. Total Records processed: 0. Successful records: 0. Failed Records: 0
+2019-03-15 16:58:33,217 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance 773f1922-4715-11e9-a81a-c4346b5d8661 for batch job batchBatch
+2019-03-15 16:58:33,217 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2019-03-15 16:58:33,217 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2019-03-15 16:58:33,230 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance '773f1922-4715-11e9-a81a-c4346b5d8661' of job 'batchBatch'
+2019-03-15 16:58:33,230 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance 773f1922-4715-11e9-a81a-c4346b5d8661 of job batchBatch. 0 records were loaded
+2019-03-15 16:58:33,230 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Instance '773f1922-4715-11e9-a81a-c4346b5d8661' of job 'batchBatch' has no records to process. It's execution will be finished now
+2019-03-15 16:58:33,246 [pool-17-thread-1] INFO  org.mule.transport.polling.watermark.Watermark - Watermark value will not be updated since poll processor returned no results
+2019-03-15 16:58:33,246 [pool-16-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance 773f1922-4715-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:58:33,246 [pool-16-thread-1] INFO  org.mule.api.processor.LoggerMessageProcessor - 773f1922-4715-11e9-a81a-c4346b5d8661 is successfull. No of failures: 0 No Of successfull : 0
+2019-03-15 16:58:33,246 [pool-16-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance 773f1922-4715-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:58:33,246 [pool-16-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+
+2019-03-15 16:58:33,261 [pool-16-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution for instance '773f1922-4715-11e9-a81a-c4346b5d8661' of job 'batchBatch'. Total Records processed: 0. Successful records: 0. Failed Records: 0
+2019-03-15 16:59:33,194 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance 9afeb5a2-4715-11e9-a81a-c4346b5d8661 for batch job batchBatch
+2019-03-15 16:59:33,194 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2019-03-15 16:59:33,194 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2019-03-15 16:59:33,204 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance '9afeb5a2-4715-11e9-a81a-c4346b5d8661' of job 'batchBatch'
+2019-03-15 16:59:33,204 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance 9afeb5a2-4715-11e9-a81a-c4346b5d8661 of job batchBatch. 0 records were loaded
+2019-03-15 16:59:33,204 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Instance '9afeb5a2-4715-11e9-a81a-c4346b5d8661' of job 'batchBatch' has no records to process. It's execution will be finished now
+2019-03-15 16:59:33,220 [pool-17-thread-1] INFO  org.mule.transport.polling.watermark.Watermark - Watermark value will not be updated since poll processor returned no results
+2019-03-15 16:59:33,220 [pool-16-thread-2] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance 9afeb5a2-4715-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:59:33,220 [pool-16-thread-2] INFO  org.mule.api.processor.LoggerMessageProcessor - 9afeb5a2-4715-11e9-a81a-c4346b5d8661 is successfull. No of failures: 0 No Of successfull : 0
+2019-03-15 16:59:33,220 [pool-16-thread-2] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance 9afeb5a2-4715-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 16:59:33,220 [pool-16-thread-2] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+
+2019-03-15 16:59:33,235 [pool-16-thread-2] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution for instance '9afeb5a2-4715-11e9-a81a-c4346b5d8661' of job 'batchBatch'. Total Records processed: 0. Successful records: 0. Failed Records: 0
+2019-03-15 17:00:33,742 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance bf180ae2-4715-11e9-a81a-c4346b5d8661 for batch job batchBatch
+2019-03-15 17:00:33,742 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2019-03-15 17:00:33,742 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2019-03-15 17:00:33,756 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance 'bf180ae2-4715-11e9-a81a-c4346b5d8661' of job 'batchBatch'
+2019-03-15 17:00:33,756 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance bf180ae2-4715-11e9-a81a-c4346b5d8661 of job batchBatch. 0 records were loaded
+2019-03-15 17:00:33,756 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Instance 'bf180ae2-4715-11e9-a81a-c4346b5d8661' of job 'batchBatch' has no records to process. It's execution will be finished now
+2019-03-15 17:00:33,756 [pool-16-thread-3] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance bf180ae2-4715-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 17:00:33,756 [pool-17-thread-1] INFO  org.mule.transport.polling.watermark.Watermark - Watermark value will not be updated since poll processor returned no results
+2019-03-15 17:00:33,772 [pool-16-thread-3] INFO  org.mule.api.processor.LoggerMessageProcessor - bf180ae2-4715-11e9-a81a-c4346b5d8661 is successfull. No of failures: 0 No Of successfull : 0
+2019-03-15 17:00:33,772 [pool-16-thread-3] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance bf180ae2-4715-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 17:00:33,772 [pool-16-thread-3] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+
+2019-03-15 17:00:33,772 [pool-16-thread-3] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution for instance 'bf180ae2-4715-11e9-a81a-c4346b5d8661' of job 'batchBatch'. Total Records processed: 0. Successful records: 0. Failed Records: 0
+2019-03-15 17:01:33,188 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance e286c842-4715-11e9-a81a-c4346b5d8661 for batch job batchBatch
+2019-03-15 17:01:33,188 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2019-03-15 17:01:33,188 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2019-03-15 17:01:33,207 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance 'e286c842-4715-11e9-a81a-c4346b5d8661' of job 'batchBatch'
+2019-03-15 17:01:33,207 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance e286c842-4715-11e9-a81a-c4346b5d8661 of job batchBatch. 0 records were loaded
+2019-03-15 17:01:33,207 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Instance 'e286c842-4715-11e9-a81a-c4346b5d8661' of job 'batchBatch' has no records to process. It's execution will be finished now
+2019-03-15 17:01:33,222 [pool-17-thread-1] INFO  org.mule.transport.polling.watermark.Watermark - Watermark value will not be updated since poll processor returned no results
+2019-03-15 17:01:33,238 [pool-16-thread-4] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance e286c842-4715-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 17:01:33,238 [pool-16-thread-4] INFO  org.mule.api.processor.LoggerMessageProcessor - e286c842-4715-11e9-a81a-c4346b5d8661 is successfull. No of failures: 0 No Of successfull : 0
+2019-03-15 17:01:33,238 [pool-16-thread-4] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance e286c842-4715-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 17:01:33,238 [pool-16-thread-4] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+
+2019-03-15 17:01:33,238 [pool-16-thread-4] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution for instance 'e286c842-4715-11e9-a81a-c4346b5d8661' of job 'batchBatch'. Total Records processed: 0. Successful records: 0. Failed Records: 0
+2019-03-15 17:02:33,183 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance 06494af2-4716-11e9-a81a-c4346b5d8661 for batch job batchBatch
+2019-03-15 17:02:33,183 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2019-03-15 17:02:33,183 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2019-03-15 17:02:33,199 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance '06494af2-4716-11e9-a81a-c4346b5d8661' of job 'batchBatch'
+2019-03-15 17:02:33,199 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance 06494af2-4716-11e9-a81a-c4346b5d8661 of job batchBatch. 0 records were loaded
+2019-03-15 17:02:33,199 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Instance '06494af2-4716-11e9-a81a-c4346b5d8661' of job 'batchBatch' has no records to process. It's execution will be finished now
+2019-03-15 17:02:33,214 [pool-17-thread-1] INFO  org.mule.transport.polling.watermark.Watermark - Watermark value will not be updated since poll processor returned no results
+2019-03-15 17:02:33,214 [pool-16-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance 06494af2-4716-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 17:02:33,214 [pool-16-thread-1] INFO  org.mule.api.processor.LoggerMessageProcessor - 06494af2-4716-11e9-a81a-c4346b5d8661 is successfull. No of failures: 0 No Of successfull : 0
+2019-03-15 17:02:33,214 [pool-16-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance 06494af2-4716-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 17:02:33,214 [pool-16-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+
+2019-03-15 17:02:33,214 [pool-16-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution for instance '06494af2-4716-11e9-a81a-c4346b5d8661' of job 'batchBatch'. Total Records processed: 0. Successful records: 0. Failed Records: 0
+2019-03-15 17:03:33,204 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance 2a0fc542-4716-11e9-a81a-c4346b5d8661 for batch job batchBatch
+2019-03-15 17:03:33,204 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2019-03-15 17:03:33,204 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2019-03-15 17:03:33,217 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance '2a0fc542-4716-11e9-a81a-c4346b5d8661' of job 'batchBatch'
+2019-03-15 17:03:33,217 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance 2a0fc542-4716-11e9-a81a-c4346b5d8661 of job batchBatch. 0 records were loaded
+2019-03-15 17:03:33,217 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Instance '2a0fc542-4716-11e9-a81a-c4346b5d8661' of job 'batchBatch' has no records to process. It's execution will be finished now
+2019-03-15 17:03:33,217 [pool-16-thread-2] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance 2a0fc542-4716-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 17:03:33,217 [pool-17-thread-1] INFO  org.mule.transport.polling.watermark.Watermark - Watermark value will not be updated since poll processor returned no results
+2019-03-15 17:03:33,217 [pool-16-thread-2] INFO  org.mule.api.processor.LoggerMessageProcessor - 2a0fc542-4716-11e9-a81a-c4346b5d8661 is successfull. No of failures: 0 No Of successfull : 0
+2019-03-15 17:03:33,217 [pool-16-thread-2] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance 2a0fc542-4716-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 17:03:33,217 [pool-16-thread-2] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+
+2019-03-15 17:03:33,233 [pool-16-thread-2] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution for instance '2a0fc542-4716-11e9-a81a-c4346b5d8661' of job 'batchBatch'. Total Records processed: 0. Successful records: 0. Failed Records: 0
+2019-03-15 17:04:33,191 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance 4dd10f72-4716-11e9-a81a-c4346b5d8661 for batch job batchBatch
+2019-03-15 17:04:33,191 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2019-03-15 17:04:33,191 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2019-03-15 17:04:33,200 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance '4dd10f72-4716-11e9-a81a-c4346b5d8661' of job 'batchBatch'
+2019-03-15 17:04:33,200 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance 4dd10f72-4716-11e9-a81a-c4346b5d8661 of job batchBatch. 0 records were loaded
+2019-03-15 17:04:33,200 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Instance '4dd10f72-4716-11e9-a81a-c4346b5d8661' of job 'batchBatch' has no records to process. It's execution will be finished now
+2019-03-15 17:04:33,200 [pool-17-thread-1] INFO  org.mule.transport.polling.watermark.Watermark - Watermark value will not be updated since poll processor returned no results
+2019-03-15 17:04:33,200 [pool-16-thread-3] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance 4dd10f72-4716-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 17:04:33,200 [pool-16-thread-3] INFO  org.mule.api.processor.LoggerMessageProcessor - 4dd10f72-4716-11e9-a81a-c4346b5d8661 is successfull. No of failures: 0 No Of successfull : 0
+2019-03-15 17:04:33,200 [pool-16-thread-3] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance 4dd10f72-4716-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 17:04:33,200 [pool-16-thread-3] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+
+2019-03-15 17:04:33,216 [pool-16-thread-3] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution for instance '4dd10f72-4716-11e9-a81a-c4346b5d8661' of job 'batchBatch'. Total Records processed: 0. Successful records: 0. Failed Records: 0
+2019-03-15 17:05:33,155 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance 718ed732-4716-11e9-a81a-c4346b5d8661 for batch job batchBatch
+2019-03-15 17:05:33,155 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2019-03-15 17:05:33,155 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2019-03-15 17:05:33,165 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance '718ed732-4716-11e9-a81a-c4346b5d8661' of job 'batchBatch'
+2019-03-15 17:05:33,165 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance 718ed732-4716-11e9-a81a-c4346b5d8661 of job batchBatch. 0 records were loaded
+2019-03-15 17:05:33,165 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Instance '718ed732-4716-11e9-a81a-c4346b5d8661' of job 'batchBatch' has no records to process. It's execution will be finished now
+2019-03-15 17:05:33,165 [pool-17-thread-1] INFO  org.mule.transport.polling.watermark.Watermark - Watermark value will not be updated since poll processor returned no results
+2019-03-15 17:05:33,165 [pool-16-thread-4] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance 718ed732-4716-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 17:05:33,165 [pool-16-thread-4] INFO  org.mule.api.processor.LoggerMessageProcessor - 718ed732-4716-11e9-a81a-c4346b5d8661 is successfull. No of failures: 0 No Of successfull : 0
+2019-03-15 17:05:33,165 [pool-16-thread-4] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance 718ed732-4716-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 17:05:33,165 [pool-16-thread-4] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+
+2019-03-15 17:05:33,181 [pool-16-thread-4] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution for instance '718ed732-4716-11e9-a81a-c4346b5d8661' of job 'batchBatch'. Total Records processed: 0. Successful records: 0. Failed Records: 0
+2019-03-15 17:06:33,190 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance 95577462-4716-11e9-a81a-c4346b5d8661 for batch job batchBatch
+2019-03-15 17:06:33,190 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2019-03-15 17:06:33,190 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2019-03-15 17:06:33,201 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance '95577462-4716-11e9-a81a-c4346b5d8661' of job 'batchBatch'
+2019-03-15 17:06:33,201 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance 95577462-4716-11e9-a81a-c4346b5d8661 of job batchBatch. 0 records were loaded
+2019-03-15 17:06:33,201 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Instance '95577462-4716-11e9-a81a-c4346b5d8661' of job 'batchBatch' has no records to process. It's execution will be finished now
+2019-03-15 17:06:33,201 [pool-16-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance 95577462-4716-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 17:06:33,201 [pool-17-thread-1] INFO  org.mule.transport.polling.watermark.Watermark - Watermark value will not be updated since poll processor returned no results
+2019-03-15 17:06:33,201 [pool-16-thread-1] INFO  org.mule.api.processor.LoggerMessageProcessor - 95577462-4716-11e9-a81a-c4346b5d8661 is successfull. No of failures: 0 No Of successfull : 0
+2019-03-15 17:06:33,201 [pool-16-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance 95577462-4716-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 17:06:33,201 [pool-16-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+
+2019-03-15 17:06:33,216 [pool-16-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution for instance '95577462-4716-11e9-a81a-c4346b5d8661' of job 'batchBatch'. Total Records processed: 0. Successful records: 0. Failed Records: 0
+2019-03-15 17:07:33,146 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance b91403a2-4716-11e9-a81a-c4346b5d8661 for batch job batchBatch
+2019-03-15 17:07:33,146 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2019-03-15 17:07:33,146 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2019-03-15 17:07:33,162 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance 'b91403a2-4716-11e9-a81a-c4346b5d8661' of job 'batchBatch'
+2019-03-15 17:07:33,162 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance b91403a2-4716-11e9-a81a-c4346b5d8661 of job batchBatch. 0 records were loaded
+2019-03-15 17:07:33,162 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Instance 'b91403a2-4716-11e9-a81a-c4346b5d8661' of job 'batchBatch' has no records to process. It's execution will be finished now
+2019-03-15 17:07:33,177 [pool-17-thread-1] INFO  org.mule.transport.polling.watermark.Watermark - Watermark value will not be updated since poll processor returned no results
+2019-03-15 17:07:33,177 [pool-16-thread-2] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance b91403a2-4716-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 17:07:33,177 [pool-16-thread-2] INFO  org.mule.api.processor.LoggerMessageProcessor - b91403a2-4716-11e9-a81a-c4346b5d8661 is successfull. No of failures: 0 No Of successfull : 0
+2019-03-15 17:07:33,177 [pool-16-thread-2] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance b91403a2-4716-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 17:07:33,177 [pool-16-thread-2] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+
+2019-03-15 17:07:33,177 [pool-16-thread-2] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution for instance 'b91403a2-4716-11e9-a81a-c4346b5d8661' of job 'batchBatch'. Total Records processed: 0. Successful records: 0. Failed Records: 0
+2019-03-15 17:08:33,195 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance dcdec3b2-4716-11e9-a81a-c4346b5d8661 for batch job batchBatch
+2019-03-15 17:08:33,195 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2019-03-15 17:08:33,195 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2019-03-15 17:08:33,208 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance 'dcdec3b2-4716-11e9-a81a-c4346b5d8661' of job 'batchBatch'
+2019-03-15 17:08:33,208 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance dcdec3b2-4716-11e9-a81a-c4346b5d8661 of job batchBatch. 0 records were loaded
+2019-03-15 17:08:33,208 [pool-17-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Instance 'dcdec3b2-4716-11e9-a81a-c4346b5d8661' of job 'batchBatch' has no records to process. It's execution will be finished now
+2019-03-15 17:08:33,208 [pool-16-thread-3] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance dcdec3b2-4716-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 17:08:33,208 [pool-17-thread-1] INFO  org.mule.transport.polling.watermark.Watermark - Watermark value will not be updated since poll processor returned no results
+2019-03-15 17:08:33,208 [pool-16-thread-3] INFO  org.mule.api.processor.LoggerMessageProcessor - dcdec3b2-4716-11e9-a81a-c4346b5d8661 is successfull. No of failures: 0 No Of successfull : 0
+2019-03-15 17:08:33,223 [pool-16-thread-3] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance dcdec3b2-4716-11e9-a81a-c4346b5d8661 of job batchBatch
+2019-03-15 17:08:33,223 [pool-16-thread-3] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+
+2019-03-15 17:08:33,223 [pool-16-thread-3] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution for instance 'dcdec3b2-4716-11e9-a81a-c4346b5d8661' of job 'batchBatch'. Total Records processed: 0. Successful records: 0. Failed Records: 0

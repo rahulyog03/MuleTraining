@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.mule.tooling.runtime.muleServerLaunchType">
+<listAttribute key="Mpath"/>
+<stringAttribute key="Ppath" value="C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\webservice"/>
+<stringAttribute key="launch_mule_server_version" value="org.mule.tooling.server.3.9.1.ee"/>
+<listAttribute key="mule-project-names">
+<listEntry value="webservice_junit"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/webservice_junit"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="webservice_junit"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-XX:PermSize=128M -XX:MaxPermSize=256M"/>
+</launchConfiguration>

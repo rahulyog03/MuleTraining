@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.mule.tooling.runtime.muleServerLaunchType">
+<listAttribute key="Mpath"/>
+<stringAttribute key="Ppath" value="C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\training-american-ws-1"/>
 <stringAttribute key="launch_mule_server_version" value="org.mule.tooling.server.3.9.1.ee"/>
 <listAttribute key="mule-project-names">
 <listEntry value="training-american-ws-1"/>

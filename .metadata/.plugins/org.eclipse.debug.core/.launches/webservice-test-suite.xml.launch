@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.munit.launchconfig">
+<listAttribute key="Mpath">
+<listEntry value="C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\webservice\src\test\munit\webservice-test-suite.xml"/>
+</listAttribute>
+<stringAttribute key="Ppath" value="C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\webservice"/>
+<stringAttribute key="launch_mule_server_version" value="org.mule.tooling.server.3.9.1.ee"/>
+<listAttribute key="mule-project-names">
+<listEntry value="webservice_junit"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/webservice_junit"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="webservice-test-suite.xml"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="webservice_junit"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Djava.library.path=&#13;&#10;-DmunitProjectName=webservice&#13;&#10;-Dlog4j.skipJansi=true"/>
+<stringAttribute key="resource" value="webservice-test-suite.xml"/>
+</launchConfiguration>

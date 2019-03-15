@@ -1,0 +1,232 @@
+2019-03-15 17:09:02,950 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'webservice'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 17:09:03,263 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2019-03-15 17:09:03,450 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2019-03-15 17:09:03,624 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2019-03-15 17:09:03,624 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2019-03-15 17:09:03,732 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@32057e6: startup date [Fri Mar 15 17:09:03 IST 2019]; root of context hierarchy
+2019-03-15 17:09:06,402 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-03-15 17:09:07,983 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2019-03-15 17:09:08,571 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\webservice\queue-tx-log\tx1.log and C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\webservice\queue-tx-log\tx2.log
+2019-03-15 17:09:08,603 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\webservice\queue-xa-tx-log\tx1.log and C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\webservice\queue-xa-tx-log\tx2.log
+2019-03-15 17:09:08,787 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2019-03-15 17:09:08,787 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getDeltaFlightsFlow
+2019-03-15 17:09:08,787 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2dbc408c
+2019-03-15 17:09:08,844 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getDeltaFlightsFlow.stage1
+2019-03-15 17:09:11,588 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\apps\webservice\webservice.xml'}]"
+2019-03-15 17:09:11,588 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\apps\webservice\webservice.xml'}]"
+2019-03-15 17:09:11,603 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2019-03-15 17:09:11,603 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'webservice'                                +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 17:09:11,603 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2019-03-15 17:09:11,603 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2019-03-15 17:09:11,708 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:9090
+2019-03-15 17:09:11,708 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 17:09:11,723 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2019-03-15 17:09:11,723 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getDeltaFlightsFlow
+2019-03-15 17:09:11,723 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getDeltaFlightsFlow.stage1
+2019-03-15 17:09:11,802 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2019-03-15 17:09:16,352 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: webservice                                            *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2019-03-15 17:28:13,965 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'webservice'                                +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 17:28:13,965 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: getDeltaFlightsFlow
+2019-03-15 17:28:13,981 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: getDeltaFlightsFlow.stage1
+2019-03-15 17:28:14,193 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2019-03-15 17:28:14,209 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:9090
+2019-03-15 17:28:14,224 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2019-03-15 17:28:14,224 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2019-03-15 17:28:14,240 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'webservice'                               +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 17:28:14,258 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2019-03-15 17:28:14,262 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: getDeltaFlightsFlow
+2019-03-15 17:28:14,262 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: getDeltaFlightsFlow.stage1
+2019-03-15 17:28:14,266 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2019-03-15 17:28:14,740 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@32057e6: startup date [Fri Mar 15 17:09:03 IST 2019]; root of context hierarchy
+2019-03-15 17:28:14,809 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "webservice" shut down normally on: 15/3/19 5:28 PM    *
+* Up for: 0 days, 0 hours, 19 mins, 3.172 sec                        *
+**********************************************************************
+2019-03-15 17:28:15,094 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'webservice'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 17:28:15,149 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2019-03-15 17:28:15,228 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2019-03-15 17:28:15,324 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2019-03-15 17:28:15,324 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2019-03-15 17:28:15,340 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@503eaf5a: startup date [Fri Mar 15 17:28:15 IST 2019]; root of context hierarchy
+2019-03-15 17:28:17,147 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-03-15 17:28:17,382 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\webservice\queue-tx-log\tx1.log and C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\webservice\queue-tx-log\tx2.log
+2019-03-15 17:28:17,387 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\webservice\queue-xa-tx-log\tx1.log and C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\webservice\queue-xa-tx-log\tx2.log
+2019-03-15 17:28:17,402 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2019-03-15 17:28:17,404 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getDeltaFlightsFlow
+2019-03-15 17:28:17,404 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7fe6791b
+2019-03-15 17:28:17,415 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getDeltaFlightsFlow.stage1
+2019-03-15 17:28:17,553 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\apps\webservice\webservice.xml'}]"
+2019-03-15 17:28:17,554 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\apps\webservice\webservice.xml'}]"
+2019-03-15 17:28:17,558 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'webservice'                                +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 17:28:17,560 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2019-03-15 17:28:17,560 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2019-03-15 17:28:17,594 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:9090
+2019-03-15 17:28:17,594 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 17:28:17,594 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2019-03-15 17:28:17,594 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getDeltaFlightsFlow
+2019-03-15 17:28:17,594 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getDeltaFlightsFlow.stage1
+2019-03-15 17:28:17,625 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2019-03-15 17:28:17,625 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: webservice                                            *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2019-03-15 17:33:19,180 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'webservice'                                +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 17:33:19,211 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: getDeltaFlightsFlow
+2019-03-15 17:33:19,211 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: getDeltaFlightsFlow.stage1
+2019-03-15 17:33:19,415 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2019-03-15 17:33:19,415 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:9090
+2019-03-15 17:33:19,430 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2019-03-15 17:33:19,430 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2019-03-15 17:33:19,430 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'webservice'                               +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 17:33:19,430 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2019-03-15 17:33:19,430 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: getDeltaFlightsFlow
+2019-03-15 17:33:19,430 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: getDeltaFlightsFlow.stage1
+2019-03-15 17:33:19,446 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2019-03-15 17:33:19,493 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@503eaf5a: startup date [Fri Mar 15 17:28:15 IST 2019]; root of context hierarchy
+2019-03-15 17:33:19,508 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "webservice" shut down normally on: 15/3/19 5:33 PM    *
+* Up for: 0 days, 0 hours, 5 mins, 1.950 sec                         *
+**********************************************************************
+2019-03-15 17:33:19,903 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'webservice'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 17:33:19,934 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2019-03-15 17:33:19,934 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2019-03-15 17:33:20,000 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2019-03-15 17:33:20,000 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2019-03-15 17:33:20,015 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@696f9d89: startup date [Fri Mar 15 17:33:20 IST 2019]; root of context hierarchy
+2019-03-15 17:33:20,750 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-03-15 17:33:21,130 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\webservice\queue-tx-log\tx1.log and C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\webservice\queue-tx-log\tx2.log
+2019-03-15 17:33:21,130 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\webservice\queue-xa-tx-log\tx1.log and C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\webservice\queue-xa-tx-log\tx2.log
+2019-03-15 17:33:21,145 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2019-03-15 17:33:21,161 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getDeltaFlightsFlow
+2019-03-15 17:33:21,161 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3d9b817f
+2019-03-15 17:33:21,161 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getDeltaFlightsFlow.stage1
+2019-03-15 17:33:21,583 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\apps\webservice\webservice.xml'}]"
+2019-03-15 17:33:21,583 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\apps\webservice\webservice.xml'}]"
+2019-03-15 17:33:21,583 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'webservice'                                +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 17:33:21,599 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2019-03-15 17:33:21,599 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2019-03-15 17:33:21,630 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:9090
+2019-03-15 17:33:21,630 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 17:33:21,630 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2019-03-15 17:33:21,630 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getDeltaFlightsFlow
+2019-03-15 17:33:21,630 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getDeltaFlightsFlow.stage1
+2019-03-15 17:33:21,661 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2019-03-15 17:33:21,661 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: webservice                                            *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2019-03-15 17:34:15,994 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'webservice'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 17:34:16,291 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2019-03-15 17:34:16,510 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2019-03-15 17:34:16,828 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2019-03-15 17:34:16,828 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2019-03-15 17:34:16,922 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@64712be: startup date [Fri Mar 15 17:34:16 IST 2019]; root of context hierarchy
+2019-03-15 17:34:19,606 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-03-15 17:34:22,018 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2019-03-15 17:34:23,037 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\webservice\queue-tx-log\tx1.log and C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\webservice\queue-tx-log\tx2.log
+2019-03-15 17:34:23,056 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\webservice\queue-xa-tx-log\tx1.log and C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\.\.mule\webservice\queue-xa-tx-log\tx2.log
+2019-03-15 17:34:23,260 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2019-03-15 17:34:23,267 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getDeltaFlightsFlow
+2019-03-15 17:34:23,267 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@342e690b
+2019-03-15 17:34:23,316 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getDeltaFlightsFlow.stage1
+2019-03-15 17:34:26,074 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\apps\webservice\webservice.xml'}]"
+2019-03-15 17:34:26,074 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\IMGADMIN\Desktop\Mule 3.9\ws\.mule\apps\webservice\webservice.xml'}]"
+2019-03-15 17:34:26,081 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2019-03-15 17:34:26,081 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'webservice'                                +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 17:34:26,081 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2019-03-15 17:34:26,081 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2019-03-15 17:34:26,159 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:9090
+2019-03-15 17:34:26,175 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-03-15 17:34:26,175 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2019-03-15 17:34:26,175 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getDeltaFlightsFlow
+2019-03-15 17:34:26,175 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getDeltaFlightsFlow.stage1
+2019-03-15 17:34:26,238 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2019-03-15 17:34:30,794 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: webservice                                            *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
